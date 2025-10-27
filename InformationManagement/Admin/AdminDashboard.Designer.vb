@@ -36,9 +36,13 @@ Partial Class AdminDashboard
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.RoundedPanel1 = New InformationManagement.RoundedPanel()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SidePanel.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        Me.RoundedPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'SidePanel
@@ -222,11 +226,31 @@ Partial Class AdminDashboard
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Panel1.Controls.Add(Me.RoundedPanel1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(228, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(572, 450)
         Me.Panel1.TabIndex = 1
+        '
+        'RoundedPanel1
+        '
+        Me.RoundedPanel1.BackColor = System.Drawing.Color.White
+        Me.RoundedPanel1.Controls.Add(Me.Label2)
+        Me.RoundedPanel1.CornerRadius = 20
+        Me.RoundedPanel1.Location = New System.Drawing.Point(174, 142)
+        Me.RoundedPanel1.Name = "RoundedPanel1"
+        Me.RoundedPanel1.Size = New System.Drawing.Size(200, 100)
+        Me.RoundedPanel1.TabIndex = 0
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(78, 59)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(70, 13)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "ano nagana?"
         '
         'AdminDashboard
         '
@@ -241,6 +265,9 @@ Partial Class AdminDashboard
         Me.Panel3.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.RoundedPanel1.ResumeLayout(False)
+        Me.RoundedPanel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -258,4 +285,6 @@ Partial Class AdminDashboard
     Friend WithEvents btnLogout As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents RoundedPanel1 As RoundedPanel
+    Friend WithEvents Label2 As Label
 End Class

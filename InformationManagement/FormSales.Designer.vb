@@ -59,7 +59,7 @@ Partial Class FormSales
         Me.chartPanel.CornerRadius = 20
         Me.chartPanel.Location = New System.Drawing.Point(29, 210)
         Me.chartPanel.Name = "chartPanel"
-        Me.chartPanel.Size = New System.Drawing.Size(1092, 275)
+        Me.chartPanel.Size = New System.Drawing.Size(1092, 346)
         Me.chartPanel.TabIndex = 5
         '
         'RoundedPanel3
