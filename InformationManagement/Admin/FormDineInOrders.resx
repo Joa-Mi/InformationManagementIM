@@ -141,11 +141,14 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAAHUAAAB1AePCB2UAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAAAkElEQVQ4T9WRQQrCMBREH3ThkdpjiN6ga7vRQyldeTAP4EplYCqfH0NQceGDgc9k/gQS+DFbYJPN
-        d5itj/nTghUweI4F8nTWRMEbsA8FmuX1OVzj4IWLpVlelVf/rVvvlubI2npSe6zRyhT5wmhQ5E/AORoN
-        lD1GYwKuPljaa1JG2V0s6Fyi1ryQpYyWtfM9D6IdLwUIX10uAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        cwAAAHMBY8FD/gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACQSURBVDhP1ZFB
+        CsIwFEQfdOGR2mOI3qBru9FDKV15MA/gSmVgKp8fQ1Bx4YOBz2T+BBL4MVtgk813mK2P+dOCFTB4jgXy
+        dNZEwRuwDwWa5fU5XOPghYulWV6VV/+tW++W5sjaelJ7rNHKFPnCaFDkT8A5Gg2UPUZjAq4+WNprUkbZ
+        XSzoXKLWvJCljJa18z0Poh0vBQhfXS4AAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
 </root>

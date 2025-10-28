@@ -23,9 +23,9 @@ Partial Class Dashboard
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
-        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -47,10 +47,15 @@ Partial Class Dashboard
         Me.PanelTopMenuItems = New InformationManagement.RoundedPanel()
         Me.PanelRecentReservations = New InformationManagement.RoundedPanel()
         Me.PanelPendingOrders = New InformationManagement.RoundedPanel()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.PanelQuickStats = New InformationManagement.RoundedPanel()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RoundedPanel1.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,8 +68,9 @@ Partial Class Dashboard
         Me.PanelTopMenuItems.SuspendLayout()
         Me.PanelRecentReservations.SuspendLayout()
         Me.PanelPendingOrders.SuspendLayout()
-        Me.PanelQuickStats.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelQuickStats.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -105,16 +111,16 @@ Partial Class Dashboard
         '
         'Chart1
         '
-        ChartArea3.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea3)
-        Legend3.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend3)
+        ChartArea2.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea2)
+        Legend2.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend2)
         Me.Chart1.Location = New System.Drawing.Point(36, 17)
         Me.Chart1.Name = "Chart1"
-        Series3.ChartArea = "ChartArea1"
-        Series3.Legend = "Legend1"
-        Series3.Name = "Series1"
-        Me.Chart1.Series.Add(Series3)
+        Series2.ChartArea = "ChartArea1"
+        Series2.Legend = "Legend1"
+        Series2.Name = "Series1"
+        Me.Chart1.Series.Add(Series2)
         Me.Chart1.Size = New System.Drawing.Size(982, 312)
         Me.Chart1.TabIndex = 0
         Me.Chart1.Text = "Chart1"
@@ -263,7 +269,7 @@ Partial Class Dashboard
         Me.Panel5.CornerRadius = 18
         Me.Panel5.Location = New System.Drawing.Point(32, 225)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1051, 378)
+        Me.Panel5.Size = New System.Drawing.Size(1051, 364)
         Me.Panel5.TabIndex = 10
         '
         'PanelTopMenuItems
@@ -297,6 +303,15 @@ Partial Class Dashboard
         Me.PanelPendingOrders.Size = New System.Drawing.Size(505, 62)
         Me.PanelPendingOrders.TabIndex = 13
         '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(20, 14)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(25, 18)
+        Me.PictureBox5.TabIndex = 9
+        Me.PictureBox5.TabStop = False
+        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -311,11 +326,16 @@ Partial Class Dashboard
         'PanelQuickStats
         '
         Me.PanelQuickStats.BackColor = System.Drawing.Color.White
+        Me.PanelQuickStats.Controls.Add(Me.Label12)
+        Me.PanelQuickStats.Controls.Add(Me.Label11)
+        Me.PanelQuickStats.Controls.Add(Me.Label10)
         Me.PanelQuickStats.Controls.Add(Me.Label8)
+        Me.PanelQuickStats.Controls.Add(Me.Label9)
+        Me.PanelQuickStats.Controls.Add(Me.PictureBox6)
         Me.PanelQuickStats.CornerRadius = 18
         Me.PanelQuickStats.Location = New System.Drawing.Point(578, 716)
         Me.PanelQuickStats.Name = "PanelQuickStats"
-        Me.PanelQuickStats.Size = New System.Drawing.Size(505, 62)
+        Me.PanelQuickStats.Size = New System.Drawing.Size(505, 222)
         Me.PanelQuickStats.TabIndex = 14
         '
         'Label8
@@ -329,14 +349,54 @@ Partial Class Dashboard
         Me.Label8.TabIndex = 8
         Me.Label8.Text = "Quick Stats"
         '
-        'PictureBox5
+        'Label9
         '
-        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(20, 14)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(25, 18)
-        Me.PictureBox5.TabIndex = 9
-        Me.PictureBox5.TabStop = False
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.Label9.Location = New System.Drawing.Point(53, 51)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(73, 16)
+        Me.Label9.TabIndex = 10
+        Me.Label9.Text = "Active Staff"
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
+        Me.PictureBox6.Location = New System.Drawing.Point(20, 51)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(20, 24)
+        Me.PictureBox6.TabIndex = 14
+        Me.PictureBox6.TabStop = False
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.Label10.Location = New System.Drawing.Point(53, 90)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(75, 16)
+        Me.Label10.TabIndex = 15
+        Me.Label10.Text = "Menu Items"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.Label11.Location = New System.Drawing.Point(53, 132)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(110, 16)
+        Me.Label11.TabIndex = 16
+        Me.Label11.Text = "Tables Available"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.Label12.Location = New System.Drawing.Point(54, 167)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(109, 16)
+        Me.Label12.TabIndex = 17
+        Me.Label12.Text = "Avg. Order Value"
         '
         'Dashboard
         '
@@ -374,9 +434,10 @@ Partial Class Dashboard
         Me.PanelRecentReservations.PerformLayout()
         Me.PanelPendingOrders.ResumeLayout(False)
         Me.PanelPendingOrders.PerformLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelQuickStats.ResumeLayout(False)
         Me.PanelQuickStats.PerformLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -407,4 +468,9 @@ Partial Class Dashboard
     Friend WithEvents PanelQuickStats As RoundedPanel
     Friend WithEvents Label8 As Label
     Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents PictureBox6 As PictureBox
 End Class

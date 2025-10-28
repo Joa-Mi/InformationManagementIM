@@ -23,7 +23,13 @@ Partial Class FormSales
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormSales))
-        Me.chartPanel = New InformationManagement.RoundedPanel()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim CustomLabel1 As System.Windows.Forms.DataVisualization.Charting.CustomLabel = New System.Windows.Forms.DataVisualization.Charting.CustomLabel()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Title1 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
         Me.RoundedPanel3 = New InformationManagement.RoundedPanel()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
@@ -42,6 +48,7 @@ Partial Class FormSales
         Me.lblTotalRevenue = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Chart2 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.RoundedPanel3.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,16 +58,8 @@ Partial Class FormSales
         Me.RoundedPanel1.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'chartPanel
-        '
-        Me.chartPanel.BackColor = System.Drawing.Color.White
-        Me.chartPanel.CornerRadius = 20
-        Me.chartPanel.Location = New System.Drawing.Point(29, 210)
-        Me.chartPanel.Name = "chartPanel"
-        Me.chartPanel.Size = New System.Drawing.Size(1092, 346)
-        Me.chartPanel.TabIndex = 5
         '
         'RoundedPanel3
         '
@@ -71,7 +70,7 @@ Partial Class FormSales
         Me.RoundedPanel3.Controls.Add(Me.PictureBox6)
         Me.RoundedPanel3.Controls.Add(Me.Label5)
         Me.RoundedPanel3.CornerRadius = 18
-        Me.RoundedPanel3.Location = New System.Drawing.Point(791, 27)
+        Me.RoundedPanel3.Location = New System.Drawing.Point(776, 27)
         Me.RoundedPanel3.Name = "RoundedPanel3"
         Me.RoundedPanel3.Size = New System.Drawing.Size(330, 138)
         Me.RoundedPanel3.TabIndex = 4
@@ -254,12 +253,48 @@ Partial Class FormSales
         Me.Label2.Text = "Total Revenue" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
+        'Chart2
+        '
+        CustomLabel1.ForeColor = System.Drawing.Color.Silver
+        ChartArea1.AxisX.CustomLabels.Add(CustomLabel1)
+        ChartArea1.Name = "ChartArea1"
+        Me.Chart2.ChartAreas.Add(ChartArea1)
+        Legend1.BackColor = System.Drawing.Color.Transparent
+        Legend1.Name = "Legend1"
+        Me.Chart2.Legends.Add(Legend1)
+        Me.Chart2.Location = New System.Drawing.Point(35, 222)
+        Me.Chart2.Name = "Chart2"
+        Me.Chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright
+        Series1.BorderColor = System.Drawing.Color.WhiteSmoke
+        Series1.ChartArea = "ChartArea1"
+        Series1.Color = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Series1.Legend = "Legend1"
+        Series1.Name = "Expenses"
+        Series2.ChartArea = "ChartArea1"
+        Series2.Color = System.Drawing.Color.MediumSeaGreen
+        Series2.Legend = "Legend1"
+        Series2.Name = "Profit"
+        Series3.ChartArea = "ChartArea1"
+        Series3.Color = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Series3.IsValueShownAsLabel = True
+        Series3.Legend = "Legend1"
+        Series3.Name = "Revenue"
+        Me.Chart2.Series.Add(Series1)
+        Me.Chart2.Series.Add(Series2)
+        Me.Chart2.Series.Add(Series3)
+        Me.Chart2.Size = New System.Drawing.Size(1071, 350)
+        Me.Chart2.TabIndex = 5
+        Me.Chart2.Text = "Chart2"
+        Title1.Name = "Title1"
+        Title1.Text = "Financial Overview - Monthly"
+        Me.Chart2.Titles.Add(Title1)
+        '
         'FormSales
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1168, 621)
-        Me.Controls.Add(Me.chartPanel)
+        Me.ClientSize = New System.Drawing.Size(1168, 731)
+        Me.Controls.Add(Me.Chart2)
         Me.Controls.Add(Me.RoundedPanel3)
         Me.Controls.Add(Me.RoundedPanel2)
         Me.Controls.Add(Me.RoundedPanel1)
@@ -277,6 +312,7 @@ Partial Class FormSales
         Me.RoundedPanel1.PerformLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Chart2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -299,5 +335,5 @@ Partial Class FormSales
     Friend WithEvents Label5 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents chartPanel As RoundedPanel
+    Friend WithEvents Chart2 As DataVisualization.Charting.Chart
 End Class

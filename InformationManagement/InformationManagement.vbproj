@@ -75,6 +75,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AddNewReservations.Designer.vb">
+      <DependentUpon>AddNewReservations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddNewReservations.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Admin\AdminDashboard.Designer.vb">
       <DependentUpon>AdminDashboard.vb</DependentUpon>
     </Compile>
@@ -85,6 +91,18 @@
       <DependentUpon>Dashboard.vb</DependentUpon>
     </Compile>
     <Compile Include="Admin\Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormAddNewmenuItem.Designer.vb">
+      <DependentUpon>FormAddNewmenuItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormAddNewmenuItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormAddUser.Designer.vb">
+      <DependentUpon>FormAddUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormAddUser.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin\MenuItems.Designer.vb">
@@ -117,70 +135,73 @@
     <Compile Include="Admin\Reservations.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Admin\RoundedButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Admin\UsersAccounts.Designer.vb">
       <DependentUpon>UsersAccounts.vb</DependentUpon>
     </Compile>
     <Compile Include="Admin\UsersAccounts.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCateringReservations.Designer.vb">
+    <Compile Include="Admin\FormCateringReservations.Designer.vb">
       <DependentUpon>FormCateringReservations.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormCateringReservations.vb">
+    <Compile Include="Admin\FormCateringReservations.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCustomerHistory.Designer.vb">
+    <Compile Include="Admin\FormCustomerHistory.Designer.vb">
       <DependentUpon>FormCustomerHistory.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormCustomerHistory.vb">
+    <Compile Include="Admin\FormCustomerHistory.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormDineInOrders.Designer.vb">
+    <Compile Include="Admin\FormDineInOrders.Designer.vb">
       <DependentUpon>FormDineInOrders.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormDineInOrders.vb">
+    <Compile Include="Admin\FormDineInOrders.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormEmployeeAttendance.Designer.vb">
+    <Compile Include="Admin\FormEmployeeAttendance.Designer.vb">
       <DependentUpon>FormEmployeeAttendance.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormEmployeeAttendance.vb">
+    <Compile Include="Admin\FormEmployeeAttendance.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormOrders.Designer.vb">
+    <Compile Include="Admin\FormOrders.Designer.vb">
       <DependentUpon>FormOrders.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormOrders.vb">
+    <Compile Include="Admin\FormOrders.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPayroll.Designer.vb">
+    <Compile Include="Admin\FormPayroll.Designer.vb">
       <DependentUpon>FormPayroll.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormPayroll.vb">
+    <Compile Include="Admin\FormPayroll.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormProductPerformance.Designer.vb">
+    <Compile Include="Admin\FormProductPerformance.Designer.vb">
       <DependentUpon>FormProductPerformance.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormProductPerformance.vb">
+    <Compile Include="Admin\FormProductPerformance.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormReservationStatus.Designer.vb">
+    <Compile Include="Admin\FormReservationStatus.Designer.vb">
       <DependentUpon>FormReservationStatus.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormReservationStatus.vb">
+    <Compile Include="Admin\FormReservationStatus.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSales.Designer.vb">
+    <Compile Include="Admin\FormSales.Designer.vb">
       <DependentUpon>FormSales.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormSales.vb">
+    <Compile Include="Admin\FormSales.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormTakeOutOrders.Designer.vb">
+    <Compile Include="Admin\FormTakeOutOrders.Designer.vb">
       <DependentUpon>FormTakeOutOrders.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormTakeOutOrders.vb">
+    <Compile Include="Admin\FormTakeOutOrders.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -210,6 +231,18 @@
     <EmbeddedResource Include="Admin\Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormAddNewmenuItem.resx">
+      <DependentUpon>FormAddNewmenuItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormAddUser.resx">
+      <DependentUpon>FormAddUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormCateringReservations.resx">
+      <DependentUpon>FormCateringReservations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormReservationStatus.resx">
+      <DependentUpon>FormReservationStatus.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\MenuItems.resx">
       <DependentUpon>MenuItems.vb</DependentUpon>
     </EmbeddedResource>
@@ -228,13 +261,13 @@
     <EmbeddedResource Include="Admin\UsersAccounts.resx">
       <DependentUpon>UsersAccounts.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormDineInOrders.resx">
+    <EmbeddedResource Include="Admin\FormDineInOrders.resx">
       <DependentUpon>FormDineInOrders.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPayroll.resx">
+    <EmbeddedResource Include="Admin\FormPayroll.resx">
       <DependentUpon>FormPayroll.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSales.resx">
+    <EmbeddedResource Include="Admin\FormSales.resx">
       <DependentUpon>FormSales.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -263,6 +296,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dashboard %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %284%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

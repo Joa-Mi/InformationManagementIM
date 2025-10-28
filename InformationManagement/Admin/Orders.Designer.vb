@@ -22,77 +22,152 @@ Partial Class Orders
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Title1 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
-        Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
-        Me.Chart2 = New System.Windows.Forms.DataVisualization.Charting.Chart()
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Orders))
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.AddOrdersBtn = New InformationManagement.RoundedButton()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CustomerName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.OrderType = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Products = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Quantities = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UnitPrices = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalPrice = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Status = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Actions = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Chart1
+        'Label1
         '
-        ChartArea1.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend1)
-        Me.Chart1.Location = New System.Drawing.Point(0, 0)
-        Me.Chart1.Name = "Chart1"
-        Series1.ChartArea = "ChartArea1"
-        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
-        Series1.Legend = "Legend1"
-        Series1.Name = "Series1"
-        Me.Chart1.Series.Add(Series1)
-        Me.Chart1.Size = New System.Drawing.Size(471, 300)
-        Me.Chart1.TabIndex = 0
-        Me.Chart1.Text = "Chart1"
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(175, 26)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Manage Orders"
         '
-        'Chart2
+        'AddOrdersBtn
         '
-        ChartArea2.Name = "ChartArea1"
-        Me.Chart2.ChartAreas.Add(ChartArea2)
-        Legend2.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Legend2.Enabled = False
-        Legend2.Name = "Main Courses"
-        Legend3.Name = "Appetizers"
-        Me.Chart2.Legends.Add(Legend2)
-        Me.Chart2.Legends.Add(Legend3)
-        Me.Chart2.Location = New System.Drawing.Point(415, 112)
-        Me.Chart2.Name = "Chart2"
-        Series2.ChartArea = "ChartArea1"
-        Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie
-        Series2.Legend = "Main Courses"
-        Series2.Name = "Series1"
-        Me.Chart2.Series.Add(Series2)
-        Me.Chart2.Size = New System.Drawing.Size(409, 300)
-        Me.Chart2.TabIndex = 1
-        Me.Chart2.Text = "Chart2"
-        Title1.ForeColor = System.Drawing.Color.IndianRed
-        Title1.Name = "Title1"
-        Me.Chart2.Titles.Add(Title1)
+        Me.AddOrdersBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.AddOrdersBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.AddOrdersBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.AddOrdersBtn.ForeColor = System.Drawing.Color.White
+        Me.AddOrdersBtn.Image = CType(resources.GetObject("AddOrdersBtn.Image"), System.Drawing.Image)
+        Me.AddOrdersBtn.Location = New System.Drawing.Point(960, 12)
+        Me.AddOrdersBtn.Name = "AddOrdersBtn"
+        Me.AddOrdersBtn.Size = New System.Drawing.Size(147, 42)
+        Me.AddOrdersBtn.TabIndex = 4
+        Me.AddOrdersBtn.Text = "   Add Orders"
+        Me.AddOrdersBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.AddOrdersBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.AddOrdersBtn.UseVisualStyleBackColor = False
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
+        Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.DataGridView1.ColumnHeadersHeight = 40
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.CustomerName, Me.OrderType, Me.Products, Me.Quantities, Me.UnitPrices, Me.TotalPrice, Me.Status, Me.Actions})
+        Me.DataGridView1.EnableHeadersVisualStyles = False
+        Me.DataGridView1.Location = New System.Drawing.Point(34, 116)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersVisible = False
+        Me.DataGridView1.Size = New System.Drawing.Size(1039, 196)
+        Me.DataGridView1.TabIndex = 5
+        '
+        'ID
+        '
+        Me.ID.HeaderText = "ID"
+        Me.ID.Name = "ID"
+        '
+        'CustomerName
+        '
+        Me.CustomerName.HeaderText = "Customer Name"
+        Me.CustomerName.Name = "CustomerName"
+        Me.CustomerName.Width = 150
+        '
+        'OrderType
+        '
+        Me.OrderType.HeaderText = "Order Type"
+        Me.OrderType.Name = "OrderType"
+        Me.OrderType.Width = 120
+        '
+        'Products
+        '
+        Me.Products.HeaderText = "Products"
+        Me.Products.Name = "Products"
+        Me.Products.Width = 150
+        '
+        'Quantities
+        '
+        Me.Quantities.HeaderText = "Quantities"
+        Me.Quantities.Name = "Quantities"
+        Me.Quantities.Width = 150
+        '
+        'UnitPrices
+        '
+        Me.UnitPrices.HeaderText = "Unit Prices"
+        Me.UnitPrices.Name = "UnitPrices"
+        Me.UnitPrices.Width = 150
+        '
+        'TotalPrice
+        '
+        Me.TotalPrice.HeaderText = "Total Price"
+        Me.TotalPrice.Name = "TotalPrice"
+        Me.TotalPrice.Width = 120
+        '
+        'Status
+        '
+        Me.Status.HeaderText = "Status"
+        Me.Status.Name = "Status"
+        Me.Status.Width = 120
+        '
+        'Actions
+        '
+        Me.Actions.HeaderText = "Actions"
+        Me.Actions.Name = "Actions"
+        Me.Actions.Width = 150
         '
         'Orders
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Chart2)
-        Me.Controls.Add(Me.Chart1)
+        Me.ClientSize = New System.Drawing.Size(1150, 450)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.AddOrdersBtn)
+        Me.Controls.Add(Me.Label1)
         Me.Name = "Orders"
         Me.Text = "Orders"
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Chart2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Chart1 As DataVisualization.Charting.Chart
-    Friend WithEvents Chart2 As DataVisualization.Charting.Chart
+    Friend WithEvents Label1 As Label
+    Friend WithEvents AddOrdersBtn As RoundedButton
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents ID As DataGridViewTextBoxColumn
+    Friend WithEvents CustomerName As DataGridViewTextBoxColumn
+    Friend WithEvents OrderType As DataGridViewTextBoxColumn
+    Friend WithEvents Products As DataGridViewTextBoxColumn
+    Friend WithEvents Quantities As DataGridViewTextBoxColumn
+    Friend WithEvents UnitPrices As DataGridViewTextBoxColumn
+    Friend WithEvents TotalPrice As DataGridViewTextBoxColumn
+    Friend WithEvents Status As DataGridViewTextBoxColumn
+    Friend WithEvents Actions As DataGridViewTextBoxColumn
 End Class

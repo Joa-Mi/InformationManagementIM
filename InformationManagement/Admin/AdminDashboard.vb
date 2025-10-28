@@ -1,5 +1,8 @@
 ﻿Public Class AdminDashboard
+    Public Sub New()
+        InitializeComponent()
 
+    End Sub
     Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
 
     End Sub
@@ -153,5 +156,6 @@
             .Show()
         End With
     End Sub
+
 
 End Class

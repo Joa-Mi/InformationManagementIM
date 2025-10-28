@@ -1,6 +1,7 @@
 ﻿Imports System.Windows.Forms.DataVisualization.Charting
 
 Public Class Dashboard
+
     Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.BackColor = ColorTranslator.FromHtml("#F7F8FA")
         Me.AutoScroll = True

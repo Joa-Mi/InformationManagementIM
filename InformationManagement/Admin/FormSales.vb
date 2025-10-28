@@ -6,15 +6,10 @@ Public Class FormSales
         InitializeChart()
     End Sub
     Private Sub InitializeChart()
-        ' Create chart control to fit in chartPanel
+
         Dim chart As New Chart()
         chart.Dock = DockStyle.Fill
 
-        ' Clear any existing controls and add chart to chartPanel
-        chartPanel.Controls.Clear()
-        chartPanel.Controls.Add(chart)
-
-        ' Create chart area
         Dim chartArea As New ChartArea("MainArea")
         chartArea.AxisX.MajorGrid.LineColor = Color.LightGray
         chartArea.AxisX.MajorGrid.LineDashStyle = ChartDashStyle.Dot
