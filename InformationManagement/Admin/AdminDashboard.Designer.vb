@@ -43,7 +43,7 @@ Partial Class AdminDashboard
         '
         'SidePanel
         '
-        Me.SidePanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.SidePanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(50, Byte), Integer))
         Me.SidePanel.Controls.Add(Me.btnReports)
         Me.SidePanel.Controls.Add(Me.btnPayroll)
         Me.SidePanel.Controls.Add(Me.btnOrders)
@@ -56,7 +56,7 @@ Partial Class AdminDashboard
         Me.SidePanel.Dock = System.Windows.Forms.DockStyle.Left
         Me.SidePanel.Location = New System.Drawing.Point(0, 0)
         Me.SidePanel.Name = "SidePanel"
-        Me.SidePanel.Size = New System.Drawing.Size(228, 450)
+        Me.SidePanel.Size = New System.Drawing.Size(261, 450)
         Me.SidePanel.TabIndex = 0
         '
         'Panel3
@@ -66,28 +66,28 @@ Partial Class AdminDashboard
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel3.Location = New System.Drawing.Point(0, 396)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(228, 54)
+        Me.Panel3.Size = New System.Drawing.Size(261, 54)
         Me.Panel3.TabIndex = 1
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(50, Byte), Integer))
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel2.Controls.Add(Me.Label1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(228, 52)
+        Me.Panel2.Size = New System.Drawing.Size(261, 65)
         Me.Panel2.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(23, 18)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(152, 20)
+        Me.Label1.Size = New System.Drawing.Size(191, 30)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Admin Dashboard"
         '
@@ -95,20 +95,20 @@ Partial Class AdminDashboard
         '
         Me.Panel1.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(228, 0)
+        Me.Panel1.Location = New System.Drawing.Point(261, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(572, 450)
+        Me.Panel1.Size = New System.Drawing.Size(539, 450)
         Me.Panel1.TabIndex = 1
         '
         'btnReports
         '
         Me.btnReports.FlatAppearance.BorderSize = 0
         Me.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReports.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.btnReports.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnReports.ForeColor = System.Drawing.Color.White
         Me.btnReports.Image = CType(resources.GetObject("btnReports.Image"), System.Drawing.Image)
         Me.btnReports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnReports.Location = New System.Drawing.Point(20, 340)
+        Me.btnReports.Location = New System.Drawing.Point(20, 362)
         Me.btnReports.Name = "btnReports"
         Me.btnReports.Size = New System.Drawing.Size(190, 28)
         Me.btnReports.TabIndex = 7
@@ -120,11 +120,11 @@ Partial Class AdminDashboard
         '
         Me.btnPayroll.FlatAppearance.BorderSize = 0
         Me.btnPayroll.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPayroll.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.btnPayroll.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPayroll.ForeColor = System.Drawing.Color.White
         Me.btnPayroll.Image = CType(resources.GetObject("btnPayroll.Image"), System.Drawing.Image)
         Me.btnPayroll.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnPayroll.Location = New System.Drawing.Point(20, 293)
+        Me.btnPayroll.Location = New System.Drawing.Point(20, 319)
         Me.btnPayroll.Name = "btnPayroll"
         Me.btnPayroll.Size = New System.Drawing.Size(190, 28)
         Me.btnPayroll.TabIndex = 6
@@ -136,11 +136,11 @@ Partial Class AdminDashboard
         '
         Me.btnOrders.FlatAppearance.BorderSize = 0
         Me.btnOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnOrders.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.btnOrders.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnOrders.ForeColor = System.Drawing.Color.White
         Me.btnOrders.Image = CType(resources.GetObject("btnOrders.Image"), System.Drawing.Image)
         Me.btnOrders.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnOrders.Location = New System.Drawing.Point(20, 250)
+        Me.btnOrders.Location = New System.Drawing.Point(20, 274)
         Me.btnOrders.Name = "btnOrders"
         Me.btnOrders.Size = New System.Drawing.Size(190, 28)
         Me.btnOrders.TabIndex = 5
@@ -152,11 +152,11 @@ Partial Class AdminDashboard
         '
         Me.btnReservations.FlatAppearance.BorderSize = 0
         Me.btnReservations.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReservations.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.btnReservations.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnReservations.ForeColor = System.Drawing.Color.White
         Me.btnReservations.Image = CType(resources.GetObject("btnReservations.Image"), System.Drawing.Image)
         Me.btnReservations.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnReservations.Location = New System.Drawing.Point(20, 204)
+        Me.btnReservations.Location = New System.Drawing.Point(20, 226)
         Me.btnReservations.Name = "btnReservations"
         Me.btnReservations.Size = New System.Drawing.Size(190, 28)
         Me.btnReservations.TabIndex = 4
@@ -168,11 +168,11 @@ Partial Class AdminDashboard
         '
         Me.btnMenuItems.FlatAppearance.BorderSize = 0
         Me.btnMenuItems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMenuItems.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.btnMenuItems.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMenuItems.ForeColor = System.Drawing.Color.White
         Me.btnMenuItems.Image = CType(resources.GetObject("btnMenuItems.Image"), System.Drawing.Image)
         Me.btnMenuItems.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnMenuItems.Location = New System.Drawing.Point(20, 160)
+        Me.btnMenuItems.Location = New System.Drawing.Point(20, 181)
         Me.btnMenuItems.Name = "btnMenuItems"
         Me.btnMenuItems.Size = New System.Drawing.Size(190, 28)
         Me.btnMenuItems.TabIndex = 3
@@ -184,11 +184,11 @@ Partial Class AdminDashboard
         '
         Me.btnUserAccounts.FlatAppearance.BorderSize = 0
         Me.btnUserAccounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnUserAccounts.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.btnUserAccounts.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUserAccounts.ForeColor = System.Drawing.Color.White
         Me.btnUserAccounts.Image = CType(resources.GetObject("btnUserAccounts.Image"), System.Drawing.Image)
         Me.btnUserAccounts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnUserAccounts.Location = New System.Drawing.Point(20, 116)
+        Me.btnUserAccounts.Location = New System.Drawing.Point(20, 142)
         Me.btnUserAccounts.Name = "btnUserAccounts"
         Me.btnUserAccounts.Size = New System.Drawing.Size(190, 28)
         Me.btnUserAccounts.TabIndex = 2
@@ -200,11 +200,11 @@ Partial Class AdminDashboard
         '
         Me.btnDashboard.FlatAppearance.BorderSize = 0
         Me.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDashboard.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.btnDashboard.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDashboard.ForeColor = System.Drawing.Color.White
         Me.btnDashboard.Image = Global.InformationManagement.My.Resources.Resources.dashboard__1_
         Me.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDashboard.Location = New System.Drawing.Point(20, 71)
+        Me.btnDashboard.Location = New System.Drawing.Point(20, 97)
         Me.btnDashboard.Name = "btnDashboard"
         Me.btnDashboard.Size = New System.Drawing.Size(190, 28)
         Me.btnDashboard.TabIndex = 0
@@ -216,7 +216,7 @@ Partial Class AdminDashboard
         '
         Me.btnLogout.FlatAppearance.BorderSize = 0
         Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLogout.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.btnLogout.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogout.ForeColor = System.Drawing.Color.White
         Me.btnLogout.Image = CType(resources.GetObject("btnLogout.Image"), System.Drawing.Image)
         Me.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -235,6 +235,7 @@ Partial Class AdminDashboard
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.SidePanel)
+        Me.DoubleBuffered = True
         Me.Name = "AdminDashboard"
         Me.Text = "AdminDashboard"
         Me.SidePanel.ResumeLayout(False)

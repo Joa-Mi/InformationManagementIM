@@ -30,6 +30,8 @@ Partial Class MenuItems
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.AddMenuItemsbtn = New InformationManagement.RoundedButton()
         Me.Image = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Description = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -37,8 +39,6 @@ Partial Class MenuItems
         Me.Category = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Status = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Action = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.AddMenuItemsbtn = New InformationManagement.RoundedButton()
         MenuTables = New System.Windows.Forms.DataGridView()
         CType(MenuTables, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -49,7 +49,7 @@ Partial Class MenuItems
         MenuTables.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         MenuTables.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
         MenuTables.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
@@ -68,14 +68,41 @@ Partial Class MenuItems
         DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         MenuTables.DefaultCellStyle = DataGridViewCellStyle6
         MenuTables.EnableHeadersVisualStyles = False
-        MenuTables.Location = New System.Drawing.Point(30, 89)
+        MenuTables.Location = New System.Drawing.Point(30, 108)
         MenuTables.Name = "MenuTables"
         MenuTables.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        MenuTables.RowHeadersVisible = False
         MenuTables.RowTemplate.Height = 50
         MenuTables.RowTemplate.ReadOnly = True
         MenuTables.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         MenuTables.Size = New System.Drawing.Size(1090, 237)
         MenuTables.TabIndex = 0
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.Label1.Location = New System.Drawing.Point(25, 25)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(136, 30)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Menu Items"
+        '
+        'AddMenuItemsbtn
+        '
+        Me.AddMenuItemsbtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.AddMenuItemsbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.AddMenuItemsbtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.AddMenuItemsbtn.ForeColor = System.Drawing.Color.White
+        Me.AddMenuItemsbtn.Image = CType(resources.GetObject("AddMenuItemsbtn.Image"), System.Drawing.Image)
+        Me.AddMenuItemsbtn.Location = New System.Drawing.Point(932, 16)
+        Me.AddMenuItemsbtn.Name = "AddMenuItemsbtn"
+        Me.AddMenuItemsbtn.Size = New System.Drawing.Size(188, 39)
+        Me.AddMenuItemsbtn.TabIndex = 4
+        Me.AddMenuItemsbtn.Text = "   Add Menu Items"
+        Me.AddMenuItemsbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.AddMenuItemsbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.AddMenuItemsbtn.UseVisualStyleBackColor = False
         '
         'Image
         '
@@ -103,7 +130,7 @@ Partial Class MenuItems
         Me.Description.DefaultCellStyle = DataGridViewCellStyle4
         Me.Description.HeaderText = "Description"
         Me.Description.Name = "Description"
-        Me.Description.Width = 160
+        Me.Description.Width = 200
         '
         'Price
         '
@@ -134,32 +161,6 @@ Partial Class MenuItems
         Me.Action.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         Me.Action.Text = "Edit/ Delete"
         Me.Action.Width = 150
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
-        Me.Label1.Location = New System.Drawing.Point(25, 25)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(136, 30)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Menu Items"
-        '
-        'AddMenuItemsbtn
-        '
-        Me.AddMenuItemsbtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.AddMenuItemsbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.AddMenuItemsbtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
-        Me.AddMenuItemsbtn.ForeColor = System.Drawing.Color.White
-        Me.AddMenuItemsbtn.Image = CType(resources.GetObject("AddMenuItemsbtn.Image"), System.Drawing.Image)
-        Me.AddMenuItemsbtn.Location = New System.Drawing.Point(932, 16)
-        Me.AddMenuItemsbtn.Name = "AddMenuItemsbtn"
-        Me.AddMenuItemsbtn.Size = New System.Drawing.Size(188, 39)
-        Me.AddMenuItemsbtn.TabIndex = 4
-        Me.AddMenuItemsbtn.Text = "   Add Menu Items"
-        Me.AddMenuItemsbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.AddMenuItemsbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.AddMenuItemsbtn.UseVisualStyleBackColor = False
         '
         'MenuItems
         '

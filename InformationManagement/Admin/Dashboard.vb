@@ -8,7 +8,31 @@ Public Class Dashboard
         Me.AutoScrollMinSize = New Size(0, 1200)
 
         InitializePieChartAndCards()
+        Me.SetStyle(ControlStyles.OptimizedDoubleBuffer Or
+            ControlStyles.AllPaintingInWmPaint Or
+            ControlStyles.UserPaint, True)
+        Me.UpdateStyles()
+        ' In Form_Load
+        Chart1.GetType().GetProperty("DoubleBuffered",
+            Reflection.BindingFlags.Instance Or
+            Reflection.BindingFlags.NonPublic).SetValue(Chart1, True, Nothing)
+
+        ' When updating data
+        Chart1.Series.SuspendUpdates()
+        Chart1.Series("Series1").Points.Clear()
+        ' Add your data
+        Chart1.Series.ResumeUpdates()
     End Sub
+    Public Class FlickerFreePanel
+        Inherits Panel
+
+        Public Sub New()
+            Me.DoubleBuffered = True
+            Me.SetStyle(ControlStyles.AllPaintingInWmPaint, True)
+            Me.SetStyle(ControlStyles.OptimizedDoubleBuffer, True)
+            Me.UpdateStyles()
+        End Sub
+    End Class
 
     Private Sub InitializePieChartAndCards()
         ' Clear Panel5 content
@@ -150,4 +174,7 @@ Public Class Dashboard
 
     End Sub
 
+    Private Sub PanelRecentReservations_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
 End Class

@@ -204,6 +204,7 @@
     <Compile Include="Admin\FormTakeOutOrders.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -223,6 +224,9 @@
     <Compile Include="RoundedPanel.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="RoundePanel2.vb">
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Admin\AdminDashboard.resx">
@@ -240,8 +244,23 @@
     <EmbeddedResource Include="Admin\FormCateringReservations.resx">
       <DependentUpon>FormCateringReservations.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormCustomerHistory.resx">
+      <DependentUpon>FormCustomerHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormEmployeeAttendance.resx">
+      <DependentUpon>FormEmployeeAttendance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormOrders.resx">
+      <DependentUpon>FormOrders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormProductPerformance.resx">
+      <DependentUpon>FormProductPerformance.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormReservationStatus.resx">
       <DependentUpon>FormReservationStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormTakeOutOrders.resx">
+      <DependentUpon>FormTakeOutOrders.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\MenuItems.resx">
       <DependentUpon>MenuItems.vb</DependentUpon>

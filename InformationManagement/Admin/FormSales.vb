@@ -115,4 +115,12 @@ Public Class FormSales
             End Select
         End If
     End Sub
+
+    Private Sub lblTotalRevenue_Click(sender As Object, e As EventArgs) Handles lblTotalRevenue.Click
+
+    End Sub
+
+    Private Sub Label10_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class

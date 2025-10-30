@@ -1,8 +1,12 @@
 ﻿Public Class AdminDashboard
     Public Sub New()
         InitializeComponent()
-
+        Me.DoubleBuffered = True
+        Me.SetStyle(ControlStyles.OptimizedDoubleBuffer Or
+                    ControlStyles.AllPaintingInWmPaint, True)
+        Me.UpdateStyles()
     End Sub
+
     Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
 
     End Sub
@@ -26,7 +30,7 @@
 
     Private Sub HighlightButton(clickedButton As Button)
         If currentButton IsNot Nothing Then
-            currentButton.BackColor = Color.FromArgb(44, 62, 80)
+            currentButton.BackColor = Color.FromArgb(26, 38, 50)
         End If
         clickedButton.BackColor = Color.FromArgb(110, 120, 135)
         currentButton = clickedButton
