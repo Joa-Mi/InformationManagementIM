@@ -87,6 +87,12 @@
     <Compile Include="Admin\AdminDashboard.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Admin\Adminlogin.Designer.vb">
+      <DependentUpon>Adminlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Adminlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Admin\Dashboard.Designer.vb">
       <DependentUpon>Dashboard.vb</DependentUpon>
     </Compile>
@@ -123,6 +129,24 @@
     <Compile Include="Admin\FormAddUser.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Admin\FormEditMenu.Designer.vb">
+      <DependentUpon>FormEditMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormEditMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormEditUser.Designer.vb">
+      <DependentUpon>FormEditUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormEditUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Admin\MenuItems.Designer.vb">
       <DependentUpon>MenuItems.vb</DependentUpon>
     </Compile>
@@ -155,6 +179,12 @@
     </Compile>
     <Compile Include="Admin\RoundedButton.vb">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Admin\Stafflogin.Designer.vb">
+      <DependentUpon>Stafflogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Stafflogin.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin\UsersAccounts.Designer.vb">
       <DependentUpon>UsersAccounts.vb</DependentUpon>
@@ -253,6 +283,9 @@
     <EmbeddedResource Include="Admin\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Adminlogin.resx">
+      <DependentUpon>Adminlogin.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>
     </EmbeddedResource>
@@ -277,6 +310,12 @@
     <EmbeddedResource Include="Admin\FormCustomerHistory.resx">
       <DependentUpon>FormCustomerHistory.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormEditMenu.resx">
+      <DependentUpon>FormEditMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormEditUser.resx">
+      <DependentUpon>FormEditUser.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormEmployeeAttendance.resx">
       <DependentUpon>FormEmployeeAttendance.vb</DependentUpon>
     </EmbeddedResource>
@@ -292,6 +331,9 @@
     <EmbeddedResource Include="Admin\FormTakeOutOrders.resx">
       <DependentUpon>FormTakeOutOrders.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\MenuItems.resx">
       <DependentUpon>MenuItems.vb</DependentUpon>
     </EmbeddedResource>
@@ -306,6 +348,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Reservations.resx">
       <DependentUpon>Reservations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Stafflogin.resx">
+      <DependentUpon>Stafflogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\UsersAccounts.resx">
       <DependentUpon>UsersAccounts.vb</DependentUpon>
@@ -354,6 +399,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\philippines-peso-currency-symbol %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %287%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

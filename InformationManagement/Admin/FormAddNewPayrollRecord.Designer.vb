@@ -24,7 +24,6 @@ Partial Class FormAddNewPayrollRecord
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormAddNewPayrollRecord))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnClose = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -39,6 +38,7 @@ Partial Class FormAddNewPayrollRecord
         Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown3 = New System.Windows.Forms.NumericUpDown()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.btnClose = New System.Windows.Forms.Button()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -53,17 +53,6 @@ Partial Class FormAddNewPayrollRecord
         Me.Label1.Size = New System.Drawing.Size(249, 25)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Create New Payroll Record"
-        '
-        'btnClose
-        '
-        Me.btnClose.FlatAppearance.BorderSize = 0
-        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClose.Image = CType(resources.GetObject("btnClose.Image"), System.Drawing.Image)
-        Me.btnClose.Location = New System.Drawing.Point(418, 2)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(65, 27)
-        Me.btnClose.TabIndex = 3
-        Me.btnClose.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -211,6 +200,17 @@ Partial Class FormAddNewPayrollRecord
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(440, 29)
         Me.ComboBox2.TabIndex = 19
+        '
+        'btnClose
+        '
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Image = CType(resources.GetObject("btnClose.Image"), System.Drawing.Image)
+        Me.btnClose.Location = New System.Drawing.Point(437, 12)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(35, 27)
+        Me.btnClose.TabIndex = 3
+        Me.btnClose.UseVisualStyleBackColor = True
         '
         'FormAddNewPayrollRecord
         '

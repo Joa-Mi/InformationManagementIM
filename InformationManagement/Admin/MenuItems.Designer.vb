@@ -22,73 +22,106 @@ Partial Class MenuItems
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim MenuTables As System.Windows.Forms.DataGridView
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuItems))
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.Image = New System.Windows.Forms.DataGridViewImageColumn()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.DataGridMenu = New System.Windows.Forms.DataGridView()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.AddMenuItemsbtn = New InformationManagement.RoundedButton()
+        Me.Image = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Description = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Price = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Category = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Status = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Action = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.AddMenuItemsbtn = New InformationManagement.RoundedButton()
-        MenuTables = New System.Windows.Forms.DataGridView()
-        CType(MenuTables, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.colEdit = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.colDelete = New System.Windows.Forms.DataGridViewButtonColumn()
+        CType(Me.DataGridMenu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'MenuTables
+        'DataGridMenu
         '
-        MenuTables.BackgroundColor = System.Drawing.Color.White
-        MenuTables.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        MenuTables.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
-        MenuTables.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.DataGridMenu.AllowUserToAddRows = False
+        Me.DataGridMenu.AllowUserToDeleteRows = False
+        Me.DataGridMenu.AllowUserToResizeColumns = False
+        Me.DataGridMenu.AllowUserToResizeRows = False
+        Me.DataGridMenu.BackgroundColor = System.Drawing.Color.White
+        Me.DataGridMenu.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DataGridMenu.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.DataGridMenu.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(50, Byte), Integer))
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(50, Byte), Integer))
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        MenuTables.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        MenuTables.ColumnHeadersHeight = 40
-        MenuTables.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Image, Me.Name, Me.Description, Me.Price, Me.Category, Me.Status, Me.Action})
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        MenuTables.DefaultCellStyle = DataGridViewCellStyle6
-        MenuTables.EnableHeadersVisualStyles = False
-        MenuTables.Location = New System.Drawing.Point(30, 108)
-        MenuTables.Name = "MenuTables"
-        MenuTables.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        MenuTables.RowHeadersVisible = False
-        MenuTables.RowTemplate.Height = 50
-        MenuTables.RowTemplate.ReadOnly = True
-        MenuTables.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        MenuTables.Size = New System.Drawing.Size(1046, 237)
-        MenuTables.TabIndex = 0
+        Me.DataGridMenu.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.DataGridMenu.ColumnHeadersHeight = 40
+        Me.DataGridMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.DataGridMenu.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Image, Me.Name, Me.Description, Me.Price, Me.Category, Me.Status, Me.colEdit, Me.colDelete})
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridMenu.DefaultCellStyle = DataGridViewCellStyle8
+        Me.DataGridMenu.Enabled = False
+        Me.DataGridMenu.EnableHeadersVisualStyles = False
+        Me.DataGridMenu.Location = New System.Drawing.Point(30, 98)
+        Me.DataGridMenu.Name = "DataGridMenu"
+        Me.DataGridMenu.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.DataGridMenu.RowHeadersVisible = False
+        Me.DataGridMenu.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.DataGridMenu.RowTemplate.Height = 50
+        Me.DataGridMenu.RowTemplate.ReadOnly = True
+        Me.DataGridMenu.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
+        Me.DataGridMenu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGridMenu.Size = New System.Drawing.Size(1046, 237)
+        Me.DataGridMenu.TabIndex = 0
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.Label1.Location = New System.Drawing.Point(25, 25)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(136, 30)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Menu Items"
+        '
+        'AddMenuItemsbtn
+        '
+        Me.AddMenuItemsbtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.AddMenuItemsbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.AddMenuItemsbtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.AddMenuItemsbtn.ForeColor = System.Drawing.Color.White
+        Me.AddMenuItemsbtn.Image = CType(resources.GetObject("AddMenuItemsbtn.Image"), System.Drawing.Image)
+        Me.AddMenuItemsbtn.Location = New System.Drawing.Point(888, 16)
+        Me.AddMenuItemsbtn.Name = "AddMenuItemsbtn"
+        Me.AddMenuItemsbtn.Size = New System.Drawing.Size(188, 39)
+        Me.AddMenuItemsbtn.TabIndex = 4
+        Me.AddMenuItemsbtn.Text = "   Add Menu Items"
+        Me.AddMenuItemsbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.AddMenuItemsbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.AddMenuItemsbtn.UseVisualStyleBackColor = False
         '
         'Image
         '
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.NullValue = CType(resources.GetObject("DataGridViewCellStyle2.NullValue"), Object)
         Me.Image.DefaultCellStyle = DataGridViewCellStyle2
         Me.Image.HeaderText = "Image"
         Me.Image.Name = "Image"
         Me.Image.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Image.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         '
         'Name
         '
@@ -127,40 +160,37 @@ Partial Class MenuItems
         Me.Status.Name = "Status"
         Me.Status.Width = 120
         '
-        'Action
+        'colEdit
         '
-        Me.Action.HeaderText = "Action"
-        Me.Action.Name = "Action"
-        Me.Action.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Action.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.Action.Text = "Edit/ Delete"
-        Me.Action.Width = 150
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.Blue
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Blue
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White
+        Me.colEdit.DefaultCellStyle = DataGridViewCellStyle6
+        Me.colEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.colEdit.HeaderText = "Action"
+        Me.colEdit.Name = "colEdit"
+        Me.colEdit.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.colEdit.Text = "Edit"
+        Me.colEdit.UseColumnTextForButtonValue = True
+        Me.colEdit.Width = 50
         '
-        'Label1
+        'colDelete
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
-        Me.Label1.Location = New System.Drawing.Point(25, 25)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(136, 30)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Menu Items"
-        '
-        'AddMenuItemsbtn
-        '
-        Me.AddMenuItemsbtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.AddMenuItemsbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.AddMenuItemsbtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
-        Me.AddMenuItemsbtn.ForeColor = System.Drawing.Color.White
-        Me.AddMenuItemsbtn.Image = CType(resources.GetObject("AddMenuItemsbtn.Image"), System.Drawing.Image)
-        Me.AddMenuItemsbtn.Location = New System.Drawing.Point(888, 16)
-        Me.AddMenuItemsbtn.Name = "AddMenuItemsbtn"
-        Me.AddMenuItemsbtn.Size = New System.Drawing.Size(188, 39)
-        Me.AddMenuItemsbtn.TabIndex = 4
-        Me.AddMenuItemsbtn.Text = "   Add Menu Items"
-        Me.AddMenuItemsbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.AddMenuItemsbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.AddMenuItemsbtn.UseVisualStyleBackColor = False
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.Red
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Red
+        Me.colDelete.DefaultCellStyle = DataGridViewCellStyle7
+        Me.colDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.colDelete.HeaderText = ""
+        Me.colDelete.Name = "colDelete"
+        Me.colDelete.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.colDelete.Text = "Delete"
+        Me.colDelete.UseColumnTextForButtonValue = True
+        Me.colDelete.Width = 50
         '
         'MenuItems
         '
@@ -168,12 +198,12 @@ Partial Class MenuItems
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.GhostWhite
         Me.ClientSize = New System.Drawing.Size(1123, 749)
-        Me.Controls.Add(MenuTables)
+        Me.Controls.Add(Me.DataGridMenu)
         Me.Controls.Add(Me.AddMenuItemsbtn)
         Me.Controls.Add(Me.Label1)
         Me.DoubleBuffered = True
         Me.Text = "MenuItems"
-        CType(MenuTables, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridMenu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -181,11 +211,13 @@ Partial Class MenuItems
 
     Friend WithEvents Label1 As Label
     Friend WithEvents AddMenuItemsbtn As RoundedButton
-    Friend WithEvents Image As DataGridViewImageColumn
+    Friend WithEvents DataGridMenu As DataGridView
+    Friend WithEvents Image As DataGridViewTextBoxColumn
     Friend WithEvents Name As DataGridViewTextBoxColumn
     Friend WithEvents Description As DataGridViewTextBoxColumn
     Friend WithEvents Price As DataGridViewTextBoxColumn
     Friend WithEvents Category As DataGridViewTextBoxColumn
     Friend WithEvents Status As DataGridViewTextBoxColumn
-    Friend WithEvents Action As DataGridViewButtonColumn
+    Friend WithEvents colEdit As DataGridViewButtonColumn
+    Friend WithEvents colDelete As DataGridViewButtonColumn
 End Class

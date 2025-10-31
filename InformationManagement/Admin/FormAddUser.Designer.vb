@@ -31,8 +31,8 @@ Partial Class FormAddUser
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.txtFullName = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtEmail = New System.Windows.Forms.TextBox()
+        Me.txtPhone = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -79,7 +79,7 @@ Partial Class FormAddUser
         '
         Me.cmbRole.BackColor = System.Drawing.Color.WhiteSmoke
         Me.cmbRole.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmbRole.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbRole.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbRole.FormattingEnabled = True
         Me.cmbRole.Items.AddRange(New Object() {"Staff", "Employee", "Customer"})
         Me.cmbRole.Location = New System.Drawing.Point(22, 304)
@@ -90,7 +90,8 @@ Partial Class FormAddUser
         'cmbStatus
         '
         Me.cmbStatus.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.cmbStatus.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbStatus.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbStatus.FormattingEnabled = True
         Me.cmbStatus.Items.AddRange(New Object() {"Active ", "InActive"})
         Me.cmbStatus.Location = New System.Drawing.Point(23, 385)
@@ -124,34 +125,34 @@ Partial Class FormAddUser
         '
         Me.txtFullName.BackColor = System.Drawing.Color.WhiteSmoke
         Me.txtFullName.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtFullName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtFullName.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFullName.Location = New System.Drawing.Point(22, 86)
         Me.txtFullName.MinimumSize = New System.Drawing.Size(0, 35)
         Me.txtFullName.Name = "txtFullName"
-        Me.txtFullName.Size = New System.Drawing.Size(440, 16)
+        Me.txtFullName.Size = New System.Drawing.Size(440, 35)
         Me.txtFullName.TabIndex = 16
         '
-        'TextBox3
+        'txtEmail
         '
-        Me.TextBox3.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(22, 158)
-        Me.TextBox3.MinimumSize = New System.Drawing.Size(0, 35)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(440, 16)
-        Me.TextBox3.TabIndex = 17
+        Me.txtEmail.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtEmail.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmail.Location = New System.Drawing.Point(22, 158)
+        Me.txtEmail.MinimumSize = New System.Drawing.Size(0, 35)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(440, 35)
+        Me.txtEmail.TabIndex = 17
         '
-        'TextBox4
+        'txtPhone
         '
-        Me.TextBox4.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(22, 238)
-        Me.TextBox4.MinimumSize = New System.Drawing.Size(0, 35)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(440, 16)
-        Me.TextBox4.TabIndex = 18
+        Me.txtPhone.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtPhone.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPhone.Location = New System.Drawing.Point(22, 238)
+        Me.txtPhone.MinimumSize = New System.Drawing.Size(0, 35)
+        Me.txtPhone.Name = "txtPhone"
+        Me.txtPhone.Size = New System.Drawing.Size(440, 35)
+        Me.txtPhone.TabIndex = 18
         '
         'Label7
         '
@@ -228,8 +229,8 @@ Partial Class FormAddUser
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.txtPhone)
+        Me.Controls.Add(Me.txtEmail)
         Me.Controls.Add(Me.txtFullName)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
@@ -238,6 +239,7 @@ Partial Class FormAddUser
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.btnAddUser)
         Me.Controls.Add(Me.Label1)
+        Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormAddUser"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -255,8 +257,8 @@ Partial Class FormAddUser
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents txtFullName As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txtEmail As TextBox
+    Friend WithEvents txtPhone As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label8 As Label

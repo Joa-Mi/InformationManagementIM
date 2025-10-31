@@ -31,14 +31,15 @@ Partial Class FormAddNewmenuItem
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.txtFullName = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.txtItemName = New System.Windows.Forms.TextBox()
+        Me.txtDescription = New System.Windows.Forms.TextBox()
+        Me.txtImageUrl = New System.Windows.Forms.TextBox()
         Me.btnAddItem = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
+        Me.comboStatus = New System.Windows.Forms.ComboBox()
+        Me.comboCategory = New System.Windows.Forms.ComboBox()
+        Me.numericPrice = New System.Windows.Forms.NumericUpDown()
+        CType(Me.numericPrice, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -120,71 +121,39 @@ Partial Class FormAddNewmenuItem
         Me.Label8.TabIndex = 10
         Me.Label8.Text = "Status"
         '
-        'txtFullName
+        'txtItemName
         '
-        Me.txtFullName.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.txtFullName.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtFullName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFullName.Location = New System.Drawing.Point(26, 77)
-        Me.txtFullName.MinimumSize = New System.Drawing.Size(0, 35)
-        Me.txtFullName.Name = "txtFullName"
-        Me.txtFullName.Size = New System.Drawing.Size(432, 16)
-        Me.txtFullName.TabIndex = 11
+        Me.txtItemName.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.txtItemName.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtItemName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtItemName.Location = New System.Drawing.Point(26, 77)
+        Me.txtItemName.MinimumSize = New System.Drawing.Size(0, 35)
+        Me.txtItemName.Name = "txtItemName"
+        Me.txtItemName.Size = New System.Drawing.Size(432, 16)
+        Me.txtItemName.TabIndex = 11
         '
-        'TextBox1
+        'txtDescription
         '
-        Me.TextBox1.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(26, 148)
-        Me.TextBox1.MinimumSize = New System.Drawing.Size(0, 35)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(432, 16)
-        Me.TextBox1.TabIndex = 12
+        Me.txtDescription.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.txtDescription.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtDescription.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDescription.Location = New System.Drawing.Point(26, 148)
+        Me.txtDescription.MinimumSize = New System.Drawing.Size(0, 35)
+        Me.txtDescription.Multiline = True
+        Me.txtDescription.Name = "txtDescription"
+        Me.txtDescription.Size = New System.Drawing.Size(432, 35)
+        Me.txtDescription.TabIndex = 12
         '
-        'TextBox2
+        'txtImageUrl
         '
-        Me.TextBox2.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(29, 219)
-        Me.TextBox2.MinimumSize = New System.Drawing.Size(0, 35)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(432, 16)
-        Me.TextBox2.TabIndex = 13
-        '
-        'TextBox3
-        '
-        Me.TextBox3.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(27, 288)
-        Me.TextBox3.MinimumSize = New System.Drawing.Size(0, 35)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(432, 16)
-        Me.TextBox3.TabIndex = 14
-        '
-        'TextBox4
-        '
-        Me.TextBox4.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(29, 367)
-        Me.TextBox4.MinimumSize = New System.Drawing.Size(0, 35)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(432, 16)
-        Me.TextBox4.TabIndex = 15
-        '
-        'TextBox5
-        '
-        Me.TextBox5.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(29, 437)
-        Me.TextBox5.MinimumSize = New System.Drawing.Size(0, 35)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(432, 16)
-        Me.TextBox5.TabIndex = 16
+        Me.txtImageUrl.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.txtImageUrl.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtImageUrl.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtImageUrl.Location = New System.Drawing.Point(29, 367)
+        Me.txtImageUrl.MinimumSize = New System.Drawing.Size(0, 35)
+        Me.txtImageUrl.Name = "txtImageUrl"
+        Me.txtImageUrl.Size = New System.Drawing.Size(432, 16)
+        Me.txtImageUrl.TabIndex = 15
         '
         'btnAddItem
         '
@@ -210,22 +179,51 @@ Partial Class FormAddNewmenuItem
         Me.btnClose.TabIndex = 25
         Me.btnClose.UseVisualStyleBackColor = True
         '
+        'comboStatus
+        '
+        Me.comboStatus.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.comboStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.comboStatus.FormattingEnabled = True
+        Me.comboStatus.Items.AddRange(New Object() {"Available", "Unvailable"})
+        Me.comboStatus.Location = New System.Drawing.Point(29, 448)
+        Me.comboStatus.Name = "comboStatus"
+        Me.comboStatus.Size = New System.Drawing.Size(432, 21)
+        Me.comboStatus.TabIndex = 26
+        '
+        'comboCategory
+        '
+        Me.comboCategory.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.comboCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.comboCategory.FormattingEnabled = True
+        Me.comboCategory.Items.AddRange(New Object() {"Appetizer", "Main Course", "Dessert", "Beverage"})
+        Me.comboCategory.Location = New System.Drawing.Point(29, 309)
+        Me.comboCategory.Name = "comboCategory"
+        Me.comboCategory.Size = New System.Drawing.Size(432, 21)
+        Me.comboCategory.TabIndex = 27
+        '
+        'numericPrice
+        '
+        Me.numericPrice.Location = New System.Drawing.Point(26, 230)
+        Me.numericPrice.Name = "numericPrice"
+        Me.numericPrice.Size = New System.Drawing.Size(435, 22)
+        Me.numericPrice.TabIndex = 28
+        '
         'FormAddNewmenuItem
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(517, 461)
+        Me.ClientSize = New System.Drawing.Size(485, 545)
         Me.ControlBox = False
+        Me.Controls.Add(Me.numericPrice)
+        Me.Controls.Add(Me.comboCategory)
+        Me.Controls.Add(Me.comboStatus)
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.btnAddItem)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.txtFullName)
+        Me.Controls.Add(Me.txtImageUrl)
+        Me.Controls.Add(Me.txtDescription)
+        Me.Controls.Add(Me.txtItemName)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
@@ -234,12 +232,14 @@ Partial Class FormAddNewmenuItem
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "FormAddNewmenuItem"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormAddNewmenuItembtn"
+        CType(Me.numericPrice, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -253,12 +253,12 @@ Partial Class FormAddNewmenuItem
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents txtFullName As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents txtItemName As TextBox
+    Friend WithEvents txtDescription As TextBox
+    Friend WithEvents txtImageUrl As TextBox
     Friend WithEvents btnAddItem As Button
     Friend WithEvents btnClose As Button
+    Friend WithEvents comboStatus As ComboBox
+    Friend WithEvents comboCategory As ComboBox
+    Friend WithEvents numericPrice As NumericUpDown
 End Class
