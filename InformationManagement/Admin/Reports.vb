@@ -20,14 +20,16 @@ Public Class Reports
         FlowLayoutPanel1.Padding = New Padding(8)
         FlowLayoutPanel1.Margin = New Padding(0)
         FlowLayoutPanel1.BackColor = Color.FromArgb(240, 240, 240)
-        FlowLayoutPanel1.Height = 60
-        FlowLayoutPanel1.Top = 60   'Adjust below your label
+        FlowLayoutPanel1.Height = 50
+        FlowLayoutPanel1.Top = 80   'Adjust below your label
         FlowLayoutPanel1.Left = 20
-        FlowLayoutPanel1.Width = Me.ClientSize.Width - 255
-        FlowLayoutPanel1.Height = 80
+        FlowLayoutPanel1.Width = Me.ClientSize.Width - 320
+        FlowLayoutPanel1.Height = 70
 
         FlowLayoutPanel1.AutoSize = False
-        FlowLayoutPanel1.Region = Nothing ' Important! Keep scrollbar visible.
+
+        ' === APPLY ROUNDED CORNERS TO FLOWLAYOUTPANEL ===
+        ApplyRoundedCorners(FlowLayoutPanel1, 35)
 
         ' === MOVE EXISTING BUTTONS TO FLOWLAYOUTPANEL ===
         Dim toMove As New List(Of Control)
@@ -49,6 +51,16 @@ Public Class Reports
         HighlightActiveButton(btnSales)
     End Sub
 
+    ' === APPLY ROUNDED CORNERS TO CONTROL ===
+    Private Sub ApplyRoundedCorners(ctrl As Control, radius As Integer)
+        Dim gp As New GraphicsPath()
+        gp.AddArc(0, 0, radius, radius, 180, 90)
+        gp.AddArc(ctrl.Width - radius, 0, radius, radius, 270, 90)
+        gp.AddArc(ctrl.Width - radius, ctrl.Height - radius, radius, radius, 0, 90)
+        gp.AddArc(0, ctrl.Height - radius, radius, radius, 90, 90)
+        gp.CloseFigure()
+        ctrl.Region = New Region(gp)
+    End Sub
 
     ' === BUTTON CLICKS ===
     Private Sub Button_Click(sender As Object, e As EventArgs) _
@@ -72,8 +84,7 @@ Public Class Reports
         End Select
     End Sub
 
-
-    ' === HIGHLIGHT ACTIVE BUTTON ===
+    ' === HIGHLIGHT ACTIVE BUTTON WITH PILL SHAPE ===
     Private Sub HighlightActiveButton(activeBtn As Button)
         ' Reset all buttons first
         For Each ctrl As Control In FlowLayoutPanel1.Controls
@@ -81,7 +92,7 @@ Public Class Reports
                 Dim btn As Button = CType(ctrl, Button)
                 btn.BackColor = Color.FromArgb(240, 240, 240) ' Light gray default
                 btn.ForeColor = Color.Black
-                btn.FlatAppearance.MouseOverBackColor = btn.BackColor ' Disable hover highlight
+                btn.FlatAppearance.MouseOverBackColor = btn.BackColor
                 btn.Region = Nothing
             End If
         Next
@@ -89,15 +100,17 @@ Public Class Reports
         ' Apply white color to the active (clicked) button
         activeBtn.BackColor = Color.White
         activeBtn.ForeColor = Color.Black
-        activeBtn.FlatAppearance.MouseOverBackColor = Color.White ' Prevent hover color change
+        activeBtn.FlatAppearance.MouseOverBackColor = Color.White
 
-        ' Rounded corners
-        Dim radius As Integer = 15
-        Dim gp As New Drawing2D.GraphicsPath()
-        gp.AddArc(0, 0, radius, radius, 180, 90)
-        gp.AddArc(activeBtn.Width - radius, 0, radius, radius, 270, 90)
-        gp.AddArc(activeBtn.Width - radius, activeBtn.Height - radius, radius, radius, 0, 90)
-        gp.AddArc(0, activeBtn.Height - radius, radius, radius, 90, 90)
+        ' Create pill-shaped rounded corners (fully rounded ends)
+        Dim radius As Integer = activeBtn.Height ' Use height as radius for pill shape
+        Dim gp As New GraphicsPath()
+
+        ' Left semi-circle
+        gp.AddArc(0, 0, radius, radius, 90, 180)
+        ' Right semi-circle
+        gp.AddArc(activeBtn.Width - radius, 0, radius, radius, 270, 180)
+
         gp.CloseFigure()
         activeBtn.Region = New Region(gp)
     End Sub

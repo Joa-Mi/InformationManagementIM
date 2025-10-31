@@ -24,91 +24,45 @@ Partial Class FormAddUser
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormAddUser))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.AddUserbtn = New System.Windows.Forms.Button()
+        Me.btnAddUser = New System.Windows.Forms.Button()
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.cmbRole = New System.Windows.Forms.ComboBox()
         Me.cmbStatus = New System.Windows.Forms.ComboBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.CloseBtn = New System.Windows.Forms.Button()
+        Me.txtFullName = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnClose = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(18, 23)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(123, 20)
+        Me.Label1.Size = New System.Drawing.Size(139, 25)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Add New User"
         '
-        'Label2
+        'btnAddUser
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
-        Me.Label2.Location = New System.Drawing.Point(21, 64)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(44, 16)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Name"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
-        Me.Label3.Location = New System.Drawing.Point(21, 139)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(41, 16)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Email"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
-        Me.Label4.Location = New System.Drawing.Point(20, 213)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(46, 16)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Phone"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
-        Me.Label5.Location = New System.Drawing.Point(22, 361)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(44, 16)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "Status"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
-        Me.Label6.Location = New System.Drawing.Point(24, 285)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(36, 16)
-        Me.Label6.TabIndex = 5
-        Me.Label6.Text = "Role"
-        '
-        'AddUserbtn
-        '
-        Me.AddUserbtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.AddUserbtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
-        Me.AddUserbtn.ForeColor = System.Drawing.Color.White
-        Me.AddUserbtn.Location = New System.Drawing.Point(24, 418)
-        Me.AddUserbtn.Name = "AddUserbtn"
-        Me.AddUserbtn.Size = New System.Drawing.Size(365, 42)
-        Me.AddUserbtn.TabIndex = 6
-        Me.AddUserbtn.Text = "Add User"
-        Me.AddUserbtn.UseVisualStyleBackColor = False
+        Me.btnAddUser.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.btnAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAddUser.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAddUser.ForeColor = System.Drawing.Color.White
+        Me.btnAddUser.Location = New System.Drawing.Point(12, 441)
+        Me.btnAddUser.Name = "btnAddUser"
+        Me.btnAddUser.Size = New System.Drawing.Size(460, 42)
+        Me.btnAddUser.TabIndex = 6
+        Me.btnAddUser.Text = "Add User"
+        Me.btnAddUser.UseVisualStyleBackColor = False
         '
         'txtName
         '
@@ -123,23 +77,25 @@ Partial Class FormAddUser
         '
         'cmbRole
         '
-        Me.cmbRole.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.cmbRole.BackColor = System.Drawing.Color.WhiteSmoke
         Me.cmbRole.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbRole.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbRole.FormattingEnabled = True
         Me.cmbRole.Items.AddRange(New Object() {"Staff", "Employee", "Customer"})
         Me.cmbRole.Location = New System.Drawing.Point(22, 304)
         Me.cmbRole.Name = "cmbRole"
-        Me.cmbRole.Size = New System.Drawing.Size(370, 21)
+        Me.cmbRole.Size = New System.Drawing.Size(440, 25)
         Me.cmbRole.TabIndex = 10
         '
         'cmbStatus
         '
-        Me.cmbStatus.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.cmbStatus.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.cmbStatus.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbStatus.FormattingEnabled = True
         Me.cmbStatus.Items.AddRange(New Object() {"Active ", "InActive"})
-        Me.cmbStatus.Location = New System.Drawing.Point(23, 380)
+        Me.cmbStatus.Location = New System.Drawing.Point(23, 385)
         Me.cmbStatus.Name = "cmbStatus"
-        Me.cmbStatus.Size = New System.Drawing.Size(370, 21)
+        Me.cmbStatus.Size = New System.Drawing.Size(428, 25)
         Me.cmbStatus.TabIndex = 11
         '
         'TextBox1
@@ -164,39 +120,127 @@ Partial Class FormAddUser
         Me.TextBox2.Size = New System.Drawing.Size(0, 35)
         Me.TextBox2.TabIndex = 15
         '
-        'CloseBtn
+        'txtFullName
         '
-        Me.CloseBtn.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar
-        Me.CloseBtn.BackColor = System.Drawing.Color.Transparent
-        Me.CloseBtn.FlatAppearance.BorderSize = 0
-        Me.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CloseBtn.Image = CType(resources.GetObject("CloseBtn.Image"), System.Drawing.Image)
-        Me.CloseBtn.Location = New System.Drawing.Point(420, 12)
-        Me.CloseBtn.Name = "CloseBtn"
-        Me.CloseBtn.Size = New System.Drawing.Size(31, 20)
-        Me.CloseBtn.TabIndex = 13
-        Me.CloseBtn.UseVisualStyleBackColor = False
+        Me.txtFullName.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.txtFullName.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtFullName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtFullName.Location = New System.Drawing.Point(22, 86)
+        Me.txtFullName.MinimumSize = New System.Drawing.Size(0, 35)
+        Me.txtFullName.Name = "txtFullName"
+        Me.txtFullName.Size = New System.Drawing.Size(440, 16)
+        Me.txtFullName.TabIndex = 16
+        '
+        'TextBox3
+        '
+        Me.TextBox3.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.Location = New System.Drawing.Point(22, 158)
+        Me.TextBox3.MinimumSize = New System.Drawing.Size(0, 35)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(440, 16)
+        Me.TextBox3.TabIndex = 17
+        '
+        'TextBox4
+        '
+        Me.TextBox4.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox4.Location = New System.Drawing.Point(22, 238)
+        Me.TextBox4.MinimumSize = New System.Drawing.Size(0, 35)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(440, 16)
+        Me.TextBox4.TabIndex = 18
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(24, 66)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(44, 17)
+        Me.Label7.TabIndex = 19
+        Me.Label7.Text = "Name"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(26, 138)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(40, 17)
+        Me.Label2.TabIndex = 20
+        Me.Label2.Text = "Email"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(26, 284)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(34, 17)
+        Me.Label8.TabIndex = 21
+        Me.Label8.Text = "Role"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(26, 218)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(47, 17)
+        Me.Label9.TabIndex = 22
+        Me.Label9.Text = "Phone"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(27, 351)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(46, 17)
+        Me.Label3.TabIndex = 23
+        Me.Label3.Text = "Status"
+        '
+        'btnClose
+        '
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Image = CType(resources.GetObject("btnClose.Image"), System.Drawing.Image)
+        Me.btnClose.Location = New System.Drawing.Point(433, 12)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(29, 27)
+        Me.btnClose.TabIndex = 24
+        Me.btnClose.UseVisualStyleBackColor = True
         '
         'FormAddUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(504, 411)
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(484, 511)
+        Me.ControlBox = False
+        Me.Controls.Add(Me.btnClose)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.txtFullName)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.CloseBtn)
         Me.Controls.Add(Me.cmbStatus)
         Me.Controls.Add(Me.cmbRole)
         Me.Controls.Add(Me.txtName)
-        Me.Controls.Add(Me.AddUserbtn)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.btnAddUser)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormAddUser"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormAddUser"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -204,16 +248,19 @@ Partial Class FormAddUser
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents AddUserbtn As Button
+    Friend WithEvents btnAddUser As Button
     Friend WithEvents txtName As TextBox
     Friend WithEvents cmbRole As ComboBox
     Friend WithEvents cmbStatus As ComboBox
-    Friend WithEvents CloseBtn As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtFullName As TextBox
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents btnClose As Button
 End Class

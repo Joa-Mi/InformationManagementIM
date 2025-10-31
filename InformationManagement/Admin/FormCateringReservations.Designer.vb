@@ -36,12 +36,12 @@ Partial Class FormCateringReservations
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.RoundedPane21 = New InformationManagement.RoundedPane2()
-        Me.RoundedPane22 = New InformationManagement.RoundedPane2()
-        Me.RoundedPane23 = New InformationManagement.RoundedPane2()
-        Me.RoundedPane24 = New InformationManagement.RoundedPane2()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.RoundedPane22 = New InformationManagement.RoundedPane2()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.RoundedPane23 = New InformationManagement.RoundedPane2()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.RoundedPane24 = New InformationManagement.RoundedPane2()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RoundedPane21.SuspendLayout()
         Me.RoundedPane22.SuspendLayout()
@@ -178,6 +178,16 @@ Partial Class FormCateringReservations
         Me.RoundedPane21.Size = New System.Drawing.Size(308, 138)
         Me.RoundedPane21.TabIndex = 8
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(18, 83)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(152, 30)
+        Me.Label5.TabIndex = 1
+        Me.Label5.Text = "₱8,200,000.00"
+        '
         'RoundedPane22
         '
         Me.RoundedPane22.BackColor = System.Drawing.Color.Transparent
@@ -191,6 +201,16 @@ Partial Class FormCateringReservations
         Me.RoundedPane22.Name = "RoundedPane22"
         Me.RoundedPane22.Size = New System.Drawing.Size(308, 138)
         Me.RoundedPane22.TabIndex = 9
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(28, 83)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(37, 30)
+        Me.Label6.TabIndex = 2
+        Me.Label6.Text = "68"
         '
         'RoundedPane23
         '
@@ -206,6 +226,16 @@ Partial Class FormCateringReservations
         Me.RoundedPane23.Size = New System.Drawing.Size(308, 138)
         Me.RoundedPane23.TabIndex = 10
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(20, 83)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(134, 30)
+        Me.Label7.TabIndex = 2
+        Me.Label7.Text = "₱120,588.00"
+        '
         'RoundedPane24
         '
         Me.RoundedPane24.BorderColor = System.Drawing.Color.LightGray
@@ -219,45 +249,16 @@ Partial Class FormCateringReservations
         Me.RoundedPane24.Controls.Add(Me.RoundedPane21)
         Me.RoundedPane24.CornerRadius = 15
         Me.RoundedPane24.FillColor = System.Drawing.Color.White
-        Me.RoundedPane24.Location = New System.Drawing.Point(30, 13)
+        Me.RoundedPane24.Location = New System.Drawing.Point(33, 12)
         Me.RoundedPane24.Name = "RoundedPane24"
         Me.RoundedPane24.Size = New System.Drawing.Size(1045, 445)
         Me.RoundedPane24.TabIndex = 4
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(18, 83)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(152, 30)
-        Me.Label5.TabIndex = 1
-        Me.Label5.Text = "₱8,200,000.00"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(28, 83)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(37, 30)
-        Me.Label6.TabIndex = 2
-        Me.Label6.Text = "68"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(20, 83)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(134, 30)
-        Me.Label7.TabIndex = 2
-        Me.Label7.Text = "₱120,588.00"
         '
         'FormCateringReservations
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.GhostWhite
         Me.ClientSize = New System.Drawing.Size(1173, 586)
         Me.Controls.Add(Me.RoundedPane24)
         Me.Name = "FormCateringReservations"

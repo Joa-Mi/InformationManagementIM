@@ -94,7 +94,7 @@ Partial Class FormProductPerformance
         Me.RoundedPane21.Controls.Add(Me.Label1)
         Me.RoundedPane21.CornerRadius = 15
         Me.RoundedPane21.FillColor = System.Drawing.Color.White
-        Me.RoundedPane21.Location = New System.Drawing.Point(23, 12)
+        Me.RoundedPane21.Location = New System.Drawing.Point(29, 12)
         Me.RoundedPane21.Name = "RoundedPane21"
         Me.RoundedPane21.Size = New System.Drawing.Size(1045, 638)
         Me.RoundedPane21.TabIndex = 0
@@ -109,7 +109,7 @@ Partial Class FormProductPerformance
         Me.RoundedPane28.FillColor = System.Drawing.Color.White
         Me.RoundedPane28.Location = New System.Drawing.Point(21, 267)
         Me.RoundedPane28.Name = "RoundedPane28"
-        Me.RoundedPane28.Size = New System.Drawing.Size(1006, 331)
+        Me.RoundedPane28.Size = New System.Drawing.Size(1006, 306)
         Me.RoundedPane28.TabIndex = 16
         '
         'Chart1
@@ -482,6 +482,7 @@ Partial Class FormProductPerformance
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
+        Me.BackColor = System.Drawing.Color.GhostWhite
         Me.ClientSize = New System.Drawing.Size(1151, 749)
         Me.Controls.Add(Me.RoundedPane21)
         Me.Name = "FormProductPerformance"

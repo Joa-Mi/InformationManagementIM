@@ -93,10 +93,28 @@
     <Compile Include="Admin\Dashboard.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Admin\DimBackgroundForm.Designer.vb">
+      <DependentUpon>DimBackgroundForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DimBackgroundForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Admin\FormAddNewmenuItem.Designer.vb">
       <DependentUpon>FormAddNewmenuItem.vb</DependentUpon>
     </Compile>
     <Compile Include="Admin\FormAddNewmenuItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormAddNewPayrollRecord.Designer.vb">
+      <DependentUpon>FormAddNewPayrollRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormAddNewPayrollRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormAddOrder.Designer.vb">
+      <DependentUpon>FormAddOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormAddOrder.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin\FormAddUser.Designer.vb">
@@ -229,14 +247,26 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Admin\AddNewReservations.resx">
+      <DependentUpon>AddNewReservations.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\DimBackgroundForm.resx">
+      <DependentUpon>DimBackgroundForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormAddNewmenuItem.resx">
       <DependentUpon>FormAddNewmenuItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormAddNewPayrollRecord.resx">
+      <DependentUpon>FormAddNewPayrollRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormAddOrder.resx">
+      <DependentUpon>FormAddOrder.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormAddUser.resx">
       <DependentUpon>FormAddUser.vb</DependentUpon>
@@ -318,6 +348,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\philippines-peso-currency-symbol %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

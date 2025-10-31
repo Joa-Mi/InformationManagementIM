@@ -67,14 +67,14 @@ Partial Class FormPayroll
         Me.RoundedPane24.FillColor = System.Drawing.Color.White
         Me.RoundedPane24.Location = New System.Drawing.Point(30, 197)
         Me.RoundedPane24.Name = "RoundedPane24"
-        Me.RoundedPane24.Size = New System.Drawing.Size(1076, 376)
+        Me.RoundedPane24.Size = New System.Drawing.Size(1045, 393)
         Me.RoundedPane24.TabIndex = 7
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(946, 19)
+        Me.Button1.Location = New System.Drawing.Point(903, 20)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(104, 30)
         Me.Button1.TabIndex = 10
@@ -122,7 +122,7 @@ Partial Class FormPayroll
         Series1.YValueMembers = "650000"
         Series1.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int64
         Me.Chart1.Series.Add(Series1)
-        Me.Chart1.Size = New System.Drawing.Size(1026, 300)
+        Me.Chart1.Size = New System.Drawing.Size(999, 300)
         Me.Chart1.TabIndex = 6
         Me.Chart1.Text = "Chart1"
         '
@@ -135,7 +135,7 @@ Partial Class FormPayroll
         Me.RoundedPane23.Controls.Add(Me.Label3)
         Me.RoundedPane23.CornerRadius = 15
         Me.RoundedPane23.FillColor = System.Drawing.Color.White
-        Me.RoundedPane23.Location = New System.Drawing.Point(769, 21)
+        Me.RoundedPane23.Location = New System.Drawing.Point(738, 21)
         Me.RoundedPane23.Name = "RoundedPane23"
         Me.RoundedPane23.Size = New System.Drawing.Size(337, 149)
         Me.RoundedPane23.TabIndex = 5
@@ -183,7 +183,7 @@ Partial Class FormPayroll
         Me.RoundedPane22.Controls.Add(Me.Label2)
         Me.RoundedPane22.CornerRadius = 15
         Me.RoundedPane22.FillColor = System.Drawing.Color.White
-        Me.RoundedPane22.Location = New System.Drawing.Point(398, 21)
+        Me.RoundedPane22.Location = New System.Drawing.Point(385, 21)
         Me.RoundedPane22.Name = "RoundedPane22"
         Me.RoundedPane22.Size = New System.Drawing.Size(337, 149)
         Me.RoundedPane22.TabIndex = 4
@@ -275,6 +275,7 @@ Partial Class FormPayroll
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
+        Me.BackColor = System.Drawing.Color.GhostWhite
         Me.ClientSize = New System.Drawing.Size(1129, 638)
         Me.Controls.Add(Me.RoundedPane24)
         Me.Controls.Add(Me.RoundedPane23)

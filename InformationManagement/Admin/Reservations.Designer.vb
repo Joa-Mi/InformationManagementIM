@@ -26,6 +26,7 @@ Partial Class Reservations
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Reservations))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -37,6 +38,7 @@ Partial Class Reservations
         Me.EventType = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Status = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Actions = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btnAddNewReservation = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -59,7 +61,7 @@ Partial Class Reservations
         Me.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
@@ -77,7 +79,7 @@ Partial Class Reservations
         Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle2
         Me.DataGridView1.EnableHeadersVisualStyles = False
         Me.DataGridView1.Location = New System.Drawing.Point(33, 82)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
@@ -90,7 +92,7 @@ Partial Class Reservations
         Me.DataGridView1.RowHeadersVisible = False
         DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
         Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle4
-        Me.DataGridView1.Size = New System.Drawing.Size(1099, 116)
+        Me.DataGridView1.Size = New System.Drawing.Size(1032, 116)
         Me.DataGridView1.TabIndex = 5
         '
         'ID
@@ -147,14 +149,33 @@ Partial Class Reservations
         Me.Actions.Name = "Actions"
         Me.Actions.Width = 150
         '
+        'btnAddNewReservation
+        '
+        Me.btnAddNewReservation.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.btnAddNewReservation.FlatAppearance.BorderSize = 0
+        Me.btnAddNewReservation.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAddNewReservation.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAddNewReservation.ForeColor = System.Drawing.Color.White
+        Me.btnAddNewReservation.Image = CType(resources.GetObject("btnAddNewReservation.Image"), System.Drawing.Image)
+        Me.btnAddNewReservation.Location = New System.Drawing.Point(841, 33)
+        Me.btnAddNewReservation.Name = "btnAddNewReservation"
+        Me.btnAddNewReservation.Size = New System.Drawing.Size(224, 30)
+        Me.btnAddNewReservation.TabIndex = 6
+        Me.btnAddNewReservation.Text = "   Add New Reservation"
+        Me.btnAddNewReservation.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnAddNewReservation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnAddNewReservation.UseVisualStyleBackColor = False
+        '
         'Reservations
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.ClientSize = New System.Drawing.Size(1218, 611)
+        Me.BackColor = System.Drawing.Color.GhostWhite
+        Me.ClientSize = New System.Drawing.Size(1123, 749)
+        Me.Controls.Add(Me.btnAddNewReservation)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label1)
+        Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "Reservations"
         Me.Text = "Reservations"
@@ -175,4 +196,5 @@ Partial Class Reservations
     Friend WithEvents EventType As DataGridViewTextBoxColumn
     Friend WithEvents Status As DataGridViewTextBoxColumn
     Friend WithEvents Actions As DataGridViewTextBoxColumn
+    Friend WithEvents btnAddNewReservation As Button
 End Class

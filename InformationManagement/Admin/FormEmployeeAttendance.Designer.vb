@@ -25,44 +25,19 @@ Partial Class FormEmployeeAttendance
         Dim DataGridView1 As System.Windows.Forms.DataGridView
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormEmployeeAttendance))
-        Me.RoundedPane21 = New InformationManagement.RoundedPane2()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Employee = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Position = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.RegularHours = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.OvertimeHours = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Absences = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Status = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RoundedPane21 = New InformationManagement.RoundedPane2()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.RoundedPane21.SuspendLayout()
         CType(DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.RoundedPane21.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'RoundedPane21
-        '
-        Me.RoundedPane21.BorderColor = System.Drawing.Color.LightGray
-        Me.RoundedPane21.BorderThickness = 1
-        Me.RoundedPane21.Controls.Add(DataGridView1)
-        Me.RoundedPane21.Controls.Add(Me.Button1)
-        Me.RoundedPane21.Controls.Add(Me.Label1)
-        Me.RoundedPane21.CornerRadius = 15
-        Me.RoundedPane21.FillColor = System.Drawing.Color.White
-        Me.RoundedPane21.Location = New System.Drawing.Point(24, 23)
-        Me.RoundedPane21.Name = "RoundedPane21"
-        Me.RoundedPane21.Size = New System.Drawing.Size(1101, 638)
-        Me.RoundedPane21.TabIndex = 0
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(21, 28)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(204, 20)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Employee Attendance Report"
         '
         'DataGridView1
         '
@@ -84,7 +59,7 @@ Partial Class FormEmployeeAttendance
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridView1.RowHeadersVisible = False
-        DataGridView1.Size = New System.Drawing.Size(1041, 150)
+        DataGridView1.Size = New System.Drawing.Size(997, 150)
         DataGridView1.TabIndex = 10
         '
         'Employee
@@ -122,11 +97,25 @@ Partial Class FormEmployeeAttendance
         Me.Status.Name = "Status"
         Me.Status.Width = 150
         '
+        'RoundedPane21
+        '
+        Me.RoundedPane21.BorderColor = System.Drawing.Color.LightGray
+        Me.RoundedPane21.BorderThickness = 1
+        Me.RoundedPane21.Controls.Add(DataGridView1)
+        Me.RoundedPane21.Controls.Add(Me.Button1)
+        Me.RoundedPane21.Controls.Add(Me.Label1)
+        Me.RoundedPane21.CornerRadius = 15
+        Me.RoundedPane21.FillColor = System.Drawing.Color.White
+        Me.RoundedPane21.Location = New System.Drawing.Point(31, 22)
+        Me.RoundedPane21.Name = "RoundedPane21"
+        Me.RoundedPane21.Size = New System.Drawing.Size(1045, 306)
+        Me.RoundedPane21.TabIndex = 0
+        '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(962, 28)
+        Me.Button1.Location = New System.Drawing.Point(918, 18)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(104, 30)
         Me.Button1.TabIndex = 9
@@ -135,17 +124,29 @@ Partial Class FormEmployeeAttendance
         Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(21, 28)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(204, 20)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Employee Attendance Report"
+        '
         'FormEmployeeAttendance
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.GhostWhite
         Me.ClientSize = New System.Drawing.Size(1151, 749)
         Me.Controls.Add(Me.RoundedPane21)
         Me.Name = "FormEmployeeAttendance"
         Me.Text = "FormEmployeeAttendance"
+        CType(DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.RoundedPane21.ResumeLayout(False)
         Me.RoundedPane21.PerformLayout()
-        CType(DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

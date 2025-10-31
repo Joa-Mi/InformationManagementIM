@@ -22,10 +22,9 @@ Partial Class Orders
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Orders))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Orders))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.AddOrdersBtn = New InformationManagement.RoundedButton()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CustomerName = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -36,6 +35,7 @@ Partial Class Orders
         Me.TotalPrice = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Status = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Actions = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AddOrdersBtn = New InformationManagement.RoundedButton()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -48,22 +48,6 @@ Partial Class Orders
         Me.Label1.Size = New System.Drawing.Size(175, 26)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Manage Orders"
-        '
-        'AddOrdersBtn
-        '
-        Me.AddOrdersBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.AddOrdersBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.AddOrdersBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
-        Me.AddOrdersBtn.ForeColor = System.Drawing.Color.White
-        Me.AddOrdersBtn.Image = CType(resources.GetObject("AddOrdersBtn.Image"), System.Drawing.Image)
-        Me.AddOrdersBtn.Location = New System.Drawing.Point(960, 12)
-        Me.AddOrdersBtn.Name = "AddOrdersBtn"
-        Me.AddOrdersBtn.Size = New System.Drawing.Size(147, 42)
-        Me.AddOrdersBtn.TabIndex = 4
-        Me.AddOrdersBtn.Text = "   Add Orders"
-        Me.AddOrdersBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.AddOrdersBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.AddOrdersBtn.UseVisualStyleBackColor = False
         '
         'DataGridView1
         '
@@ -141,15 +125,32 @@ Partial Class Orders
         Me.Actions.Name = "Actions"
         Me.Actions.Width = 150
         '
+        'AddOrdersBtn
+        '
+        Me.AddOrdersBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.AddOrdersBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.AddOrdersBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.AddOrdersBtn.ForeColor = System.Drawing.Color.White
+        Me.AddOrdersBtn.Image = CType(resources.GetObject("AddOrdersBtn.Image"), System.Drawing.Image)
+        Me.AddOrdersBtn.Location = New System.Drawing.Point(926, 12)
+        Me.AddOrdersBtn.Name = "AddOrdersBtn"
+        Me.AddOrdersBtn.Size = New System.Drawing.Size(147, 42)
+        Me.AddOrdersBtn.TabIndex = 4
+        Me.AddOrdersBtn.Text = "   Add Orders"
+        Me.AddOrdersBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.AddOrdersBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.AddOrdersBtn.UseVisualStyleBackColor = False
+        '
         'Orders
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.ClientSize = New System.Drawing.Size(1150, 568)
+        Me.BackColor = System.Drawing.Color.GhostWhite
+        Me.ClientSize = New System.Drawing.Size(1123, 568)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.AddOrdersBtn)
         Me.Controls.Add(Me.Label1)
+        Me.DoubleBuffered = True
         Me.Name = "Orders"
         Me.Text = "Orders"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

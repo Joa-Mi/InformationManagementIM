@@ -420,8 +420,8 @@ Partial Class Dashboard
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(1137, 749)
+        Me.BackColor = System.Drawing.Color.GhostWhite
+        Me.ClientSize = New System.Drawing.Size(1123, 749)
         Me.Controls.Add(Me.RoundedPane24)
         Me.Controls.Add(Me.RoundedPane27)
         Me.Controls.Add(Me.RoundedPane26)
@@ -431,6 +431,7 @@ Partial Class Dashboard
         Me.Controls.Add(Me.RoundedPane22)
         Me.Controls.Add(Me.RoundedPane21)
         Me.Controls.Add(Me.Label1)
+        Me.DoubleBuffered = True
         Me.Name = "Dashboard"
         Me.Text = "Dashboard"
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()

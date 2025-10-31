@@ -51,7 +51,9 @@ Partial Class FormSales
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.RoundedPane21 = New InformationManagement.RoundedPane2()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.RoundedPane22 = New InformationManagement.RoundedPane2()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -64,10 +66,8 @@ Partial Class FormSales
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.RoundedPane24 = New InformationManagement.RoundedPane2()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RoundedPane21.SuspendLayout()
@@ -136,10 +136,22 @@ Partial Class FormSales
         Me.RoundedPane21.Controls.Add(Me.PictureBox4)
         Me.RoundedPane21.CornerRadius = 15
         Me.RoundedPane21.FillColor = System.Drawing.Color.White
-        Me.RoundedPane21.Location = New System.Drawing.Point(25, 27)
+        Me.RoundedPane21.Location = New System.Drawing.Point(35, 27)
         Me.RoundedPane21.Name = "RoundedPane21"
         Me.RoundedPane21.Size = New System.Drawing.Size(335, 138)
         Me.RoundedPane21.TabIndex = 6
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.Label4.Location = New System.Drawing.Point(25, 98)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(78, 13)
+        Me.Label4.TabIndex = 6
+        Me.Label4.Text = "Last 6 months"
         '
         'RoundedPane22
         '
@@ -152,10 +164,22 @@ Partial Class FormSales
         Me.RoundedPane22.Controls.Add(Me.PictureBox8)
         Me.RoundedPane22.CornerRadius = 15
         Me.RoundedPane22.FillColor = System.Drawing.Color.White
-        Me.RoundedPane22.Location = New System.Drawing.Point(381, 27)
+        Me.RoundedPane22.Location = New System.Drawing.Point(390, 27)
         Me.RoundedPane22.Name = "RoundedPane22"
         Me.RoundedPane22.Size = New System.Drawing.Size(335, 138)
         Me.RoundedPane22.TabIndex = 7
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.Label3.Location = New System.Drawing.Point(25, 98)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(78, 13)
+        Me.Label3.TabIndex = 6
+        Me.Label3.Text = "Last 6 months"
         '
         'Label10
         '
@@ -212,7 +236,7 @@ Partial Class FormSales
         Me.RoundedPane23.Controls.Add(Me.PictureBox10)
         Me.RoundedPane23.CornerRadius = 15
         Me.RoundedPane23.FillColor = System.Drawing.Color.White
-        Me.RoundedPane23.Location = New System.Drawing.Point(735, 27)
+        Me.RoundedPane23.Location = New System.Drawing.Point(745, 27)
         Me.RoundedPane23.Name = "RoundedPane23"
         Me.RoundedPane23.Size = New System.Drawing.Size(335, 138)
         Me.RoundedPane23.TabIndex = 8
@@ -343,20 +367,10 @@ Partial Class FormSales
         Me.RoundedPane24.Controls.Add(Me.Chart1)
         Me.RoundedPane24.CornerRadius = 15
         Me.RoundedPane24.FillColor = System.Drawing.Color.White
-        Me.RoundedPane24.Location = New System.Drawing.Point(25, 191)
+        Me.RoundedPane24.Location = New System.Drawing.Point(35, 194)
         Me.RoundedPane24.Name = "RoundedPane24"
         Me.RoundedPane24.Size = New System.Drawing.Size(1045, 387)
         Me.RoundedPane24.TabIndex = 10
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(57, 26)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(200, 20)
-        Me.Label1.TabIndex = 10
-        Me.Label1.Text = "Financial Overview - Monthly"
         '
         'Button1
         '
@@ -371,39 +385,27 @@ Partial Class FormSales
         Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Label3
+        'Label1
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.Label3.Location = New System.Drawing.Point(25, 98)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(78, 13)
-        Me.Label3.TabIndex = 6
-        Me.Label3.Text = "Last 6 months"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.Label4.Location = New System.Drawing.Point(25, 98)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(78, 13)
-        Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Last 6 months"
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(57, 26)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(200, 20)
+        Me.Label1.TabIndex = 10
+        Me.Label1.Text = "Financial Overview - Monthly"
         '
         'FormSales
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.GhostWhite
         Me.ClientSize = New System.Drawing.Size(1168, 731)
         Me.Controls.Add(Me.RoundedPane24)
         Me.Controls.Add(Me.RoundedPane23)
         Me.Controls.Add(Me.RoundedPane22)
         Me.Controls.Add(Me.RoundedPane21)
+        Me.DoubleBuffered = True
         Me.Name = "FormSales"
         Me.Text = "FormSales"
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()

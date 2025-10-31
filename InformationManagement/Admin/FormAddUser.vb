@@ -21,10 +21,12 @@ Public Class FormAddUser
         Me.Region = New Region(path)
     End Sub
 
-    Private Sub CloseBtn_Click(sender As Object, e As EventArgs) Handles CloseBtn.Click
-        Me.Close()
-    End Sub
-    Private Sub AddUserBtn_Click(sender As Object, e As EventArgs) Handles AddUserbtn.Click
 
+    Private Sub AddUserBtn_Click(sender As Object, e As EventArgs) Handles btnAddUser.Click
+
+    End Sub
+
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+        Me.Close()
     End Sub
 End Class

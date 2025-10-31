@@ -22,9 +22,11 @@ Partial Class FormCustomerHistory
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormCustomerHistory))
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.RoundedPane21 = New InformationManagement.RoundedPane2()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.dateid = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Orderid = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -32,8 +34,6 @@ Partial Class FormCustomerHistory
         Me.Items = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Amount = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Status = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.RoundedPane21.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -47,10 +47,34 @@ Partial Class FormCustomerHistory
         Me.RoundedPane21.Controls.Add(Me.DataGridView1)
         Me.RoundedPane21.CornerRadius = 15
         Me.RoundedPane21.FillColor = System.Drawing.Color.White
-        Me.RoundedPane21.Location = New System.Drawing.Point(25, 27)
+        Me.RoundedPane21.Location = New System.Drawing.Point(33, 21)
         Me.RoundedPane21.Name = "RoundedPane21"
-        Me.RoundedPane21.Size = New System.Drawing.Size(1101, 500)
+        Me.RoundedPane21.Size = New System.Drawing.Size(1045, 429)
         Me.RoundedPane21.TabIndex = 0
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.Location = New System.Drawing.Point(921, 21)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(104, 30)
+        Me.Button1.TabIndex = 9
+        Me.Button1.Text = "   Export"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(30, 31)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(214, 20)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Customer Order History Report"
         '
         'DataGridView1
         '
@@ -111,34 +135,11 @@ Partial Class FormCustomerHistory
         Me.Status.Name = "Status"
         Me.Status.Width = 150
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(30, 31)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(214, 20)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Customer Order History Report"
-        '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(966, 21)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(104, 30)
-        Me.Button1.TabIndex = 9
-        Me.Button1.Text = "   Export"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'FormCustomerHistory
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.GhostWhite
         Me.ClientSize = New System.Drawing.Size(1151, 749)
         Me.Controls.Add(Me.RoundedPane21)
         Me.Name = "FormCustomerHistory"

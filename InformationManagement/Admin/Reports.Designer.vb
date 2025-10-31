@@ -44,7 +44,7 @@ Partial Class Reports
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 20)
+        Me.Label1.Location = New System.Drawing.Point(12, 29)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(252, 26)
         Me.Label1.TabIndex = 2
@@ -53,9 +53,9 @@ Partial Class Reports
         'Panel1
         '
         Me.Panel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
-        Me.Panel1.Location = New System.Drawing.Point(-4, 147)
+        Me.Panel1.Location = New System.Drawing.Point(-4, 162)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1380, 579)
+        Me.Panel1.Size = New System.Drawing.Size(1380, 564)
         Me.Panel1.TabIndex = 3
         '
         'FlowLayoutPanel1
@@ -76,10 +76,10 @@ Partial Class Reports
         Me.FlowLayoutPanel1.Controls.Add(Me.btnEmployeeAttendance)
         Me.FlowLayoutPanel1.Controls.Add(Me.btnProductsPerformance)
         Me.FlowLayoutPanel1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(12, 71)
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(12, 85)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
         Me.FlowLayoutPanel1.Padding = New System.Windows.Forms.Padding(10, 5, 10, 5)
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(1700, 55)
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(1700, 45)
         Me.FlowLayoutPanel1.TabIndex = 4
         Me.FlowLayoutPanel1.WrapContents = False
         '
@@ -290,13 +290,14 @@ Partial Class Reports
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.BackColor = System.Drawing.Color.GhostWhite
         Me.ClientSize = New System.Drawing.Size(1370, 718)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.FlowLayoutPanel1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label1)
+        Me.DoubleBuffered = True
         Me.MinimizeBox = False
         Me.Name = "Reports"
         Me.Text = "Reports"

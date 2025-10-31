@@ -31,8 +31,8 @@ Partial Class FormTakeOutOrders
         Me.Items = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Amount = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Status = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.RoundedPane21.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -48,7 +48,7 @@ Partial Class FormTakeOutOrders
         Me.RoundedPane21.FillColor = System.Drawing.Color.White
         Me.RoundedPane21.Location = New System.Drawing.Point(25, 24)
         Me.RoundedPane21.Name = "RoundedPane21"
-        Me.RoundedPane21.Size = New System.Drawing.Size(1101, 418)
+        Me.RoundedPane21.Size = New System.Drawing.Size(1045, 451)
         Me.RoundedPane21.TabIndex = 0
         '
         'DataGridView1
@@ -104,6 +104,19 @@ Partial Class FormTakeOutOrders
         Me.Status.Name = "Status"
         Me.Status.Width = 150
         '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.Location = New System.Drawing.Point(922, 17)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(104, 30)
+        Me.Button1.TabIndex = 8
+        Me.Button1.Text = "   Export"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -115,23 +128,11 @@ Partial Class FormTakeOutOrders
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Takeout Order Report"
         '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(964, 17)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(104, 30)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "   Export"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'FormTakeOutOrders
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.GhostWhite
         Me.ClientSize = New System.Drawing.Size(1151, 749)
         Me.Controls.Add(Me.RoundedPane21)
         Me.Name = "FormTakeOutOrders"
