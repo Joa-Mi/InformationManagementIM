@@ -118,12 +118,16 @@ Partial Class FormOrders
         Series2.Name = "PopularCategories"
         DataPoint7.AxisLabel = "Main Courses"
         DataPoint7.Color = System.Drawing.Color.MediumPurple
+        DataPoint7.LabelForeColor = System.Drawing.Color.Transparent
         DataPoint8.AxisLabel = "Appetizers"
         DataPoint8.Color = System.Drawing.Color.LightGreen
+        DataPoint8.LabelForeColor = System.Drawing.Color.Transparent
         DataPoint9.AxisLabel = "Desserts"
         DataPoint9.Color = System.Drawing.Color.Goldenrod
+        DataPoint9.LabelForeColor = System.Drawing.Color.Transparent
         DataPoint10.AxisLabel = "Beverages"
         DataPoint10.Color = System.Drawing.Color.DarkOrange
+        DataPoint10.LabelForeColor = System.Drawing.Color.Transparent
         Series2.Points.Add(DataPoint7)
         Series2.Points.Add(DataPoint8)
         Series2.Points.Add(DataPoint9)

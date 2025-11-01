@@ -412,5 +412,17 @@
   <ItemGroup>
     <None Include="Resources\user %287%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fork-and-knife.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fork-and-knife1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fork-and-knife %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

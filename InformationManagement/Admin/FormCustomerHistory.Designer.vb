@@ -34,6 +34,7 @@ Partial Class FormCustomerHistory
         Me.Items = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Amount = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Status = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.RoundedPane21.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -42,6 +43,7 @@ Partial Class FormCustomerHistory
         '
         Me.RoundedPane21.BorderColor = System.Drawing.Color.LightGray
         Me.RoundedPane21.BorderThickness = 1
+        Me.RoundedPane21.Controls.Add(Me.ComboBox1)
         Me.RoundedPane21.Controls.Add(Me.Button1)
         Me.RoundedPane21.Controls.Add(Me.Label1)
         Me.RoundedPane21.Controls.Add(Me.DataGridView1)
@@ -78,6 +80,10 @@ Partial Class FormCustomerHistory
         '
         'DataGridView1
         '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AllowUserToResizeColumns = False
+        Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
         Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
@@ -85,18 +91,18 @@ Partial Class FormCustomerHistory
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView1.ColumnHeadersHeight = 40
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.dateid, Me.Orderid, Me.Type, Me.Items, Me.Amount, Me.Status})
-        Me.DataGridView1.Location = New System.Drawing.Point(34, 101)
+        Me.DataGridView1.Location = New System.Drawing.Point(47, 101)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.DataGridView1.RowHeadersVisible = False
-        Me.DataGridView1.Size = New System.Drawing.Size(1019, 150)
+        Me.DataGridView1.Size = New System.Drawing.Size(948, 76)
         Me.DataGridView1.TabIndex = 0
         '
         'dateid
@@ -135,10 +141,23 @@ Partial Class FormCustomerHistory
         Me.Status.Name = "Status"
         Me.Status.Width = 150
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(750, 27)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 25)
+        Me.ComboBox1.TabIndex = 10
+        '
         'FormCustomerHistory
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.GhostWhite
         Me.ClientSize = New System.Drawing.Size(1151, 749)
         Me.Controls.Add(Me.RoundedPane21)
@@ -161,4 +180,5 @@ Partial Class FormCustomerHistory
     Friend WithEvents Status As DataGridViewTextBoxColumn
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents ComboBox1 As ComboBox
 End Class

@@ -96,7 +96,7 @@ Partial Class FormProductPerformance
         Me.RoundedPane21.FillColor = System.Drawing.Color.White
         Me.RoundedPane21.Location = New System.Drawing.Point(29, 12)
         Me.RoundedPane21.Name = "RoundedPane21"
-        Me.RoundedPane21.Size = New System.Drawing.Size(1045, 638)
+        Me.RoundedPane21.Size = New System.Drawing.Size(1045, 676)
         Me.RoundedPane21.TabIndex = 0
         '
         'RoundedPane28
@@ -109,7 +109,7 @@ Partial Class FormProductPerformance
         Me.RoundedPane28.FillColor = System.Drawing.Color.White
         Me.RoundedPane28.Location = New System.Drawing.Point(21, 267)
         Me.RoundedPane28.Name = "RoundedPane28"
-        Me.RoundedPane28.Size = New System.Drawing.Size(1006, 306)
+        Me.RoundedPane28.Size = New System.Drawing.Size(1006, 365)
         Me.RoundedPane28.TabIndex = 16
         '
         'Chart1
@@ -142,6 +142,7 @@ Partial Class FormProductPerformance
         Series1.Legend = "Legend1"
         Series1.Name = "Revenue"
         DataPoint1.AxisLabel = "Beef Steak"
+        DataPoint1.LabelForeColor = System.Drawing.Color.DarkGray
         DataPoint2.AxisLabel = "Chicken Curry"
         DataPoint2.MarkerColor = System.Drawing.Color.MediumSlateBlue
         DataPoint3.AxisLabel = "Fish Grilled"
@@ -157,10 +158,11 @@ Partial Class FormProductPerformance
         Series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
         Series1.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int64
         Me.Chart1.Series.Add(Series1)
-        Me.Chart1.Size = New System.Drawing.Size(965, 292)
+        Me.Chart1.Size = New System.Drawing.Size(965, 329)
         Me.Chart1.TabIndex = 0
         Me.Chart1.Text = "Chart1"
-        Title1.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Title1.Alignment = System.Drawing.ContentAlignment.TopLeft
+        Title1.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Title1.Name = "Title1"
         Title1.Text = "Revenue by Product"
         Me.Chart1.Titles.Add(Title1)

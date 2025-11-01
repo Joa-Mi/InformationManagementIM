@@ -37,6 +37,7 @@ Partial Class Adminlogin
         'Back1
         '
         Me.Back1.BackColor = System.Drawing.Color.White
+        Me.Back1.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Back1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Back1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Back1.ForeColor = System.Drawing.Color.Red
@@ -69,18 +70,19 @@ Partial Class Adminlogin
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Maroon
         Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(120, 17)
+        Me.Label1.Location = New System.Drawing.Point(113, 12)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(71, 25)
+        Me.Label1.Size = New System.Drawing.Size(81, 30)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Admin"
         '
         'adminlog
         '
         Me.adminlog.BackColor = System.Drawing.Color.White
+        Me.adminlog.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.adminlog.FlatAppearance.BorderSize = 0
         Me.adminlog.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.adminlog.Font = New System.Drawing.Font("Microsoft New Tai Lue", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -142,6 +144,7 @@ Partial Class Adminlogin
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CancelButton = Me.Back1
         Me.ClientSize = New System.Drawing.Size(895, 447)
         Me.Controls.Add(Me.RoundedPanel1)
         Me.Controls.Add(Me.Back1)
