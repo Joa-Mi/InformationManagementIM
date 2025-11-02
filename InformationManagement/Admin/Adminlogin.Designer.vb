@@ -28,9 +28,9 @@ Partial Class Adminlogin
         Me.Label1 = New System.Windows.Forms.Label()
         Me.adminlog = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtId = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.RoundedPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -56,9 +56,9 @@ Partial Class Adminlogin
         Me.RoundedPanel1.Controls.Add(Me.Label1)
         Me.RoundedPanel1.Controls.Add(Me.adminlog)
         Me.RoundedPanel1.Controls.Add(Me.Label2)
-        Me.RoundedPanel1.Controls.Add(Me.TextBox1)
+        Me.RoundedPanel1.Controls.Add(Me.txtId)
         Me.RoundedPanel1.Controls.Add(Me.Label3)
-        Me.RoundedPanel1.Controls.Add(Me.TextBox2)
+        Me.RoundedPanel1.Controls.Add(Me.txtPassword)
         Me.RoundedPanel1.CornerRadius = 24
         Me.RoundedPanel1.Location = New System.Drawing.Point(301, 109)
         Me.RoundedPanel1.Name = "RoundedPanel1"
@@ -108,13 +108,14 @@ Partial Class Adminlogin
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "ID :"
         '
-        'TextBox1
+        'txtId
         '
-        Me.TextBox1.Location = New System.Drawing.Point(58, 99)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox1.TabIndex = 4
+        Me.txtId.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtId.Location = New System.Drawing.Point(58, 99)
+        Me.txtId.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtId.Name = "txtId"
+        Me.txtId.Size = New System.Drawing.Size(181, 29)
+        Me.txtId.TabIndex = 4
         '
         'Label3
         '
@@ -128,14 +129,15 @@ Partial Class Adminlogin
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Password :"
         '
-        'TextBox2
+        'txtPassword
         '
-        Me.TextBox2.Location = New System.Drawing.Point(58, 186)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(180, 20)
-        Me.TextBox2.TabIndex = 5
+        Me.txtPassword.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPassword.Location = New System.Drawing.Point(58, 186)
+        Me.txtPassword.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPassword.Size = New System.Drawing.Size(180, 29)
+        Me.txtPassword.TabIndex = 5
         '
         'Adminlogin
         '
@@ -160,8 +162,8 @@ Partial Class Adminlogin
 
     End Sub
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtId As TextBox
+    Friend WithEvents txtPassword As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents adminlog As Button

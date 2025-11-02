@@ -3,7 +3,7 @@
         ' You can leave this empty or remove it
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtId.TextChanged
         ' Optional: Add logic if needed
     End Sub
 
@@ -18,7 +18,7 @@
         Me.Hide()
     End Sub
 
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles txtPassword.TextChanged
         ' Optional: Add logic if needed
     End Sub
 

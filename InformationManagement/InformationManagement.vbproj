@@ -272,6 +272,9 @@
     <Compile Include="RoundedPanel.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="RoundedTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="RoundePanel2.vb">
       <SubType>Component</SubType>
     </Compile>

@@ -43,7 +43,7 @@ Partial Class Orders
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Location = New System.Drawing.Point(29, 30)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(175, 26)
         Me.Label1.TabIndex = 0
@@ -70,7 +70,7 @@ Partial Class Orders
         Me.DataGridView1.ColumnHeadersHeight = 40
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.CustomerName, Me.OrderType, Me.Products, Me.Quantities, Me.UnitPrices, Me.TotalPrice, Me.Status, Me.Actions})
         Me.DataGridView1.EnableHeadersVisualStyles = False
-        Me.DataGridView1.Location = New System.Drawing.Point(34, 116)
+        Me.DataGridView1.Location = New System.Drawing.Point(34, 87)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.Size = New System.Drawing.Size(1039, 196)
@@ -136,7 +136,7 @@ Partial Class Orders
         Me.AddOrdersBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
         Me.AddOrdersBtn.ForeColor = System.Drawing.Color.White
         Me.AddOrdersBtn.Image = CType(resources.GetObject("AddOrdersBtn.Image"), System.Drawing.Image)
-        Me.AddOrdersBtn.Location = New System.Drawing.Point(926, 12)
+        Me.AddOrdersBtn.Location = New System.Drawing.Point(926, 14)
         Me.AddOrdersBtn.Name = "AddOrdersBtn"
         Me.AddOrdersBtn.Size = New System.Drawing.Size(147, 42)
         Me.AddOrdersBtn.TabIndex = 4

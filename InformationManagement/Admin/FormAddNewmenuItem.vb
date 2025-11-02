@@ -1,10 +1,15 @@
-﻿Public Class FormAddNewmenuItem
+﻿Imports System.Drawing.Drawing2D
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+
+Public Class FormAddNewmenuItem
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         Me.Hide()
     End Sub
 
     Private Sub FormAddNewmenuItem_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Optional: any initialization logic
+        txtItemName.TextBoxBackColor = Color.WhiteSmoke
+        txtDescription.TextBoxBackColor = Color.WhiteSmoke
+        txtImageUrl.TextBoxBackColor = Color.WhiteSmoke
     End Sub
 
     Private Sub btnAddItem_Click(sender As Object, e As EventArgs) Handles btnAddItem.Click
@@ -34,4 +39,6 @@
         ' Close the Add Item form
         Me.Close()
     End Sub
+
+
 End Class

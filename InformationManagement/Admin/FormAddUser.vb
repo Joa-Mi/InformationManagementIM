@@ -74,9 +74,9 @@ Public Class FormAddUser
         dateJoined
     )
 
-        txtFullName.Clear()
-        txtEmail.Clear()
-        txtPhone.Clear()
+        txtFullName.Text = ""
+        txtEmail.Text = ""
+        txtPhone.Text = ""
         cmbRole.SelectedIndex = -1
         cmbStatus.SelectedIndex = -1
 

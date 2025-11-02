@@ -31,11 +31,11 @@ Partial Class FormEditUser
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.btnUpdateUser = New System.Windows.Forms.Button()
-        Me.txtFullName = New System.Windows.Forms.TextBox()
-        Me.txtEmail = New System.Windows.Forms.TextBox()
-        Me.txtPhone = New System.Windows.Forms.TextBox()
         Me.cmbRole = New System.Windows.Forms.ComboBox()
         Me.cmbStatus = New System.Windows.Forms.ComboBox()
+        Me.txtFullName = New InformationManagement.RoundedTextBox()
+        Me.txtPhone = New InformationManagement.RoundedTextBox()
+        Me.txtEmail = New InformationManagement.RoundedTextBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -122,62 +122,83 @@ Partial Class FormEditUser
         Me.btnUpdateUser.Text = "Update User"
         Me.btnUpdateUser.UseVisualStyleBackColor = False
         '
-        'txtFullName
-        '
-        Me.txtFullName.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.txtFullName.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtFullName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFullName.Location = New System.Drawing.Point(27, 71)
-        Me.txtFullName.MinimumSize = New System.Drawing.Size(0, 35)
-        Me.txtFullName.Name = "txtFullName"
-        Me.txtFullName.Size = New System.Drawing.Size(440, 35)
-        Me.txtFullName.TabIndex = 31
-        '
-        'txtEmail
-        '
-        Me.txtEmail.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtEmail.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmail.Location = New System.Drawing.Point(27, 143)
-        Me.txtEmail.MinimumSize = New System.Drawing.Size(0, 35)
-        Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(440, 35)
-        Me.txtEmail.TabIndex = 32
-        '
-        'txtPhone
-        '
-        Me.txtPhone.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtPhone.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPhone.Location = New System.Drawing.Point(27, 214)
-        Me.txtPhone.MinimumSize = New System.Drawing.Size(0, 35)
-        Me.txtPhone.Name = "txtPhone"
-        Me.txtPhone.Size = New System.Drawing.Size(440, 35)
-        Me.txtPhone.TabIndex = 33
-        '
         'cmbRole
         '
         Me.cmbRole.BackColor = System.Drawing.Color.WhiteSmoke
         Me.cmbRole.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmbRole.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbRole.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbRole.FormattingEnabled = True
         Me.cmbRole.Items.AddRange(New Object() {"Staff", "Employee", "Customer"})
         Me.cmbRole.Location = New System.Drawing.Point(27, 290)
         Me.cmbRole.Name = "cmbRole"
-        Me.cmbRole.Size = New System.Drawing.Size(440, 25)
+        Me.cmbRole.Size = New System.Drawing.Size(440, 29)
         Me.cmbRole.TabIndex = 34
         '
         'cmbStatus
         '
         Me.cmbStatus.BackColor = System.Drawing.Color.WhiteSmoke
         Me.cmbStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmbStatus.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbStatus.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbStatus.FormattingEnabled = True
         Me.cmbStatus.Items.AddRange(New Object() {"Active ", "InActive"})
-        Me.cmbStatus.Location = New System.Drawing.Point(27, 357)
+        Me.cmbStatus.Location = New System.Drawing.Point(33, 358)
         Me.cmbStatus.Name = "cmbStatus"
-        Me.cmbStatus.Size = New System.Drawing.Size(428, 25)
+        Me.cmbStatus.Size = New System.Drawing.Size(434, 29)
         Me.cmbStatus.TabIndex = 35
+        '
+        'txtFullName
+        '
+        Me.txtFullName.BackColor = System.Drawing.Color.Transparent
+        Me.txtFullName.FocusBorderColor = System.Drawing.Color.DarkGray
+        Me.txtFullName.Location = New System.Drawing.Point(27, 71)
+        Me.txtFullName.MaxLength = 32767
+        Me.txtFullName.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.txtFullName.Multiline = False
+        Me.txtFullName.Name = "txtFullName"
+        Me.txtFullName.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.txtFullName.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtFullName.Size = New System.Drawing.Size(440, 40)
+        Me.txtFullName.TabIndex = 36
+        Me.txtFullName.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
+        Me.txtFullName.TextColor = System.Drawing.Color.Black
+        Me.txtFullName.TextFont = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.txtFullName.Text = ""
+        '
+        'txtPhone
+        '
+        Me.txtPhone.BackColor = System.Drawing.Color.Transparent
+        Me.txtPhone.FocusBorderColor = System.Drawing.Color.DarkGray
+        Me.txtPhone.Location = New System.Drawing.Point(27, 214)
+        Me.txtPhone.MaxLength = 32767
+        Me.txtPhone.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.txtPhone.Multiline = False
+        Me.txtPhone.Name = "txtPhone"
+        Me.txtPhone.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.txtPhone.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtPhone.Size = New System.Drawing.Size(440, 40)
+        Me.txtPhone.TabIndex = 37
+        Me.txtPhone.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
+        Me.txtPhone.TextColor = System.Drawing.Color.Black
+        Me.txtPhone.TextFont = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.txtPhone.Text = ""
+        '
+        'txtEmail
+        '
+        Me.txtEmail.BackColor = System.Drawing.Color.Transparent
+        Me.txtEmail.FocusBorderColor = System.Drawing.Color.DarkGray
+        Me.txtEmail.Location = New System.Drawing.Point(27, 143)
+        Me.txtEmail.MaxLength = 32767
+        Me.txtEmail.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.txtEmail.Multiline = False
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.txtEmail.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtEmail.Size = New System.Drawing.Size(440, 40)
+        Me.txtEmail.TabIndex = 38
+        Me.txtEmail.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
+        Me.txtEmail.TextColor = System.Drawing.Color.Black
+        Me.txtEmail.TextFont = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.txtEmail.Text = ""
         '
         'FormEditUser
         '
@@ -186,11 +207,11 @@ Partial Class FormEditUser
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(484, 461)
+        Me.Controls.Add(Me.txtEmail)
+        Me.Controls.Add(Me.txtPhone)
+        Me.Controls.Add(Me.txtFullName)
         Me.Controls.Add(Me.cmbStatus)
         Me.Controls.Add(Me.cmbRole)
-        Me.Controls.Add(Me.txtPhone)
-        Me.Controls.Add(Me.txtEmail)
-        Me.Controls.Add(Me.txtFullName)
         Me.Controls.Add(Me.btnUpdateUser)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -199,6 +220,7 @@ Partial Class FormEditUser
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormEditUser"
         Me.Text = "FormEditUser"
         Me.ResumeLayout(False)
@@ -214,9 +236,9 @@ Partial Class FormEditUser
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents btnUpdateUser As Button
-    Friend WithEvents txtFullName As TextBox
-    Friend WithEvents txtEmail As TextBox
-    Friend WithEvents txtPhone As TextBox
     Friend WithEvents cmbRole As ComboBox
     Friend WithEvents cmbStatus As ComboBox
+    Friend WithEvents txtFullName As RoundedTextBox
+    Friend WithEvents txtPhone As RoundedTextBox
+    Friend WithEvents txtEmail As RoundedTextBox
 End Class

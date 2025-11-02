@@ -27,13 +27,11 @@ Partial Class FormAddOrder
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.RoundedPane21 = New InformationManagement.RoundedPane2()
-        Me.txtProductName = New System.Windows.Forms.TextBox()
         Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtCustomerName = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -45,6 +43,8 @@ Partial Class FormAddOrder
         Me.Label11 = New System.Windows.Forms.Label()
         Me.btnAddItem = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
+        Me.txtCustomerName = New InformationManagement.RoundedTextBox()
+        Me.txtProductName = New InformationManagement.RoundedTextBox()
         Me.RoundedPane21.SuspendLayout()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -97,17 +97,6 @@ Partial Class FormAddOrder
         Me.RoundedPane21.Size = New System.Drawing.Size(485, 95)
         Me.RoundedPane21.TabIndex = 7
         '
-        'txtProductName
-        '
-        Me.txtProductName.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.txtProductName.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtProductName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtProductName.Location = New System.Drawing.Point(21, 39)
-        Me.txtProductName.MinimumSize = New System.Drawing.Size(0, 35)
-        Me.txtProductName.Name = "txtProductName"
-        Me.txtProductName.Size = New System.Drawing.Size(133, 16)
-        Me.txtProductName.TabIndex = 12
-        '
         'NumericUpDown2
         '
         Me.NumericUpDown2.BackColor = System.Drawing.Color.WhiteSmoke
@@ -157,17 +146,6 @@ Partial Class FormAddOrder
         Me.Label4.Size = New System.Drawing.Size(96, 17)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Product Name"
-        '
-        'txtCustomerName
-        '
-        Me.txtCustomerName.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.txtCustomerName.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtCustomerName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCustomerName.Location = New System.Drawing.Point(27, 84)
-        Me.txtCustomerName.MinimumSize = New System.Drawing.Size(0, 35)
-        Me.txtCustomerName.Name = "txtCustomerName"
-        Me.txtCustomerName.Size = New System.Drawing.Size(485, 16)
-        Me.txtCustomerName.TabIndex = 8
         '
         'Label7
         '
@@ -292,6 +270,44 @@ Partial Class FormAddOrder
         Me.btnClose.TabIndex = 3
         Me.btnClose.UseVisualStyleBackColor = True
         '
+        'txtCustomerName
+        '
+        Me.txtCustomerName.BackColor = System.Drawing.Color.Transparent
+        Me.txtCustomerName.FocusBorderColor = System.Drawing.Color.DarkGray
+        Me.txtCustomerName.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCustomerName.Location = New System.Drawing.Point(27, 84)
+        Me.txtCustomerName.MaxLength = 32767
+        Me.txtCustomerName.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.txtCustomerName.Multiline = False
+        Me.txtCustomerName.Name = "txtCustomerName"
+        Me.txtCustomerName.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.txtCustomerName.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtCustomerName.Size = New System.Drawing.Size(485, 40)
+        Me.txtCustomerName.TabIndex = 20
+        Me.txtCustomerName.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
+        Me.txtCustomerName.TextColor = System.Drawing.Color.Black
+        Me.txtCustomerName.TextFont = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCustomerName.Text = ""
+        '
+        'txtProductName
+        '
+        Me.txtProductName.BackColor = System.Drawing.Color.Transparent
+        Me.txtProductName.FocusBorderColor = System.Drawing.Color.DarkGray
+        Me.txtProductName.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtProductName.Location = New System.Drawing.Point(21, 39)
+        Me.txtProductName.MaxLength = 32767
+        Me.txtProductName.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.txtProductName.Multiline = False
+        Me.txtProductName.Name = "txtProductName"
+        Me.txtProductName.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.txtProductName.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtProductName.Size = New System.Drawing.Size(151, 40)
+        Me.txtProductName.TabIndex = 21
+        Me.txtProductName.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
+        Me.txtProductName.TextColor = System.Drawing.Color.Black
+        Me.txtProductName.TextFont = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtProductName.Text = ""
+        '
         'FormAddOrder
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -299,6 +315,7 @@ Partial Class FormAddOrder
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(539, 481)
         Me.ControlBox = False
+        Me.Controls.Add(Me.txtCustomerName)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnCreateOrder)
@@ -309,7 +326,6 @@ Partial Class FormAddOrder
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.btnAddItem)
-        Me.Controls.Add(Me.txtCustomerName)
         Me.Controls.Add(Me.RoundedPane21)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -337,10 +353,8 @@ Partial Class FormAddOrder
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents txtCustomerName As TextBox
     Friend WithEvents NumericUpDown2 As NumericUpDown
     Friend WithEvents NumericUpDown1 As NumericUpDown
-    Friend WithEvents txtProductName As TextBox
     Friend WithEvents btnAddItem As Button
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
@@ -351,4 +365,6 @@ Partial Class FormAddOrder
     Friend WithEvents btnCreateOrder As Button
     Friend WithEvents btnCancel As Button
     Friend WithEvents Label11 As Label
+    Friend WithEvents txtCustomerName As RoundedTextBox
+    Friend WithEvents txtProductName As RoundedTextBox
 End Class

@@ -46,7 +46,7 @@ Partial Class Reservations
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 8)
+        Me.Label1.Location = New System.Drawing.Point(29, 30)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(295, 26)
         Me.Label1.TabIndex = 0
@@ -78,7 +78,7 @@ Partial Class Reservations
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle2
         Me.DataGridView1.EnableHeadersVisualStyles = False
-        Me.DataGridView1.Location = New System.Drawing.Point(33, 82)
+        Me.DataGridView1.Location = New System.Drawing.Point(33, 79)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -157,9 +157,9 @@ Partial Class Reservations
         Me.btnAddNewReservation.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAddNewReservation.ForeColor = System.Drawing.Color.White
         Me.btnAddNewReservation.Image = CType(resources.GetObject("btnAddNewReservation.Image"), System.Drawing.Image)
-        Me.btnAddNewReservation.Location = New System.Drawing.Point(841, 33)
+        Me.btnAddNewReservation.Location = New System.Drawing.Point(841, 12)
         Me.btnAddNewReservation.Name = "btnAddNewReservation"
-        Me.btnAddNewReservation.Size = New System.Drawing.Size(224, 30)
+        Me.btnAddNewReservation.Size = New System.Drawing.Size(224, 44)
         Me.btnAddNewReservation.TabIndex = 6
         Me.btnAddNewReservation.Text = "   Add New Reservation"
         Me.btnAddNewReservation.TextAlign = System.Drawing.ContentAlignment.MiddleRight

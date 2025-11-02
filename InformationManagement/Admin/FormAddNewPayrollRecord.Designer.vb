@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormAddNewPayrollRecord
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FormAddNewPayrollRecord
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormAddNewPayrollRecord))
         Me.Label1 = New System.Windows.Forms.Label()
@@ -32,13 +32,13 @@ Partial Class FormAddNewPayrollRecord
         Me.Label7 = New System.Windows.Forms.Label()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.btnCreateRecord = New System.Windows.Forms.Button()
-        Me.txtFullName = New System.Windows.Forms.TextBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown3 = New System.Windows.Forms.NumericUpDown()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.btnClose = New System.Windows.Forms.Button()
+        Me.RoundedTextBox1 = New InformationManagement.RoundedTextBox()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -140,17 +140,6 @@ Partial Class FormAddNewPayrollRecord
         Me.btnCreateRecord.Text = "Create Record"
         Me.btnCreateRecord.UseVisualStyleBackColor = False
         '
-        'txtFullName
-        '
-        Me.txtFullName.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.txtFullName.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtFullName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFullName.Location = New System.Drawing.Point(21, 79)
-        Me.txtFullName.MinimumSize = New System.Drawing.Size(0, 35)
-        Me.txtFullName.Name = "txtFullName"
-        Me.txtFullName.Size = New System.Drawing.Size(440, 16)
-        Me.txtFullName.TabIndex = 14
-        '
         'ComboBox1
         '
         Me.ComboBox1.BackColor = System.Drawing.Color.WhiteSmoke
@@ -212,6 +201,25 @@ Partial Class FormAddNewPayrollRecord
         Me.btnClose.TabIndex = 3
         Me.btnClose.UseVisualStyleBackColor = True
         '
+        'RoundedTextBox1
+        '
+        Me.RoundedTextBox1.BackColor = System.Drawing.Color.Transparent
+        Me.RoundedTextBox1.FocusBorderColor = System.Drawing.Color.DarkGray
+        Me.RoundedTextBox1.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RoundedTextBox1.Location = New System.Drawing.Point(21, 79)
+        Me.RoundedTextBox1.MaxLength = 32767
+        Me.RoundedTextBox1.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.RoundedTextBox1.Multiline = False
+        Me.RoundedTextBox1.Name = "RoundedTextBox1"
+        Me.RoundedTextBox1.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.RoundedTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.RoundedTextBox1.Size = New System.Drawing.Size(440, 40)
+        Me.RoundedTextBox1.TabIndex = 20
+        Me.RoundedTextBox1.TextBoxBackColor = System.Drawing.Color.White
+        Me.RoundedTextBox1.TextColor = System.Drawing.Color.Black
+        Me.RoundedTextBox1.TextFont = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RoundedTextBox1.Text = ""
+        '
         'FormAddNewPayrollRecord
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -219,12 +227,12 @@ Partial Class FormAddNewPayrollRecord
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(484, 461)
         Me.ControlBox = False
+        Me.Controls.Add(Me.RoundedTextBox1)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.NumericUpDown3)
         Me.Controls.Add(Me.NumericUpDown2)
         Me.Controls.Add(Me.NumericUpDown1)
         Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.txtFullName)
         Me.Controls.Add(Me.btnCreateRecord)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.Label7)
@@ -259,10 +267,10 @@ Partial Class FormAddNewPayrollRecord
     Friend WithEvents Label7 As Label
     Friend WithEvents btnCancel As Button
     Friend WithEvents btnCreateRecord As Button
-    Friend WithEvents txtFullName As TextBox
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents NumericUpDown1 As NumericUpDown
     Friend WithEvents NumericUpDown2 As NumericUpDown
     Friend WithEvents NumericUpDown3 As NumericUpDown
     Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents RoundedTextBox1 As RoundedTextBox
 End Class
