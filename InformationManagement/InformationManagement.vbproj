@@ -129,10 +129,22 @@
     <Compile Include="Admin\FormEditMenu.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Admin\FormEditReservation.Designer.vb">
+      <DependentUpon>FormEditReservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormEditReservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Admin\FormEditUser.Designer.vb">
       <DependentUpon>FormEditUser.vb</DependentUpon>
     </Compile>
     <Compile Include="Admin\FormEditUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormViewReservation.Designer.vb">
+      <DependentUpon>FormViewReservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormViewReservation.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin\Login.Designer.vb">
@@ -310,6 +322,9 @@
     <EmbeddedResource Include="Admin\FormEditMenu.resx">
       <DependentUpon>FormEditMenu.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormEditReservation.resx">
+      <DependentUpon>FormEditReservation.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormEditUser.resx">
       <DependentUpon>FormEditUser.vb</DependentUpon>
     </EmbeddedResource>
@@ -327,6 +342,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormTakeOutOrders.resx">
       <DependentUpon>FormTakeOutOrders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormViewReservation.resx">
+      <DependentUpon>FormViewReservation.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
@@ -420,6 +438,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fork-and-knife %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletebox.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
