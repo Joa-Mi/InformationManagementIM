@@ -27,8 +27,8 @@ Public Class FormAddNewmenuItem
             txtItemName.Text,
             txtDescription.Text,
             numericPrice.Value.ToString("0.00"),
-            comboCategory.SelectedItem.ToString(),
-            comboStatus.SelectedItem.ToString()
+            cmbCategory.SelectedItem.ToString(),
+            cmbStatus.SelectedItem.ToString()
         }
 
         ' Add new row to the DataGridView in MenuItems form
@@ -40,5 +40,27 @@ Public Class FormAddNewmenuItem
         Me.Close()
     End Sub
 
+    Private Sub ComboBox_DrawItem(sender As Object, e As DrawItemEventArgs) _
+    Handles cmbCategory.DrawItem, cmbStatus.DrawItem
 
+        ' Prevent errors when nothing to draw
+        If e.Index < 0 Then Return
+
+        ' Correctly reference the ComboBox that triggered the event
+        Dim cmb As System.Windows.Forms.ComboBox = DirectCast(sender, System.Windows.Forms.ComboBox)
+
+        ' Draw background (handles selection color)
+        e.DrawBackground()
+
+        ' Draw the text of the current item
+        Using textBrush As New SolidBrush(e.ForeColor)
+            e.Graphics.DrawString(cmb.Items(e.Index).ToString(), cmb.Font, textBrush, e.Bounds)
+        End Using
+
+        ' Draw focus rectangle (optional visual border when focused)
+        e.DrawFocusRectangle()
+    End Sub
+    Private Sub FormAddNewmenuItems_Deactivate(sender As Object, e As EventArgs) Handles Me.Deactivate
+        Me.Close()
+    End Sub
 End Class

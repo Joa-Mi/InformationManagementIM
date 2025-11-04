@@ -158,10 +158,16 @@ Public Class UsersAccounts
     End Sub
 
     Private Sub Adduserbtn_Click(sender As Object, e As EventArgs) Handles Adduserbtn.Click
+
         With FormAddUser
             .StartPosition = FormStartPosition.CenterScreen
             .Show()
             .BringToFront()
+
         End With
+
+
     End Sub
+
+
 End Class

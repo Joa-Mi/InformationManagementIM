@@ -64,13 +64,14 @@ Partial Class Login
         '
         Me.AdminBot.BackColor = System.Drawing.Color.White
         Me.AdminBot.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.AdminBot.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.AdminBot.FlatAppearance.BorderSize = 0
+        Me.AdminBot.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.AdminBot.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AdminBot.ForeColor = System.Drawing.Color.Red
         Me.AdminBot.Location = New System.Drawing.Point(78, 192)
         Me.AdminBot.Margin = New System.Windows.Forms.Padding(2)
         Me.AdminBot.Name = "AdminBot"
-        Me.AdminBot.Size = New System.Drawing.Size(148, 33)
+        Me.AdminBot.Size = New System.Drawing.Size(148, 37)
         Me.AdminBot.TabIndex = 6
         Me.AdminBot.Text = "Admin"
         Me.AdminBot.UseVisualStyleBackColor = False
@@ -78,10 +79,11 @@ Partial Class Login
         'Staff1
         '
         Me.Staff1.BackColor = System.Drawing.Color.White
-        Me.Staff1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Staff1.FlatAppearance.BorderSize = 0
+        Me.Staff1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Staff1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Staff1.ForeColor = System.Drawing.Color.Red
-        Me.Staff1.Location = New System.Drawing.Point(78, 132)
+        Me.Staff1.Location = New System.Drawing.Point(78, 128)
         Me.Staff1.Margin = New System.Windows.Forms.Padding(2)
         Me.Staff1.Name = "Staff1"
         Me.Staff1.Size = New System.Drawing.Size(148, 37)
@@ -95,7 +97,7 @@ Partial Class Login
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 2)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(296, 140)

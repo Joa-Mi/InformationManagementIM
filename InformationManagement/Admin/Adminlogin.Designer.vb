@@ -25,12 +25,12 @@ Partial Class Adminlogin
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Adminlogin))
         Me.Back1 = New System.Windows.Forms.Button()
         Me.RoundedPanel1 = New InformationManagement.RoundedPanel()
+        Me.txtPassword = New InformationManagement.RoundedTextBox()
+        Me.txtId = New InformationManagement.RoundedTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.adminlog = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtId = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.RoundedPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -53,17 +53,53 @@ Partial Class Adminlogin
         '
         Me.RoundedPanel1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.RoundedPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.RoundedPanel1.Controls.Add(Me.txtPassword)
+        Me.RoundedPanel1.Controls.Add(Me.txtId)
         Me.RoundedPanel1.Controls.Add(Me.Label1)
         Me.RoundedPanel1.Controls.Add(Me.adminlog)
         Me.RoundedPanel1.Controls.Add(Me.Label2)
-        Me.RoundedPanel1.Controls.Add(Me.txtId)
         Me.RoundedPanel1.Controls.Add(Me.Label3)
-        Me.RoundedPanel1.Controls.Add(Me.txtPassword)
         Me.RoundedPanel1.CornerRadius = 24
         Me.RoundedPanel1.Location = New System.Drawing.Point(301, 109)
         Me.RoundedPanel1.Name = "RoundedPanel1"
         Me.RoundedPanel1.Size = New System.Drawing.Size(308, 294)
         Me.RoundedPanel1.TabIndex = 10
+        '
+        'txtPassword
+        '
+        Me.txtPassword.BackColor = System.Drawing.Color.Transparent
+        Me.txtPassword.BorderRadius = 6
+        Me.txtPassword.FocusBorderColor = System.Drawing.Color.Red
+        Me.txtPassword.Location = New System.Drawing.Point(58, 176)
+        Me.txtPassword.MaxLength = 32767
+        Me.txtPassword.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.txtPassword.Multiline = False
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtPassword.Size = New System.Drawing.Size(181, 30)
+        Me.txtPassword.TabIndex = 10
+        Me.txtPassword.TextBoxBackColor = System.Drawing.Color.White
+        Me.txtPassword.TextColor = System.Drawing.Color.Black
+        Me.txtPassword.TextFont = New System.Drawing.Font("Segoe UI", 10.0!)
+        '
+        'txtId
+        '
+        Me.txtId.BackColor = System.Drawing.Color.Transparent
+        Me.txtId.BorderRadius = 6
+        Me.txtId.FocusBorderColor = System.Drawing.Color.Red
+        Me.txtId.Location = New System.Drawing.Point(58, 90)
+        Me.txtId.MaxLength = 32767
+        Me.txtId.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.txtId.Multiline = False
+        Me.txtId.Name = "txtId"
+        Me.txtId.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.txtId.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtId.Size = New System.Drawing.Size(181, 30)
+        Me.txtId.TabIndex = 9
+        Me.txtId.TextBoxBackColor = System.Drawing.Color.White
+        Me.txtId.TextColor = System.Drawing.Color.Black
+        Me.txtId.TextFont = New System.Drawing.Font("Segoe UI", 10.0!)
         '
         'Label1
         '
@@ -72,7 +108,7 @@ Partial Class Adminlogin
         Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(113, 12)
+        Me.Label1.Location = New System.Drawing.Point(114, 21)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(81, 30)
@@ -108,15 +144,6 @@ Partial Class Adminlogin
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "ID :"
         '
-        'txtId
-        '
-        Me.txtId.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtId.Location = New System.Drawing.Point(58, 99)
-        Me.txtId.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(181, 29)
-        Me.txtId.TabIndex = 4
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -128,16 +155,6 @@ Partial Class Adminlogin
         Me.Label3.Size = New System.Drawing.Size(87, 21)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Password :"
-        '
-        'txtPassword
-        '
-        Me.txtPassword.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(58, 186)
-        Me.txtPassword.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassword.Size = New System.Drawing.Size(180, 29)
-        Me.txtPassword.TabIndex = 5
         '
         'Adminlogin
         '
@@ -162,11 +179,11 @@ Partial Class Adminlogin
 
     End Sub
     Friend WithEvents Label1 As Label
-    Friend WithEvents txtId As TextBox
-    Friend WithEvents txtPassword As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents adminlog As Button
     Friend WithEvents Back1 As Button
     Friend WithEvents RoundedPanel1 As RoundedPanel
+    Friend WithEvents txtPassword As RoundedTextBox
+    Friend WithEvents txtId As RoundedTextBox
 End Class

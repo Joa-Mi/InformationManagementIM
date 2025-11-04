@@ -81,6 +81,7 @@ Partial Class FormProductPerformance
         '
         'RoundedPane21
         '
+        Me.RoundedPane21.AutoScroll = True
         Me.RoundedPane21.BorderColor = System.Drawing.Color.LightGray
         Me.RoundedPane21.BorderThickness = 1
         Me.RoundedPane21.Controls.Add(Me.RoundedPane28)

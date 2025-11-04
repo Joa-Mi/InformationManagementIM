@@ -33,8 +33,8 @@ Partial Class FormAddNewmenuItem
         Me.Label8 = New System.Windows.Forms.Label()
         Me.btnAddItem = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
-        Me.comboStatus = New System.Windows.Forms.ComboBox()
-        Me.comboCategory = New System.Windows.Forms.ComboBox()
+        Me.cmbStatus = New System.Windows.Forms.ComboBox()
+        Me.cmbCategory = New System.Windows.Forms.ComboBox()
         Me.numericPrice = New System.Windows.Forms.NumericUpDown()
         Me.txtImageUrl = New InformationManagement.RoundedTextBox()
         Me.txtItemName = New InformationManagement.RoundedTextBox()
@@ -145,35 +145,41 @@ Partial Class FormAddNewmenuItem
         Me.btnClose.TabIndex = 25
         Me.btnClose.UseVisualStyleBackColor = True
         '
-        'comboStatus
+        'cmbStatus
         '
-        Me.comboStatus.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.comboStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.comboStatus.FormattingEnabled = True
-        Me.comboStatus.Items.AddRange(New Object() {"Available", "Unvailable"})
-        Me.comboStatus.Location = New System.Drawing.Point(29, 448)
-        Me.comboStatus.Name = "comboStatus"
-        Me.comboStatus.Size = New System.Drawing.Size(432, 21)
-        Me.comboStatus.TabIndex = 26
+        Me.cmbStatus.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.cmbStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.cmbStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbStatus.FormattingEnabled = True
+        Me.cmbStatus.ItemHeight = 30
+        Me.cmbStatus.Items.AddRange(New Object() {"Available", "Unvailable"})
+        Me.cmbStatus.Location = New System.Drawing.Point(29, 448)
+        Me.cmbStatus.Name = "cmbStatus"
+        Me.cmbStatus.Size = New System.Drawing.Size(432, 36)
+        Me.cmbStatus.TabIndex = 26
         '
-        'comboCategory
+        'cmbCategory
         '
-        Me.comboCategory.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.comboCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.comboCategory.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.comboCategory.FormattingEnabled = True
-        Me.comboCategory.Items.AddRange(New Object() {"Appetizer", "Main Course", "Dessert", "Beverage"})
-        Me.comboCategory.Location = New System.Drawing.Point(29, 309)
-        Me.comboCategory.Name = "comboCategory"
-        Me.comboCategory.Size = New System.Drawing.Size(432, 25)
-        Me.comboCategory.TabIndex = 27
+        Me.cmbCategory.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.cmbCategory.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.cmbCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbCategory.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbCategory.FormattingEnabled = True
+        Me.cmbCategory.ItemHeight = 30
+        Me.cmbCategory.Items.AddRange(New Object() {"Appetizer", "Main Course", "Dessert", "Beverage"})
+        Me.cmbCategory.Location = New System.Drawing.Point(29, 309)
+        Me.cmbCategory.Name = "cmbCategory"
+        Me.cmbCategory.Size = New System.Drawing.Size(432, 36)
+        Me.cmbCategory.TabIndex = 27
         '
         'numericPrice
         '
+        Me.numericPrice.AutoSize = True
+        Me.numericPrice.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.numericPrice.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.numericPrice.Location = New System.Drawing.Point(26, 230)
         Me.numericPrice.Name = "numericPrice"
-        Me.numericPrice.Size = New System.Drawing.Size(435, 27)
+        Me.numericPrice.Size = New System.Drawing.Size(435, 23)
         Me.numericPrice.TabIndex = 28
         '
         'txtImageUrl
@@ -189,10 +195,9 @@ Partial Class FormAddNewmenuItem
         Me.txtImageUrl.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtImageUrl.Size = New System.Drawing.Size(432, 40)
         Me.txtImageUrl.TabIndex = 29
-        Me.txtImageUrl.TextBoxBackColor = System.Drawing.Color.White
+        Me.txtImageUrl.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
         Me.txtImageUrl.TextColor = System.Drawing.Color.Black
         Me.txtImageUrl.TextFont = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtImageUrl.Text = ""
         '
         'txtItemName
         '
@@ -207,10 +212,9 @@ Partial Class FormAddNewmenuItem
         Me.txtItemName.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtItemName.Size = New System.Drawing.Size(432, 40)
         Me.txtItemName.TabIndex = 30
-        Me.txtItemName.TextBoxBackColor = System.Drawing.Color.White
+        Me.txtItemName.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
         Me.txtItemName.TextColor = System.Drawing.Color.Black
         Me.txtItemName.TextFont = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtItemName.Text = ""
         '
         'txtDescription
         '
@@ -225,16 +229,16 @@ Partial Class FormAddNewmenuItem
         Me.txtDescription.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtDescription.Size = New System.Drawing.Size(432, 40)
         Me.txtDescription.TabIndex = 31
-        Me.txtDescription.TextBoxBackColor = System.Drawing.Color.White
+        Me.txtDescription.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
         Me.txtDescription.TextColor = System.Drawing.Color.Black
         Me.txtDescription.TextFont = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDescription.Text = ""
         '
         'FormAddNewmenuItem
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(485, 545)
         Me.ControlBox = False
@@ -242,8 +246,8 @@ Partial Class FormAddNewmenuItem
         Me.Controls.Add(Me.txtItemName)
         Me.Controls.Add(Me.txtImageUrl)
         Me.Controls.Add(Me.numericPrice)
-        Me.Controls.Add(Me.comboCategory)
-        Me.Controls.Add(Me.comboStatus)
+        Me.Controls.Add(Me.cmbCategory)
+        Me.Controls.Add(Me.cmbStatus)
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.btnAddItem)
         Me.Controls.Add(Me.Label8)
@@ -261,6 +265,7 @@ Partial Class FormAddNewmenuItem
         Me.Name = "FormAddNewmenuItem"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormAddNewmenuItembtn"
+        Me.TransparencyKey = System.Drawing.Color.Silver
         CType(Me.numericPrice, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -277,8 +282,8 @@ Partial Class FormAddNewmenuItem
     Friend WithEvents Label8 As Label
     Friend WithEvents btnAddItem As Button
     Friend WithEvents btnClose As Button
-    Friend WithEvents comboStatus As ComboBox
-    Friend WithEvents comboCategory As ComboBox
+    Friend WithEvents cmbStatus As ComboBox
+    Friend WithEvents cmbCategory As ComboBox
     Friend WithEvents numericPrice As NumericUpDown
     Friend WithEvents txtImageUrl As RoundedTextBox
     Friend WithEvents txtItemName As RoundedTextBox

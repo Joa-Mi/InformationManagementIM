@@ -5,14 +5,35 @@ Public Class Reports
     ' === Load Form into Panel1 ===
     Private Sub LoadFormIntoPanel(childForm As Form)
         Panel1.Controls.Clear()
+
         childForm.TopLevel = False
         childForm.FormBorderStyle = FormBorderStyle.None
-        childForm.Dock = DockStyle.Fill
+        childForm.AutoScroll = False
+        childForm.AutoSize = True
+        childForm.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        childForm.Dock = DockStyle.None
+
+        ' Add to panel and show
         Panel1.Controls.Add(childForm)
+        childForm.Location = New Point(0, 0)
         childForm.Show()
+
+        ' Force layout update
+        childForm.PerformLayout()
+        Application.DoEvents()
+
+        ' Set AutoScrollMinSize based on child form's actual size
+        Panel1.AutoScrollMinSize = New Size(childForm.Width, childForm.Height)
     End Sub
 
+
     Private Sub Reports_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.AutoScroll = True
+        Me.AutoScrollMinSize = New Size(Me.Width, Me.Height)
+        Panel1.AutoSize = False
+        Panel1.AutoScroll = True
+        Panel1.BorderStyle = BorderStyle.None
+
         ' === FLOWLAYOUTPANEL SETTINGS ===
         FlowLayoutPanel1.AutoScroll = True
         FlowLayoutPanel1.WrapContents = False

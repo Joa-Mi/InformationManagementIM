@@ -7,13 +7,7 @@
         Me.UpdateStyles()
     End Sub
 
-    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
 
-    End Sub
-
-    Private Sub SidePanel_Paint(sender As Object, e As PaintEventArgs) Handles SidePanel.Paint
-
-    End Sub
     Private Sub MakeRoundedButton(btn As Button, radius As Integer)
         Dim path As New Drawing2D.GraphicsPath()
         Dim rect As New Rectangle(0, 0, btn.Width, btn.Height)

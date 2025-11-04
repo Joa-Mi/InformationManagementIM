@@ -27,6 +27,7 @@ Partial Class FormAddOrder
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.RoundedPane21 = New InformationManagement.RoundedPane2()
+        Me.txtProductName = New InformationManagement.RoundedTextBox()
         Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -35,8 +36,8 @@ Partial Class FormAddOrder
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.cmbOrderType = New System.Windows.Forms.ComboBox()
+        Me.cmbStatus = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.btnCreateOrder = New System.Windows.Forms.Button()
         Me.btnCancel = New System.Windows.Forms.Button()
@@ -44,7 +45,6 @@ Partial Class FormAddOrder
         Me.btnAddItem = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.txtCustomerName = New InformationManagement.RoundedTextBox()
-        Me.txtProductName = New InformationManagement.RoundedTextBox()
         Me.RoundedPane21.SuspendLayout()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -96,6 +96,24 @@ Partial Class FormAddOrder
         Me.RoundedPane21.Name = "RoundedPane21"
         Me.RoundedPane21.Size = New System.Drawing.Size(485, 95)
         Me.RoundedPane21.TabIndex = 7
+        '
+        'txtProductName
+        '
+        Me.txtProductName.BackColor = System.Drawing.Color.Transparent
+        Me.txtProductName.FocusBorderColor = System.Drawing.Color.DarkGray
+        Me.txtProductName.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtProductName.Location = New System.Drawing.Point(21, 39)
+        Me.txtProductName.MaxLength = 32767
+        Me.txtProductName.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.txtProductName.Multiline = False
+        Me.txtProductName.Name = "txtProductName"
+        Me.txtProductName.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.txtProductName.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtProductName.Size = New System.Drawing.Size(151, 40)
+        Me.txtProductName.TabIndex = 21
+        Me.txtProductName.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
+        Me.txtProductName.TextColor = System.Drawing.Color.Black
+        Me.txtProductName.TextFont = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'NumericUpDown2
         '
@@ -177,27 +195,31 @@ Partial Class FormAddOrder
         Me.Label9.TabIndex = 13
         Me.Label9.Text = "Order Type"
         '
-        'ComboBox1
+        'cmbOrderType
         '
-        Me.ComboBox1.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(38, 372)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 29)
-        Me.ComboBox1.TabIndex = 14
+        Me.cmbOrderType.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.cmbOrderType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.cmbOrderType.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbOrderType.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbOrderType.FormattingEnabled = True
+        Me.cmbOrderType.ItemHeight = 30
+        Me.cmbOrderType.Location = New System.Drawing.Point(38, 354)
+        Me.cmbOrderType.Name = "cmbOrderType"
+        Me.cmbOrderType.Size = New System.Drawing.Size(121, 36)
+        Me.cmbOrderType.TabIndex = 14
         '
-        'ComboBox2
+        'cmbStatus
         '
-        Me.ComboBox2.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(198, 372)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 29)
-        Me.ComboBox2.TabIndex = 15
+        Me.cmbStatus.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.cmbStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.cmbStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbStatus.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbStatus.FormattingEnabled = True
+        Me.cmbStatus.ItemHeight = 30
+        Me.cmbStatus.Location = New System.Drawing.Point(194, 354)
+        Me.cmbStatus.Name = "cmbStatus"
+        Me.cmbStatus.Size = New System.Drawing.Size(121, 36)
+        Me.cmbStatus.TabIndex = 15
         '
         'Label10
         '
@@ -287,26 +309,6 @@ Partial Class FormAddOrder
         Me.txtCustomerName.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
         Me.txtCustomerName.TextColor = System.Drawing.Color.Black
         Me.txtCustomerName.TextFont = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCustomerName.Text = ""
-        '
-        'txtProductName
-        '
-        Me.txtProductName.BackColor = System.Drawing.Color.Transparent
-        Me.txtProductName.FocusBorderColor = System.Drawing.Color.DarkGray
-        Me.txtProductName.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtProductName.Location = New System.Drawing.Point(21, 39)
-        Me.txtProductName.MaxLength = 32767
-        Me.txtProductName.MinimumSize = New System.Drawing.Size(50, 20)
-        Me.txtProductName.Multiline = False
-        Me.txtProductName.Name = "txtProductName"
-        Me.txtProductName.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.txtProductName.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtProductName.Size = New System.Drawing.Size(151, 40)
-        Me.txtProductName.TabIndex = 21
-        Me.txtProductName.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
-        Me.txtProductName.TextColor = System.Drawing.Color.Black
-        Me.txtProductName.TextFont = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtProductName.Text = ""
         '
         'FormAddOrder
         '
@@ -320,8 +322,8 @@ Partial Class FormAddOrder
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnCreateOrder)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cmbStatus)
+        Me.Controls.Add(Me.cmbOrderType)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
@@ -359,8 +361,8 @@ Partial Class FormAddOrder
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents cmbOrderType As ComboBox
+    Friend WithEvents cmbStatus As ComboBox
     Friend WithEvents Label10 As Label
     Friend WithEvents btnCreateOrder As Button
     Friend WithEvents btnCancel As Button

@@ -26,11 +26,11 @@ Partial Class Stafflogin
         Me.Back2 = New System.Windows.Forms.Button()
         Me.stafflog = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.RoundedPanel1 = New InformationManagement.RoundedPanel()
+        Me.RoundedTextBox2 = New InformationManagement.RoundedTextBox()
+        Me.RoundedTextBox1 = New InformationManagement.RoundedTextBox()
         Me.RoundedPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -56,7 +56,7 @@ Partial Class Stafflogin
         Me.stafflog.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.stafflog.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.stafflog.ForeColor = System.Drawing.Color.Red
-        Me.stafflog.Location = New System.Drawing.Point(109, 236)
+        Me.stafflog.Location = New System.Drawing.Point(103, 214)
         Me.stafflog.Margin = New System.Windows.Forms.Padding(2)
         Me.stafflog.Name = "stafflog"
         Me.stafflog.Size = New System.Drawing.Size(98, 33)
@@ -77,23 +77,6 @@ Partial Class Stafflogin
         Me.Label1.Size = New System.Drawing.Size(54, 25)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Staff"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(51, 166)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(199, 19)
-        Me.TextBox2.TabIndex = 5
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(51, 93)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(199, 19)
-        Me.TextBox1.TabIndex = 4
         '
         'Label2
         '
@@ -124,18 +107,54 @@ Partial Class Stafflogin
         '
         Me.RoundedPanel1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.RoundedPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.RoundedPanel1.Controls.Add(Me.RoundedTextBox2)
+        Me.RoundedPanel1.Controls.Add(Me.RoundedTextBox1)
         Me.RoundedPanel1.Controls.Add(Me.stafflog)
         Me.RoundedPanel1.Controls.Add(Me.Label1)
-        Me.RoundedPanel1.Controls.Add(Me.TextBox2)
         Me.RoundedPanel1.Controls.Add(Me.Label2)
         Me.RoundedPanel1.Controls.Add(Me.Label3)
-        Me.RoundedPanel1.Controls.Add(Me.TextBox1)
         Me.RoundedPanel1.CornerRadius = 24
         Me.RoundedPanel1.Font = New System.Drawing.Font("Microsoft Yi Baiti", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RoundedPanel1.Location = New System.Drawing.Point(169, 43)
         Me.RoundedPanel1.Name = "RoundedPanel1"
         Me.RoundedPanel1.Size = New System.Drawing.Size(308, 294)
         Me.RoundedPanel1.TabIndex = 12
+        '
+        'RoundedTextBox2
+        '
+        Me.RoundedTextBox2.BackColor = System.Drawing.Color.Transparent
+        Me.RoundedTextBox2.BorderRadius = 6
+        Me.RoundedTextBox2.FocusBorderColor = System.Drawing.Color.Red
+        Me.RoundedTextBox2.Location = New System.Drawing.Point(51, 157)
+        Me.RoundedTextBox2.MaxLength = 32767
+        Me.RoundedTextBox2.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.RoundedTextBox2.Multiline = False
+        Me.RoundedTextBox2.Name = "RoundedTextBox2"
+        Me.RoundedTextBox2.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.RoundedTextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.RoundedTextBox2.Size = New System.Drawing.Size(200, 30)
+        Me.RoundedTextBox2.TabIndex = 10
+        Me.RoundedTextBox2.TextBoxBackColor = System.Drawing.Color.White
+        Me.RoundedTextBox2.TextColor = System.Drawing.Color.Black
+        Me.RoundedTextBox2.TextFont = New System.Drawing.Font("Microsoft Yi Baiti", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'RoundedTextBox1
+        '
+        Me.RoundedTextBox1.BackColor = System.Drawing.Color.Transparent
+        Me.RoundedTextBox1.BorderRadius = 6
+        Me.RoundedTextBox1.FocusBorderColor = System.Drawing.Color.Red
+        Me.RoundedTextBox1.Location = New System.Drawing.Point(51, 85)
+        Me.RoundedTextBox1.MaxLength = 32767
+        Me.RoundedTextBox1.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.RoundedTextBox1.Multiline = False
+        Me.RoundedTextBox1.Name = "RoundedTextBox1"
+        Me.RoundedTextBox1.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.RoundedTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.RoundedTextBox1.Size = New System.Drawing.Size(200, 30)
+        Me.RoundedTextBox1.TabIndex = 9
+        Me.RoundedTextBox1.TextBoxBackColor = System.Drawing.Color.White
+        Me.RoundedTextBox1.TextColor = System.Drawing.Color.Black
+        Me.RoundedTextBox1.TextFont = New System.Drawing.Font("Microsoft Yi Baiti", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'Stafflogin
         '
@@ -161,9 +180,9 @@ Partial Class Stafflogin
     Friend WithEvents Back2 As Button
     Friend WithEvents stafflog As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents RoundedPanel1 As RoundedPanel
+    Friend WithEvents RoundedTextBox2 As RoundedTextBox
+    Friend WithEvents RoundedTextBox1 As RoundedTextBox
 End Class

@@ -57,9 +57,9 @@ Partial Class FormAddUser
         Me.btnAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAddUser.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAddUser.ForeColor = System.Drawing.Color.White
-        Me.btnAddUser.Location = New System.Drawing.Point(12, 441)
+        Me.btnAddUser.Location = New System.Drawing.Point(32, 441)
         Me.btnAddUser.Name = "btnAddUser"
-        Me.btnAddUser.Size = New System.Drawing.Size(460, 42)
+        Me.btnAddUser.Size = New System.Drawing.Size(417, 42)
         Me.btnAddUser.TabIndex = 6
         Me.btnAddUser.Text = "Add User"
         Me.btnAddUser.UseVisualStyleBackColor = False
@@ -77,26 +77,32 @@ Partial Class FormAddUser
         '
         'cmbRole
         '
+        Me.cmbRole.AutoCompleteCustomSource.AddRange(New String() {"Staff", "Emploee", "Customer"})
         Me.cmbRole.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.cmbRole.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.cmbRole.DropDownWidth = 300
         Me.cmbRole.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmbRole.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbRole.FormattingEnabled = True
+        Me.cmbRole.ItemHeight = 30
         Me.cmbRole.Items.AddRange(New Object() {"Staff", "Employee", "Customer"})
         Me.cmbRole.Location = New System.Drawing.Point(32, 304)
         Me.cmbRole.Name = "cmbRole"
-        Me.cmbRole.Size = New System.Drawing.Size(419, 25)
+        Me.cmbRole.Size = New System.Drawing.Size(419, 36)
         Me.cmbRole.TabIndex = 10
         '
         'cmbStatus
         '
         Me.cmbStatus.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.cmbStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.cmbStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmbStatus.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbStatus.FormattingEnabled = True
+        Me.cmbStatus.ItemHeight = 30
         Me.cmbStatus.Items.AddRange(New Object() {"Active ", "InActive"})
-        Me.cmbStatus.Location = New System.Drawing.Point(23, 385)
+        Me.cmbStatus.Location = New System.Drawing.Point(32, 371)
         Me.cmbStatus.Name = "cmbStatus"
-        Me.cmbStatus.Size = New System.Drawing.Size(428, 25)
+        Me.cmbStatus.Size = New System.Drawing.Size(417, 36)
         Me.cmbStatus.TabIndex = 11
         '
         'TextBox1
@@ -199,7 +205,6 @@ Partial Class FormAddUser
         Me.txtFullName.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
         Me.txtFullName.TextColor = System.Drawing.Color.Black
         Me.txtFullName.TextFont = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFullName.Text = ""
         '
         'txtPhone
         '
@@ -218,7 +223,6 @@ Partial Class FormAddUser
         Me.txtPhone.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
         Me.txtPhone.TextColor = System.Drawing.Color.Black
         Me.txtPhone.TextFont = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPhone.Text = ""
         '
         'txtEmail
         '
@@ -237,7 +241,6 @@ Partial Class FormAddUser
         Me.txtEmail.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
         Me.txtEmail.TextColor = System.Drawing.Color.Black
         Me.txtEmail.TextFont = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmail.Text = ""
         '
         'FormAddUser
         '
@@ -276,7 +279,6 @@ Partial Class FormAddUser
     Friend WithEvents Label1 As Label
     Friend WithEvents btnAddUser As Button
     Friend WithEvents txtName As TextBox
-    Friend WithEvents cmbRole As ComboBox
     Friend WithEvents cmbStatus As ComboBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
@@ -289,4 +291,5 @@ Partial Class FormAddUser
     Friend WithEvents txtFullName As RoundedTextBox
     Friend WithEvents txtPhone As RoundedTextBox
     Friend WithEvents txtEmail As RoundedTextBox
+    Friend WithEvents cmbRole As ComboBox
 End Class

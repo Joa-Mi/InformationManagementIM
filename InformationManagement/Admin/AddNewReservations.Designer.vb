@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class PanelCreateReservation
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,11 +20,10 @@ Partial Class PanelCreateReservation
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PanelCreateReservation))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtFullName = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -35,14 +34,15 @@ Partial Class PanelCreateReservation
         Me.Label9 = New System.Windows.Forms.Label()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.btnCreateReservation = New System.Windows.Forms.Button()
-        Me.txtEmail = New System.Windows.Forms.TextBox()
-        Me.txtPhone = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cmbEventType = New System.Windows.Forms.ComboBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
         Me.btnClose = New System.Windows.Forms.Button()
+        Me.txtNote = New InformationManagement.RoundedTextBox()
+        Me.txtPhone = New InformationManagement.RoundedTextBox()
+        Me.txtEmail = New InformationManagement.RoundedTextBox()
+        Me.txtFullName = New InformationManagement.RoundedTextBox()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -55,17 +55,6 @@ Partial Class PanelCreateReservation
         Me.Label1.Size = New System.Drawing.Size(224, 25)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Create New Reservation"
-        '
-        'txtFullName
-        '
-        Me.txtFullName.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.txtFullName.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtFullName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFullName.Location = New System.Drawing.Point(22, 66)
-        Me.txtFullName.MinimumSize = New System.Drawing.Size(0, 35)
-        Me.txtFullName.Name = "txtFullName"
-        Me.txtFullName.Size = New System.Drawing.Size(440, 16)
-        Me.txtFullName.TabIndex = 2
         '
         'Label2
         '
@@ -171,44 +160,25 @@ Partial Class PanelCreateReservation
         Me.btnCreateReservation.Size = New System.Drawing.Size(173, 33)
         Me.btnCreateReservation.TabIndex = 12
         Me.btnCreateReservation.Text = "Create Reservation"
-        Me.btnCreateReservation.UseVisualStyleBackColor = False
+        Me.btnCreateReservation.UseVisualStyleBackColor = True
         '
-        'txtEmail
+        'cmbEventType
         '
-        Me.txtEmail.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtEmail.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmail.Location = New System.Drawing.Point(22, 135)
-        Me.txtEmail.MinimumSize = New System.Drawing.Size(0, 35)
-        Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(440, 16)
-        Me.txtEmail.TabIndex = 13
-        '
-        'txtPhone
-        '
-        Me.txtPhone.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtPhone.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPhone.Location = New System.Drawing.Point(22, 202)
-        Me.txtPhone.MinimumSize = New System.Drawing.Size(0, 35)
-        Me.txtPhone.Name = "txtPhone"
-        Me.txtPhone.Size = New System.Drawing.Size(440, 16)
-        Me.txtPhone.TabIndex = 14
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(270, 279)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(192, 25)
-        Me.ComboBox1.TabIndex = 16
+        Me.cmbEventType.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.cmbEventType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.cmbEventType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbEventType.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbEventType.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbEventType.FormattingEnabled = True
+        Me.cmbEventType.ItemHeight = 30
+        Me.cmbEventType.Location = New System.Drawing.Point(270, 279)
+        Me.cmbEventType.Name = "cmbEventType"
+        Me.cmbEventType.Size = New System.Drawing.Size(192, 36)
+        Me.cmbEventType.TabIndex = 16
         '
         'DateTimePicker1
         '
+        Me.DateTimePicker1.CalendarMonthBackground = System.Drawing.Color.WhiteSmoke
         Me.DateTimePicker1.CustomFormat = "dd/MM/yyyy"
         Me.DateTimePicker1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
@@ -221,27 +191,18 @@ Partial Class PanelCreateReservation
         '
         'NumericUpDown1
         '
-        Me.NumericUpDown1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumericUpDown1.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.NumericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown1.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NumericUpDown1.Location = New System.Drawing.Point(24, 279)
         Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(180, 25)
+        Me.NumericUpDown1.Size = New System.Drawing.Size(180, 21)
         Me.NumericUpDown1.TabIndex = 18
-        '
-        'TextBox4
-        '
-        Me.TextBox4.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox4.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(22, 403)
-        Me.TextBox4.MinimumSize = New System.Drawing.Size(0, 35)
-        Me.TextBox4.Multiline = True
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox4.Size = New System.Drawing.Size(440, 80)
-        Me.TextBox4.TabIndex = 19
+        Me.NumericUpDown1.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'DateTimePicker2
         '
+        Me.DateTimePicker2.CalendarMonthBackground = System.Drawing.Color.WhiteSmoke
         Me.DateTimePicker2.CustomFormat = "dd/MM/yyyy"
         Me.DateTimePicker2.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time
@@ -263,6 +224,74 @@ Partial Class PanelCreateReservation
         Me.btnClose.TabIndex = 21
         Me.btnClose.UseVisualStyleBackColor = True
         '
+        'txtNote
+        '
+        Me.txtNote.BackColor = System.Drawing.Color.Transparent
+        Me.txtNote.FocusBorderColor = System.Drawing.Color.DarkGray
+        Me.txtNote.Location = New System.Drawing.Point(24, 401)
+        Me.txtNote.MaxLength = 32767
+        Me.txtNote.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.txtNote.Multiline = True
+        Me.txtNote.Name = "txtNote"
+        Me.txtNote.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.txtNote.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtNote.Size = New System.Drawing.Size(438, 91)
+        Me.txtNote.TabIndex = 25
+        Me.txtNote.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
+        Me.txtNote.TextColor = System.Drawing.Color.Black
+        Me.txtNote.TextFont = New System.Drawing.Font("Segoe UI", 10.0!)
+        '
+        'txtPhone
+        '
+        Me.txtPhone.BackColor = System.Drawing.Color.Transparent
+        Me.txtPhone.FocusBorderColor = System.Drawing.Color.DarkGray
+        Me.txtPhone.Location = New System.Drawing.Point(24, 202)
+        Me.txtPhone.MaxLength = 32767
+        Me.txtPhone.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.txtPhone.Multiline = False
+        Me.txtPhone.Name = "txtPhone"
+        Me.txtPhone.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.txtPhone.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtPhone.Size = New System.Drawing.Size(438, 40)
+        Me.txtPhone.TabIndex = 24
+        Me.txtPhone.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
+        Me.txtPhone.TextColor = System.Drawing.Color.Black
+        Me.txtPhone.TextFont = New System.Drawing.Font("Segoe UI", 10.0!)
+        '
+        'txtEmail
+        '
+        Me.txtEmail.BackColor = System.Drawing.Color.Transparent
+        Me.txtEmail.FocusBorderColor = System.Drawing.Color.DarkGray
+        Me.txtEmail.Location = New System.Drawing.Point(24, 135)
+        Me.txtEmail.MaxLength = 32767
+        Me.txtEmail.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.txtEmail.Multiline = False
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.txtEmail.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtEmail.Size = New System.Drawing.Size(438, 40)
+        Me.txtEmail.TabIndex = 23
+        Me.txtEmail.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
+        Me.txtEmail.TextColor = System.Drawing.Color.Black
+        Me.txtEmail.TextFont = New System.Drawing.Font("Segoe UI", 10.0!)
+        '
+        'txtFullName
+        '
+        Me.txtFullName.BackColor = System.Drawing.Color.Transparent
+        Me.txtFullName.FocusBorderColor = System.Drawing.Color.DarkGray
+        Me.txtFullName.Location = New System.Drawing.Point(24, 66)
+        Me.txtFullName.MaxLength = 32767
+        Me.txtFullName.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.txtFullName.Multiline = False
+        Me.txtFullName.Name = "txtFullName"
+        Me.txtFullName.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.txtFullName.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtFullName.Size = New System.Drawing.Size(438, 40)
+        Me.txtFullName.TabIndex = 22
+        Me.txtFullName.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
+        Me.txtFullName.TextColor = System.Drawing.Color.Black
+        Me.txtFullName.TextFont = New System.Drawing.Font("Segoe UI", 10.0!)
+        '
         'PanelCreateReservation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -270,14 +299,15 @@ Partial Class PanelCreateReservation
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(484, 541)
         Me.ControlBox = False
-        Me.Controls.Add(Me.btnClose)
-        Me.Controls.Add(Me.DateTimePicker2)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.NumericUpDown1)
-        Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.txtNote)
         Me.Controls.Add(Me.txtPhone)
         Me.Controls.Add(Me.txtEmail)
+        Me.Controls.Add(Me.txtFullName)
+        Me.Controls.Add(Me.btnClose)
+        Me.Controls.Add(Me.DateTimePicker2)
+        Me.Controls.Add(Me.NumericUpDown1)
+        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.cmbEventType)
         Me.Controls.Add(Me.btnCreateReservation)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.Label9)
@@ -288,7 +318,6 @@ Partial Class PanelCreateReservation
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.txtFullName)
         Me.Controls.Add(Me.Label1)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -301,7 +330,6 @@ Partial Class PanelCreateReservation
 
     End Sub
     Friend WithEvents Label1 As Label
-    Friend WithEvents txtFullName As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
@@ -312,12 +340,13 @@ Partial Class PanelCreateReservation
     Friend WithEvents Label9 As Label
     Friend WithEvents btnCancel As Button
     Friend WithEvents btnCreateReservation As Button
-    Friend WithEvents txtEmail As TextBox
-    Friend WithEvents txtPhone As TextBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cmbEventType As ComboBox
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents NumericUpDown1 As NumericUpDown
-    Friend WithEvents TextBox4 As TextBox
     Friend WithEvents DateTimePicker2 As DateTimePicker
     Friend WithEvents btnClose As Button
+    Friend WithEvents txtFullName As RoundedTextBox
+    Friend WithEvents txtEmail As RoundedTextBox
+    Friend WithEvents txtPhone As RoundedTextBox
+    Friend WithEvents txtNote As RoundedTextBox
 End Class

@@ -32,11 +32,11 @@ Partial Class FormAddNewPayrollRecord
         Me.Label7 = New System.Windows.Forms.Label()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.btnCreateRecord = New System.Windows.Forms.Button()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cmbPosition = New System.Windows.Forms.ComboBox()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown3 = New System.Windows.Forms.NumericUpDown()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.cmbPayperiod = New System.Windows.Forms.ComboBox()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.RoundedTextBox1 = New InformationManagement.RoundedTextBox()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -140,15 +140,18 @@ Partial Class FormAddNewPayrollRecord
         Me.btnCreateRecord.Text = "Create Record"
         Me.btnCreateRecord.UseVisualStyleBackColor = False
         '
-        'ComboBox1
+        'cmbPosition
         '
-        Me.ComboBox1.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.ComboBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(21, 148)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(440, 29)
-        Me.ComboBox1.TabIndex = 15
+        Me.cmbPosition.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.cmbPosition.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.cmbPosition.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbPosition.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbPosition.FormattingEnabled = True
+        Me.cmbPosition.ItemHeight = 30
+        Me.cmbPosition.Location = New System.Drawing.Point(21, 148)
+        Me.cmbPosition.Name = "cmbPosition"
+        Me.cmbPosition.Size = New System.Drawing.Size(440, 36)
+        Me.cmbPosition.TabIndex = 15
         '
         'NumericUpDown1
         '
@@ -180,15 +183,18 @@ Partial Class FormAddNewPayrollRecord
         Me.NumericUpDown3.Size = New System.Drawing.Size(440, 25)
         Me.NumericUpDown3.TabIndex = 18
         '
-        'ComboBox2
+        'cmbPayperiod
         '
-        Me.ComboBox2.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.ComboBox2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(21, 363)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(440, 29)
-        Me.ComboBox2.TabIndex = 19
+        Me.cmbPayperiod.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.cmbPayperiod.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.cmbPayperiod.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbPayperiod.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbPayperiod.FormattingEnabled = True
+        Me.cmbPayperiod.ItemHeight = 30
+        Me.cmbPayperiod.Location = New System.Drawing.Point(21, 363)
+        Me.cmbPayperiod.Name = "cmbPayperiod"
+        Me.cmbPayperiod.Size = New System.Drawing.Size(440, 36)
+        Me.cmbPayperiod.TabIndex = 19
         '
         'btnClose
         '
@@ -215,10 +221,9 @@ Partial Class FormAddNewPayrollRecord
         Me.RoundedTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.RoundedTextBox1.Size = New System.Drawing.Size(440, 40)
         Me.RoundedTextBox1.TabIndex = 20
-        Me.RoundedTextBox1.TextBoxBackColor = System.Drawing.Color.White
+        Me.RoundedTextBox1.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
         Me.RoundedTextBox1.TextColor = System.Drawing.Color.Black
         Me.RoundedTextBox1.TextFont = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundedTextBox1.Text = ""
         '
         'FormAddNewPayrollRecord
         '
@@ -228,11 +233,11 @@ Partial Class FormAddNewPayrollRecord
         Me.ClientSize = New System.Drawing.Size(484, 461)
         Me.ControlBox = False
         Me.Controls.Add(Me.RoundedTextBox1)
-        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.cmbPayperiod)
         Me.Controls.Add(Me.NumericUpDown3)
         Me.Controls.Add(Me.NumericUpDown2)
         Me.Controls.Add(Me.NumericUpDown1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cmbPosition)
         Me.Controls.Add(Me.btnCreateRecord)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.Label7)
@@ -267,10 +272,10 @@ Partial Class FormAddNewPayrollRecord
     Friend WithEvents Label7 As Label
     Friend WithEvents btnCancel As Button
     Friend WithEvents btnCreateRecord As Button
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cmbPosition As ComboBox
     Friend WithEvents NumericUpDown1 As NumericUpDown
     Friend WithEvents NumericUpDown2 As NumericUpDown
     Friend WithEvents NumericUpDown3 As NumericUpDown
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents cmbPayperiod As ComboBox
     Friend WithEvents RoundedTextBox1 As RoundedTextBox
 End Class

@@ -41,7 +41,7 @@ Partial Class FormEditUser
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(22, 14)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(91, 25)
@@ -115,9 +115,9 @@ Partial Class FormEditUser
         Me.btnUpdateUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUpdateUser.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUpdateUser.ForeColor = System.Drawing.Color.White
-        Me.btnUpdateUser.Location = New System.Drawing.Point(12, 407)
+        Me.btnUpdateUser.Location = New System.Drawing.Point(27, 407)
         Me.btnUpdateUser.Name = "btnUpdateUser"
-        Me.btnUpdateUser.Size = New System.Drawing.Size(460, 42)
+        Me.btnUpdateUser.Size = New System.Drawing.Size(440, 42)
         Me.btnUpdateUser.TabIndex = 30
         Me.btnUpdateUser.Text = "Update User"
         Me.btnUpdateUser.UseVisualStyleBackColor = False
@@ -125,25 +125,29 @@ Partial Class FormEditUser
         'cmbRole
         '
         Me.cmbRole.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.cmbRole.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.cmbRole.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmbRole.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbRole.FormattingEnabled = True
+        Me.cmbRole.ItemHeight = 30
         Me.cmbRole.Items.AddRange(New Object() {"Staff", "Employee", "Customer"})
-        Me.cmbRole.Location = New System.Drawing.Point(27, 290)
+        Me.cmbRole.Location = New System.Drawing.Point(27, 289)
         Me.cmbRole.Name = "cmbRole"
-        Me.cmbRole.Size = New System.Drawing.Size(440, 29)
+        Me.cmbRole.Size = New System.Drawing.Size(440, 36)
         Me.cmbRole.TabIndex = 34
         '
         'cmbStatus
         '
         Me.cmbStatus.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.cmbStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.cmbStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmbStatus.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbStatus.FormattingEnabled = True
+        Me.cmbStatus.ItemHeight = 30
         Me.cmbStatus.Items.AddRange(New Object() {"Active ", "InActive"})
-        Me.cmbStatus.Location = New System.Drawing.Point(33, 358)
+        Me.cmbStatus.Location = New System.Drawing.Point(27, 348)
         Me.cmbStatus.Name = "cmbStatus"
-        Me.cmbStatus.Size = New System.Drawing.Size(434, 29)
+        Me.cmbStatus.Size = New System.Drawing.Size(440, 36)
         Me.cmbStatus.TabIndex = 35
         '
         'txtFullName
@@ -162,7 +166,6 @@ Partial Class FormEditUser
         Me.txtFullName.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
         Me.txtFullName.TextColor = System.Drawing.Color.Black
         Me.txtFullName.TextFont = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.txtFullName.Text = ""
         '
         'txtPhone
         '
@@ -180,7 +183,6 @@ Partial Class FormEditUser
         Me.txtPhone.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
         Me.txtPhone.TextColor = System.Drawing.Color.Black
         Me.txtPhone.TextFont = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.txtPhone.Text = ""
         '
         'txtEmail
         '
@@ -198,7 +200,6 @@ Partial Class FormEditUser
         Me.txtEmail.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
         Me.txtEmail.TextColor = System.Drawing.Color.Black
         Me.txtEmail.TextFont = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.txtEmail.Text = ""
         '
         'FormEditUser
         '
@@ -206,7 +207,7 @@ Partial Class FormEditUser
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(484, 461)
+        Me.ClientSize = New System.Drawing.Size(492, 461)
         Me.Controls.Add(Me.txtEmail)
         Me.Controls.Add(Me.txtPhone)
         Me.Controls.Add(Me.txtFullName)

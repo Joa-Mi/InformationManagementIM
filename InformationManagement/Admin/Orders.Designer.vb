@@ -24,8 +24,11 @@ Partial Class Orders
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Orders))
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.AddOrdersBtn = New InformationManagement.RoundedButton()
         Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CustomerName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.OrderType = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -34,8 +37,8 @@ Partial Class Orders
         Me.UnitPrices = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TotalPrice = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Status = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Actions = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AddOrdersBtn = New InformationManagement.RoundedButton()
+        Me.Edit = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.Delete = New System.Windows.Forms.DataGridViewButtonColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -51,13 +54,13 @@ Partial Class Orders
         '
         'DataGridView1
         '
-        Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AllowUserToResizeColumns = False
         Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
         Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.DataGridView1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText
         Me.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
@@ -68,13 +71,31 @@ Partial Class Orders
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView1.ColumnHeadersHeight = 40
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.CustomerName, Me.OrderType, Me.Products, Me.Quantities, Me.UnitPrices, Me.TotalPrice, Me.Status, Me.Actions})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.CustomerName, Me.OrderType, Me.Products, Me.Quantities, Me.UnitPrices, Me.TotalPrice, Me.Status, Me.Edit, Me.Delete})
         Me.DataGridView1.EnableHeadersVisualStyles = False
         Me.DataGridView1.Location = New System.Drawing.Point(34, 87)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersVisible = False
-        Me.DataGridView1.Size = New System.Drawing.Size(1039, 196)
+        Me.DataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
+        Me.DataGridView1.Size = New System.Drawing.Size(1283, 196)
         Me.DataGridView1.TabIndex = 5
+        '
+        'AddOrdersBtn
+        '
+        Me.AddOrdersBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.AddOrdersBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.AddOrdersBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.AddOrdersBtn.ForeColor = System.Drawing.Color.White
+        Me.AddOrdersBtn.Image = CType(resources.GetObject("AddOrdersBtn.Image"), System.Drawing.Image)
+        Me.AddOrdersBtn.Location = New System.Drawing.Point(926, 14)
+        Me.AddOrdersBtn.Name = "AddOrdersBtn"
+        Me.AddOrdersBtn.Size = New System.Drawing.Size(147, 42)
+        Me.AddOrdersBtn.TabIndex = 4
+        Me.AddOrdersBtn.Text = "   Add Orders"
+        Me.AddOrdersBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.AddOrdersBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.AddOrdersBtn.UseVisualStyleBackColor = False
         '
         'ID
         '
@@ -123,34 +144,45 @@ Partial Class Orders
         Me.Status.Name = "Status"
         Me.Status.Width = 120
         '
-        'Actions
+        'Edit
         '
-        Me.Actions.HeaderText = "Actions"
-        Me.Actions.Name = "Actions"
-        Me.Actions.Width = 150
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Blue
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Blue
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black
+        Me.Edit.DefaultCellStyle = DataGridViewCellStyle2
+        Me.Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Edit.HeaderText = "Actions"
+        Me.Edit.Name = "Edit"
+        Me.Edit.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Edit.Text = "Edit"
         '
-        'AddOrdersBtn
+        'Delete
         '
-        Me.AddOrdersBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.AddOrdersBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.AddOrdersBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
-        Me.AddOrdersBtn.ForeColor = System.Drawing.Color.White
-        Me.AddOrdersBtn.Image = CType(resources.GetObject("AddOrdersBtn.Image"), System.Drawing.Image)
-        Me.AddOrdersBtn.Location = New System.Drawing.Point(926, 14)
-        Me.AddOrdersBtn.Name = "AddOrdersBtn"
-        Me.AddOrdersBtn.Size = New System.Drawing.Size(147, 42)
-        Me.AddOrdersBtn.TabIndex = 4
-        Me.AddOrdersBtn.Text = "   Add Orders"
-        Me.AddOrdersBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.AddOrdersBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.AddOrdersBtn.UseVisualStyleBackColor = False
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.Red
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Red
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
+        Me.Delete.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Delete.HeaderText = ""
+        Me.Delete.Name = "Delete"
+        Me.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.Delete.Text = "Delete"
+        Me.Delete.UseColumnTextForButtonValue = True
         '
         'Orders
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.GhostWhite
-        Me.ClientSize = New System.Drawing.Size(1123, 568)
+        Me.ClientSize = New System.Drawing.Size(1296, 568)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.AddOrdersBtn)
         Me.Controls.Add(Me.Label1)
@@ -174,5 +206,6 @@ Partial Class Orders
     Friend WithEvents UnitPrices As DataGridViewTextBoxColumn
     Friend WithEvents TotalPrice As DataGridViewTextBoxColumn
     Friend WithEvents Status As DataGridViewTextBoxColumn
-    Friend WithEvents Actions As DataGridViewTextBoxColumn
+    Friend WithEvents Edit As DataGridViewButtonColumn
+    Friend WithEvents Delete As DataGridViewButtonColumn
 End Class

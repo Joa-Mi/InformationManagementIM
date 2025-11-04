@@ -99,12 +99,6 @@
     <Compile Include="Admin\Dashboard.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\DimBackgroundForm.Designer.vb">
-      <DependentUpon>DimBackgroundForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\DimBackgroundForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Admin\FormAddNewmenuItem.Designer.vb">
       <DependentUpon>FormAddNewmenuItem.vb</DependentUpon>
     </Compile>
@@ -253,6 +247,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="FlatNumericUpDown.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -291,9 +288,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin\DimBackgroundForm.resx">
-      <DependentUpon>DimBackgroundForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormAddNewmenuItem.resx">
       <DependentUpon>FormAddNewmenuItem.vb</DependentUpon>
