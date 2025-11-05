@@ -129,16 +129,22 @@
     <Compile Include="Admin\FormEditMenu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\FormEditReservation.Designer.vb">
-      <DependentUpon>FormEditReservation.vb</DependentUpon>
+    <Compile Include="Admin\FormEditPayrollRecord.Designer.vb">
+      <DependentUpon>FormEditPayrollRecord.vb</DependentUpon>
     </Compile>
-    <Compile Include="Admin\FormEditReservation.vb">
+    <Compile Include="Admin\FormEditPayrollRecord.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin\FormEditUser.Designer.vb">
       <DependentUpon>FormEditUser.vb</DependentUpon>
     </Compile>
     <Compile Include="Admin\FormEditUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormViewPayrollDetails.Designer.vb">
+      <DependentUpon>FormViewPayrollDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormViewPayrollDetails.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin\FormViewReservation.Designer.vb">
@@ -262,6 +268,12 @@
     <Compile Include="FlatNumericUpDown.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Admin\FormEditReservation.Designer.vb">
+      <DependentUpon>FormEditReservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormEditReservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -322,8 +334,8 @@
     <EmbeddedResource Include="Admin\FormEditMenu.resx">
       <DependentUpon>FormEditMenu.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\FormEditReservation.resx">
-      <DependentUpon>FormEditReservation.vb</DependentUpon>
+    <EmbeddedResource Include="Admin\FormEditPayrollRecord.resx">
+      <DependentUpon>FormEditPayrollRecord.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormEditUser.resx">
       <DependentUpon>FormEditUser.vb</DependentUpon>
@@ -342,6 +354,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormTakeOutOrders.resx">
       <DependentUpon>FormTakeOutOrders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormViewPayrollDetails.resx">
+      <DependentUpon>FormViewPayrollDetails.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormViewReservation.resx">
       <DependentUpon>FormViewReservation.vb</DependentUpon>
@@ -378,6 +393,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormSales.resx">
       <DependentUpon>FormSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormEditReservation.resx">
+      <DependentUpon>FormEditReservation.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

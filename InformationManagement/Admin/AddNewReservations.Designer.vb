@@ -41,8 +41,8 @@ Partial Class FormAddNewReservation
         Me.txtPhone = New InformationManagement.RoundedTextBox()
         Me.txtEmail = New InformationManagement.RoundedTextBox()
         Me.txtFullName = New InformationManagement.RoundedTextBox()
-        Me.btnClose = New System.Windows.Forms.Button()
         Me.txtNote = New InformationManagement.RoundedTextBox()
+        Me.btnClose = New System.Windows.Forms.Button()
         CType(Me.numGuests, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -265,17 +265,6 @@ Partial Class FormAddNewReservation
         Me.txtFullName.TextColor = System.Drawing.Color.Black
         Me.txtFullName.TextFont = New System.Drawing.Font("Segoe UI", 10.0!)
         '
-        'btnClose
-        '
-        Me.btnClose.FlatAppearance.BorderSize = 0
-        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClose.Image = CType(resources.GetObject("btnClose.Image"), System.Drawing.Image)
-        Me.btnClose.Location = New System.Drawing.Point(433, 11)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(29, 27)
-        Me.btnClose.TabIndex = 21
-        Me.btnClose.UseVisualStyleBackColor = True
-        '
         'txtNote
         '
         Me.txtNote.BackColor = System.Drawing.Color.Transparent
@@ -292,6 +281,17 @@ Partial Class FormAddNewReservation
         Me.txtNote.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
         Me.txtNote.TextColor = System.Drawing.Color.Black
         Me.txtNote.TextFont = New System.Drawing.Font("Segoe UI", 10.0!)
+        '
+        'btnClose
+        '
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Image = CType(resources.GetObject("btnClose.Image"), System.Drawing.Image)
+        Me.btnClose.Location = New System.Drawing.Point(433, 11)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(29, 27)
+        Me.btnClose.TabIndex = 21
+        Me.btnClose.UseVisualStyleBackColor = True
         '
         'FormAddNewReservation
         '
