@@ -125,6 +125,23 @@
 
     End Sub
 
+    Private Sub Inventory_Click(sender As Object, e As EventArgs) Handles Inventory.Click
+        HighlightButton(Inventory)
+
+        ' Create an instance of your Inventory form
+        Dim inventoryForm As New Inventory() ' Make sure "Inventory" is your FORM, not the button name
+
+        With inventoryForm
+            .TopLevel = False
+            .FormBorderStyle = FormBorderStyle.None
+            .Dock = DockStyle.Fill
+            Panel1.Controls.Clear()
+            Panel1.Controls.Add(inventoryForm) ' ✅ Correct: add the FORM, not the button
+            .BringToFront()
+            .Show()
+        End With
+    End Sub
+
     Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
         Dim result As DialogResult = MessageBox.Show("Are you sure you want to log out?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
 
