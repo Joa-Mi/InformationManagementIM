@@ -52,7 +52,7 @@ Partial Class AddNewItems
         '
         'AddItem
         '
-        Me.AddItem.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.AddItem.BackColor = System.Drawing.Color.DarkRed
         Me.AddItem.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AddItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.AddItem.Location = New System.Drawing.Point(594, 614)
@@ -64,7 +64,7 @@ Partial Class AddNewItems
         '
         'Cancel
         '
-        Me.Cancel.BackColor = System.Drawing.SystemColors.ControlText
+        Me.Cancel.BackColor = System.Drawing.SystemColors.Highlight
         Me.Cancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Cancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Cancel.Location = New System.Drawing.Point(470, 614)
