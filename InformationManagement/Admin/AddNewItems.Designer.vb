@@ -24,8 +24,6 @@ Partial Class AddNewItems
     Private Sub InitializeComponent()
         Me.AddItem = New System.Windows.Forms.Button()
         Me.Cancel = New System.Windows.Forms.Button()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.RoundedTextBox2 = New InformationManagement.RoundedTextBox()
         Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -34,16 +32,20 @@ Partial Class AddNewItems
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.RoundedTextBox1 = New InformationManagement.RoundedTextBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.Unit = New System.Windows.Forms.ComboBox()
         Me.Quantity = New InformationManagement.RoundedTextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Category = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtFullName = New InformationManagement.RoundedTextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Restockby = New InformationManagement.RoundedTextBox()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -62,43 +64,15 @@ Partial Class AddNewItems
         '
         'Cancel
         '
-        Me.Cancel.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Cancel.BackColor = System.Drawing.SystemColors.ControlText
         Me.Cancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Cancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Cancel.Location = New System.Drawing.Point(470, 614)
         Me.Cancel.Name = "Cancel"
         Me.Cancel.Size = New System.Drawing.Size(118, 47)
         Me.Cancel.TabIndex = 60
         Me.Cancel.Text = "Cancel"
         Me.Cancel.UseVisualStyleBackColor = False
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label11.Location = New System.Drawing.Point(13, 519)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(105, 25)
-        Me.Label11.TabIndex = 59
-        Me.Label11.Text = "Supplier :"
-        '
-        'RoundedTextBox2
-        '
-        Me.RoundedTextBox2.BackColor = System.Drawing.Color.Transparent
-        Me.RoundedTextBox2.FocusBorderColor = System.Drawing.Color.DarkGray
-        Me.RoundedTextBox2.Location = New System.Drawing.Point(18, 548)
-        Me.RoundedTextBox2.Margin = New System.Windows.Forms.Padding(4)
-        Me.RoundedTextBox2.MaxLength = 32767
-        Me.RoundedTextBox2.MinimumSize = New System.Drawing.Size(67, 25)
-        Me.RoundedTextBox2.Multiline = False
-        Me.RoundedTextBox2.Name = "RoundedTextBox2"
-        Me.RoundedTextBox2.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.RoundedTextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.RoundedTextBox2.Size = New System.Drawing.Size(653, 44)
-        Me.RoundedTextBox2.TabIndex = 46
-        Me.RoundedTextBox2.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
-        Me.RoundedTextBox2.TextColor = System.Drawing.Color.Black
-        Me.RoundedTextBox2.TextFont = New System.Drawing.Font("Segoe UI", 10.0!)
         '
         'NumericUpDown2
         '
@@ -193,14 +167,14 @@ Partial Class AddNewItems
         Me.RoundedTextBox1.TextColor = System.Drawing.Color.Black
         Me.RoundedTextBox1.TextFont = New System.Drawing.Font("Segoe UI", 10.0!)
         '
-        'ComboBox2
+        'Unit
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"kg", "liters", "pieces", "boxes", "grams", "bottles"})
-        Me.ComboBox2.Location = New System.Drawing.Point(394, 260)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(250, 24)
-        Me.ComboBox2.TabIndex = 51
+        Me.Unit.FormattingEnabled = True
+        Me.Unit.Items.AddRange(New Object() {"kg", "liters", "pieces", "boxes", "grams", "bottles"})
+        Me.Unit.Location = New System.Drawing.Point(394, 260)
+        Me.Unit.Name = "Unit"
+        Me.Unit.Size = New System.Drawing.Size(250, 24)
+        Me.Unit.TabIndex = 51
         '
         'Quantity
         '
@@ -227,9 +201,9 @@ Partial Class AddNewItems
         Me.Label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label6.Location = New System.Drawing.Point(13, 231)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(106, 25)
+        Me.Label6.Size = New System.Drawing.Size(167, 25)
         Me.Label6.TabIndex = 50
-        Me.Label6.Text = "Quantity :"
+        Me.Label6.Text = "Stock Quantity :"
         '
         'Label5
         '
@@ -242,14 +216,14 @@ Partial Class AddNewItems
         Me.Label5.TabIndex = 49
         Me.Label5.Text = "Unit :"
         '
-        'ComboBox1
+        'Category
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Meat & Poultry", "Vegetables", "Dairy", "Dry Goods", "Oils & Condiments", "Herbs & Spices", "Beverages", "Seafood"})
-        Me.ComboBox1.Location = New System.Drawing.Point(394, 162)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(250, 24)
-        Me.ComboBox1.TabIndex = 47
+        Me.Category.FormattingEnabled = True
+        Me.Category.Items.AddRange(New Object() {"Meat & Poultry", "Vegetables", "Dairy", "Dry Goods", "Oils & Condiments", "Herbs & Spices", "Beverages", "Seafood"})
+        Me.Category.Location = New System.Drawing.Point(394, 162)
+        Me.Category.Name = "Category"
+        Me.Category.Size = New System.Drawing.Size(250, 24)
+        Me.Category.TabIndex = 47
         '
         'Label4
         '
@@ -313,15 +287,64 @@ Partial Class AddNewItems
         Me.Label1.TabIndex = 40
         Me.Label1.Text = "Add New Inventory Item"
         '
+        'DateTimePicker2
+        '
+        Me.DateTimePicker2.Location = New System.Drawing.Point(394, 547)
+        Me.DateTimePicker2.Name = "DateTimePicker2"
+        Me.DateTimePicker2.Size = New System.Drawing.Size(270, 22)
+        Me.DateTimePicker2.TabIndex = 63
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label11.Location = New System.Drawing.Point(389, 518)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(172, 25)
+        Me.Label11.TabIndex = 62
+        Me.Label11.Text = "Expiration Date :"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label12.Location = New System.Drawing.Point(13, 518)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(131, 25)
+        Me.Label12.TabIndex = 65
+        Me.Label12.Text = "Restock by :"
+        '
+        'Restockby
+        '
+        Me.Restockby.BackColor = System.Drawing.Color.Transparent
+        Me.Restockby.FocusBorderColor = System.Drawing.Color.DarkGray
+        Me.Restockby.Location = New System.Drawing.Point(18, 547)
+        Me.Restockby.Margin = New System.Windows.Forms.Padding(4)
+        Me.Restockby.MaxLength = 32767
+        Me.Restockby.MinimumSize = New System.Drawing.Size(67, 25)
+        Me.Restockby.Multiline = False
+        Me.Restockby.Name = "Restockby"
+        Me.Restockby.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.Restockby.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Restockby.Size = New System.Drawing.Size(307, 44)
+        Me.Restockby.TabIndex = 64
+        Me.Restockby.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
+        Me.Restockby.TextColor = System.Drawing.Color.Black
+        Me.Restockby.TextFont = New System.Drawing.Font("Segoe UI", 10.0!)
+        '
         'AddNewItems
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(731, 759)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.Restockby)
+        Me.Controls.Add(Me.DateTimePicker2)
+        Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.AddItem)
         Me.Controls.Add(Me.Cancel)
-        Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.RoundedTextBox2)
         Me.Controls.Add(Me.NumericUpDown2)
         Me.Controls.Add(Me.NumericUpDown1)
         Me.Controls.Add(Me.Label10)
@@ -330,11 +353,11 @@ Partial Class AddNewItems
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.RoundedTextBox1)
-        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.Unit)
         Me.Controls.Add(Me.Quantity)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Category)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txtFullName)
         Me.Controls.Add(Me.Label3)
@@ -353,8 +376,6 @@ Partial Class AddNewItems
 
     Friend WithEvents AddItem As Button
     Friend WithEvents Cancel As Button
-    Friend WithEvents Label11 As Label
-    Friend WithEvents RoundedTextBox2 As RoundedTextBox
     Friend WithEvents NumericUpDown2 As NumericUpDown
     Friend WithEvents NumericUpDown1 As NumericUpDown
     Friend WithEvents Label10 As Label
@@ -363,14 +384,18 @@ Partial Class AddNewItems
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents RoundedTextBox1 As RoundedTextBox
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents Unit As ComboBox
     Friend WithEvents Quantity As RoundedTextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Category As ComboBox
     Friend WithEvents Label4 As Label
     Friend WithEvents txtFullName As RoundedTextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents DateTimePicker2 As DateTimePicker
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Restockby As RoundedTextBox
 End Class

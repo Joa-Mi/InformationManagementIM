@@ -48,7 +48,7 @@ Partial Class Inventory
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Category = New System.Windows.Forms.ComboBox()
         Me.AddItem = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -329,14 +329,15 @@ Partial Class Inventory
         Me.TextBox1.Size = New System.Drawing.Size(970, 22)
         Me.TextBox1.TabIndex = 38
         '
-        'ComboBox1
+        'Category
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Meat & Poultry", "Vegetables", "Dairy", "Dry Goods", "Oils & Condiments", "Herbs & Spices", "Beverages", "Seafood"})
-        Me.ComboBox1.Location = New System.Drawing.Point(1023, 451)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(250, 24)
-        Me.ComboBox1.TabIndex = 37
+        Me.Category.ForeColor = System.Drawing.SystemColors.WindowText
+        Me.Category.FormattingEnabled = True
+        Me.Category.Items.AddRange(New Object() {"Meat & Poultry", "Vegetables", "Dairy", "Dry Goods", "Oils & Condiments", "Herbs & Spices", "Beverages", "Seafood"})
+        Me.Category.Location = New System.Drawing.Point(1023, 451)
+        Me.Category.Name = "Category"
+        Me.Category.Size = New System.Drawing.Size(250, 24)
+        Me.Category.TabIndex = 37
         '
         'AddItem
         '
@@ -391,7 +392,7 @@ Partial Class Inventory
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Category)
         Me.Controls.Add(Me.AddItem)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -433,7 +434,7 @@ Partial Class Inventory
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Category As ComboBox
     Friend WithEvents AddItem As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
