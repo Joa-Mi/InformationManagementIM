@@ -26,19 +26,6 @@ Public Class Login
         Me.Hide()
     End Sub
 
-    Private Sub Staff1_Click(sender As Object, e As EventArgs) Handles Staff1.Click
-        ' Show the StaffLogin form
-        Dim staffForm As New Stafflogin()
-
-        ' Match the current Login form's state and size
-        staffForm.WindowState = Me.WindowState
-        staffForm.Size = Me.Size
-        staffForm.Location = Me.Location
-
-        staffForm.Show()
-        Me.Hide()
-    End Sub
-
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Optional: open Login in normal state (not forced fullscreen)
         ' You can leave this empty or force fullscreen if you want:

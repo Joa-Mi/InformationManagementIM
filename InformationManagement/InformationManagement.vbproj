@@ -168,9 +168,7 @@
     <Compile Include="Admin\MenuItems.Designer.vb">
       <DependentUpon>MenuItems.vb</DependentUpon>
     </Compile>
-    <Compile Include="Admin\MenuItems.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Admin\MenuItems.vb" />
     <Compile Include="Admin\Orders.Designer.vb">
       <DependentUpon>Orders.vb</DependentUpon>
     </Compile>
@@ -197,12 +195,6 @@
     </Compile>
     <Compile Include="Admin\RoundedButton.vb">
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Admin\Stafflogin.Designer.vb">
-      <DependentUpon>Stafflogin.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\Stafflogin.vb">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin\UsersAccounts.Designer.vb">
       <DependentUpon>UsersAccounts.vb</DependentUpon>
@@ -381,9 +373,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Reservations.resx">
       <DependentUpon>Reservations.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Stafflogin.resx">
-      <DependentUpon>Stafflogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\UsersAccounts.resx">
       <DependentUpon>UsersAccounts.vb</DependentUpon>

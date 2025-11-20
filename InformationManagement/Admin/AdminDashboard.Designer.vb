@@ -24,12 +24,8 @@ Partial Class AdminDashboard
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AdminDashboard))
         Me.SidePanel = New System.Windows.Forms.Panel()
-        Me.Inventory = New System.Windows.Forms.Button()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Employee = New System.Windows.Forms.Button()
+        Me.Inventory = New System.Windows.Forms.Button()
         Me.btnReports = New System.Windows.Forms.Button()
         Me.btnPayroll = New System.Windows.Forms.Button()
         Me.btnOrders = New System.Windows.Forms.Button()
@@ -37,7 +33,11 @@ Partial Class AdminDashboard
         Me.btnMenuItems = New System.Windows.Forms.Button()
         Me.btnUserAccounts = New System.Windows.Forms.Button()
         Me.btnDashboard = New System.Windows.Forms.Button()
+        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.btnLogout = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.SidePanel.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -64,67 +64,6 @@ Partial Class AdminDashboard
         Me.SidePanel.Size = New System.Drawing.Size(348, 666)
         Me.SidePanel.TabIndex = 0
         '
-        'Inventory
-        '
-        Me.Inventory.FlatAppearance.BorderSize = 0
-        Me.Inventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Inventory.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Inventory.ForeColor = System.Drawing.Color.White
-        Me.Inventory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Inventory.Location = New System.Drawing.Point(-30, 445)
-        Me.Inventory.Margin = New System.Windows.Forms.Padding(4)
-        Me.Inventory.Name = "Inventory"
-        Me.Inventory.Size = New System.Drawing.Size(253, 34)
-        Me.Inventory.TabIndex = 9
-        Me.Inventory.Text = "     Inventory"
-        Me.Inventory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Inventory.UseVisualStyleBackColor = True
-        '
-        'Panel3
-        '
-        Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel3.Controls.Add(Me.btnLogout)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel3.Location = New System.Drawing.Point(0, 613)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(348, 53)
-        Me.Panel3.TabIndex = 1
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(348, 80)
-        Me.Panel2.TabIndex = 0
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(31, 22)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(249, 37)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Admin Dashboard"
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(348, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(719, 666)
-        Me.Panel1.TabIndex = 1
-        '
         'Employee
         '
         Me.Employee.FlatAppearance.BorderSize = 0
@@ -132,7 +71,7 @@ Partial Class AdminDashboard
         Me.Employee.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Employee.ForeColor = System.Drawing.Color.White
         Me.Employee.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Employee.Location = New System.Drawing.Point(-18, 498)
+        Me.Employee.Location = New System.Drawing.Point(-9, 498)
         Me.Employee.Margin = New System.Windows.Forms.Padding(4)
         Me.Employee.Name = "Employee"
         Me.Employee.Size = New System.Drawing.Size(253, 34)
@@ -140,6 +79,22 @@ Partial Class AdminDashboard
         Me.Employee.Text = "Employee"
         Me.Employee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Employee.UseVisualStyleBackColor = True
+        '
+        'Inventory
+        '
+        Me.Inventory.FlatAppearance.BorderSize = 0
+        Me.Inventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Inventory.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Inventory.ForeColor = System.Drawing.Color.White
+        Me.Inventory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Inventory.Location = New System.Drawing.Point(-18, 446)
+        Me.Inventory.Margin = New System.Windows.Forms.Padding(4)
+        Me.Inventory.Name = "Inventory"
+        Me.Inventory.Size = New System.Drawing.Size(253, 34)
+        Me.Inventory.TabIndex = 9
+        Me.Inventory.Text = "     Inventory"
+        Me.Inventory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Inventory.UseVisualStyleBackColor = True
         '
         'btnReports
         '
@@ -260,6 +215,17 @@ Partial Class AdminDashboard
         Me.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnDashboard.UseVisualStyleBackColor = True
         '
+        'Panel3
+        '
+        Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel3.Controls.Add(Me.btnLogout)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel3.Location = New System.Drawing.Point(0, 613)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(348, 53)
+        Me.Panel3.TabIndex = 1
+        '
         'btnLogout
         '
         Me.btnLogout.FlatAppearance.BorderSize = 0
@@ -276,6 +242,40 @@ Partial Class AdminDashboard
         Me.btnLogout.Text = "     Logout"
         Me.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnLogout.UseVisualStyleBackColor = True
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.Label1)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(348, 80)
+        Me.Panel2.TabIndex = 0
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(31, 22)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(249, 37)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Admin Dashboard"
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel1.Location = New System.Drawing.Point(348, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(719, 666)
+        Me.Panel1.TabIndex = 1
         '
         'AdminDashboard
         '
