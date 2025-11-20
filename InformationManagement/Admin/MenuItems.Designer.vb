@@ -36,12 +36,12 @@ Partial Class MenuItems
         Me.AddMenuItemsbtn = New InformationManagement.RoundedButton()
         Me.colImage = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colDescription = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colPrice = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colCategory = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colStatus = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colEdit = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.colDelete = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.Description = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Price = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Category = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Status = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Edit = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.Delete = New System.Windows.Forms.DataGridViewButtonColumn()
         CType(Me.DataGridMenu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -65,7 +65,7 @@ Partial Class MenuItems
         Me.DataGridMenu.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridMenu.ColumnHeadersHeight = 40
         Me.DataGridMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.DataGridMenu.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colImage, Me.colName, Me.colDescription, Me.colPrice, Me.colCategory, Me.colStatus, Me.colEdit, Me.colDelete})
+        Me.DataGridMenu.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colImage, Me.colName, Me.Description, Me.Price, Me.Category, Me.Status, Me.Edit, Me.Delete})
         DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
@@ -140,78 +140,78 @@ Partial Class MenuItems
         Me.colName.Name = "colName"
         Me.colName.Width = 250
         '
-        'colDescription
+        'Description
         '
-        Me.colDescription.DataPropertyName = "Description"
+        Me.Description.DataPropertyName = "colDescription"
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.colDescription.DefaultCellStyle = DataGridViewCellStyle4
-        Me.colDescription.HeaderText = "Description"
-        Me.colDescription.MinimumWidth = 6
-        Me.colDescription.Name = "colDescription"
-        Me.colDescription.Width = 200
+        Me.Description.DefaultCellStyle = DataGridViewCellStyle4
+        Me.Description.HeaderText = "Description"
+        Me.Description.MinimumWidth = 6
+        Me.Description.Name = "Description"
+        Me.Description.Width = 200
         '
-        'colPrice
+        'Price
         '
-        Me.colPrice.DataPropertyName = "Price"
+        Me.Price.DataPropertyName = "colPrice"
         DataGridViewCellStyle5.Format = "C2"
         DataGridViewCellStyle5.NullValue = Nothing
-        Me.colPrice.DefaultCellStyle = DataGridViewCellStyle5
-        Me.colPrice.HeaderText = "Price"
-        Me.colPrice.MinimumWidth = 6
-        Me.colPrice.Name = "colPrice"
-        Me.colPrice.Width = 150
+        Me.Price.DefaultCellStyle = DataGridViewCellStyle5
+        Me.Price.HeaderText = "Price"
+        Me.Price.MinimumWidth = 6
+        Me.Price.Name = "Price"
+        Me.Price.Width = 150
         '
-        'colCategory
+        'Category
         '
-        Me.colCategory.DataPropertyName = "Category"
-        Me.colCategory.HeaderText = "Category"
-        Me.colCategory.MinimumWidth = 6
-        Me.colCategory.Name = "colCategory"
-        Me.colCategory.Width = 120
+        Me.Category.DataPropertyName = "colCategory"
+        Me.Category.HeaderText = "Category"
+        Me.Category.MinimumWidth = 6
+        Me.Category.Name = "Category"
+        Me.Category.Width = 120
         '
-        'colStatus
+        'Status
         '
-        Me.colStatus.DataPropertyName = "Status"
-        Me.colStatus.HeaderText = "Status"
-        Me.colStatus.MinimumWidth = 6
-        Me.colStatus.Name = "colStatus"
-        Me.colStatus.Width = 120
+        Me.Status.DataPropertyName = "colStatus"
+        Me.Status.HeaderText = "Status"
+        Me.Status.MinimumWidth = 6
+        Me.Status.Name = "Status"
+        Me.Status.Width = 120
         '
-        'colEdit
+        'Edit
         '
-        Me.colEdit.DataPropertyName = "Edit"
+        Me.Edit.DataPropertyName = "colEdit"
         DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle6.BackColor = System.Drawing.Color.Blue
         DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
         DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Blue
         DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White
-        Me.colEdit.DefaultCellStyle = DataGridViewCellStyle6
-        Me.colEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.colEdit.HeaderText = "Edit"
-        Me.colEdit.MinimumWidth = 6
-        Me.colEdit.Name = "colEdit"
-        Me.colEdit.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.colEdit.Text = "Edit"
-        Me.colEdit.UseColumnTextForButtonValue = True
-        Me.colEdit.Width = 70
+        Me.Edit.DefaultCellStyle = DataGridViewCellStyle6
+        Me.Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Edit.HeaderText = "Edit"
+        Me.Edit.MinimumWidth = 6
+        Me.Edit.Name = "Edit"
+        Me.Edit.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Edit.Text = "Edit"
+        Me.Edit.UseColumnTextForButtonValue = True
+        Me.Edit.Width = 70
         '
-        'colDelete
+        'Delete
         '
-        Me.colDelete.DataPropertyName = "Delete"
+        Me.Delete.DataPropertyName = "colDelete"
         DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle7.BackColor = System.Drawing.Color.Red
         DataGridViewCellStyle7.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Red
-        Me.colDelete.DefaultCellStyle = DataGridViewCellStyle7
-        Me.colDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.colDelete.HeaderText = "Delete"
-        Me.colDelete.MinimumWidth = 6
-        Me.colDelete.Name = "colDelete"
-        Me.colDelete.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.colDelete.Text = "Delete"
-        Me.colDelete.UseColumnTextForButtonValue = True
-        Me.colDelete.Width = 70
+        Me.Delete.DefaultCellStyle = DataGridViewCellStyle7
+        Me.Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Delete.HeaderText = "Delete"
+        Me.Delete.MinimumWidth = 6
+        Me.Delete.Name = "Delete"
+        Me.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Delete.Text = "Delete"
+        Me.Delete.UseColumnTextForButtonValue = True
+        Me.Delete.Width = 70
         '
         'MenuItems
         '
@@ -238,10 +238,10 @@ Partial Class MenuItems
     Friend WithEvents DataGridMenu As DataGridView
     Friend WithEvents colImage As DataGridViewTextBoxColumn
     Friend WithEvents colName As DataGridViewTextBoxColumn
-    Friend WithEvents colDescription As DataGridViewTextBoxColumn
-    Friend WithEvents colPrice As DataGridViewTextBoxColumn
-    Friend WithEvents colCategory As DataGridViewTextBoxColumn
-    Friend WithEvents colStatus As DataGridViewTextBoxColumn
-    Friend WithEvents colEdit As DataGridViewButtonColumn
-    Friend WithEvents colDelete As DataGridViewButtonColumn
+    Friend WithEvents Description As DataGridViewTextBoxColumn
+    Friend WithEvents Price As DataGridViewTextBoxColumn
+    Friend WithEvents Category As DataGridViewTextBoxColumn
+    Friend WithEvents Status As DataGridViewTextBoxColumn
+    Friend WithEvents Edit As DataGridViewButtonColumn
+    Friend WithEvents Delete As DataGridViewButtonColumn
 End Class

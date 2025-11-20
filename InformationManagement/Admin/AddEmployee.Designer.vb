@@ -305,7 +305,7 @@ Partial Class AddEmployee
         '
         Me.MaritalStatus.BackColor = System.Drawing.Color.Transparent
         Me.MaritalStatus.FocusBorderColor = System.Drawing.Color.DarkGray
-        Me.MaritalStatus.Location = New System.Drawing.Point(396, 609)
+        Me.MaritalStatus.Location = New System.Drawing.Point(396, 710)
         Me.MaritalStatus.Margin = New System.Windows.Forms.Padding(4)
         Me.MaritalStatus.MaxLength = 32767
         Me.MaritalStatus.MinimumSize = New System.Drawing.Size(67, 25)
@@ -324,7 +324,7 @@ Partial Class AddEmployee
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label4.Location = New System.Drawing.Point(391, 580)
+        Me.Label4.Location = New System.Drawing.Point(391, 681)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(158, 25)
         Me.Label4.TabIndex = 73
@@ -335,7 +335,7 @@ Partial Class AddEmployee
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label12.Location = New System.Drawing.Point(391, 491)
+        Me.Label12.Location = New System.Drawing.Point(391, 585)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(115, 25)
         Me.Label12.TabIndex = 69
@@ -353,7 +353,7 @@ Partial Class AddEmployee
         Me.Address.Name = "Address"
         Me.Address.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.Address.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Address.Size = New System.Drawing.Size(307, 44)
+        Me.Address.Size = New System.Drawing.Size(662, 44)
         Me.Address.TabIndex = 72
         Me.Address.TextBoxBackColor = System.Drawing.Color.WhiteSmoke
         Me.Address.TextColor = System.Drawing.Color.Black
@@ -372,7 +372,7 @@ Partial Class AddEmployee
         '
         'HireDate
         '
-        Me.HireDate.Location = New System.Drawing.Point(396, 520)
+        Me.HireDate.Location = New System.Drawing.Point(396, 614)
         Me.HireDate.Name = "HireDate"
         Me.HireDate.Size = New System.Drawing.Size(307, 22)
         Me.HireDate.TabIndex = 75
@@ -381,7 +381,7 @@ Partial Class AddEmployee
         '
         Me.Position.BackColor = System.Drawing.Color.Transparent
         Me.Position.FocusBorderColor = System.Drawing.Color.DarkGray
-        Me.Position.Location = New System.Drawing.Point(41, 609)
+        Me.Position.Location = New System.Drawing.Point(41, 614)
         Me.Position.Margin = New System.Windows.Forms.Padding(4)
         Me.Position.MaxLength = 32767
         Me.Position.MinimumSize = New System.Drawing.Size(67, 25)
@@ -400,7 +400,7 @@ Partial Class AddEmployee
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label14.Location = New System.Drawing.Point(36, 580)
+        Me.Label14.Location = New System.Drawing.Point(39, 585)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(102, 25)
         Me.Label14.TabIndex = 75
@@ -410,7 +410,7 @@ Partial Class AddEmployee
         '
         Me.WorkShift.BackColor = System.Drawing.Color.Transparent
         Me.WorkShift.FocusBorderColor = System.Drawing.Color.DarkGray
-        Me.WorkShift.Location = New System.Drawing.Point(396, 692)
+        Me.WorkShift.Location = New System.Drawing.Point(396, 799)
         Me.WorkShift.Margin = New System.Windows.Forms.Padding(4)
         Me.WorkShift.MaxLength = 32767
         Me.WorkShift.MinimumSize = New System.Drawing.Size(67, 25)
@@ -429,7 +429,7 @@ Partial Class AddEmployee
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label16.Location = New System.Drawing.Point(391, 663)
+        Me.Label16.Location = New System.Drawing.Point(391, 772)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(132, 25)
         Me.Label16.TabIndex = 79
@@ -439,7 +439,7 @@ Partial Class AddEmployee
         '
         Me.Salary.BackColor = System.Drawing.Color.Transparent
         Me.Salary.FocusBorderColor = System.Drawing.Color.DarkGray
-        Me.Salary.Location = New System.Drawing.Point(41, 781)
+        Me.Salary.Location = New System.Drawing.Point(41, 799)
         Me.Salary.Margin = New System.Windows.Forms.Padding(4)
         Me.Salary.MaxLength = 32767
         Me.Salary.MinimumSize = New System.Drawing.Size(67, 25)
@@ -458,7 +458,7 @@ Partial Class AddEmployee
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label17.Location = New System.Drawing.Point(36, 752)
+        Me.Label17.Location = New System.Drawing.Point(39, 770)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(87, 25)
         Me.Label17.TabIndex = 81
@@ -468,7 +468,7 @@ Partial Class AddEmployee
         '
         Me.EmergencyContact.BackColor = System.Drawing.Color.Transparent
         Me.EmergencyContact.FocusBorderColor = System.Drawing.Color.DarkGray
-        Me.EmergencyContact.Location = New System.Drawing.Point(41, 692)
+        Me.EmergencyContact.Location = New System.Drawing.Point(41, 710)
         Me.EmergencyContact.Margin = New System.Windows.Forms.Padding(4)
         Me.EmergencyContact.MaxLength = 32767
         Me.EmergencyContact.MinimumSize = New System.Drawing.Size(67, 25)
@@ -487,7 +487,7 @@ Partial Class AddEmployee
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label18.Location = New System.Drawing.Point(36, 663)
+        Me.Label18.Location = New System.Drawing.Point(36, 681)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(214, 25)
         Me.Label18.TabIndex = 77

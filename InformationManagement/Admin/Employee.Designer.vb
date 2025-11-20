@@ -22,8 +22,8 @@ Partial Class Employee
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.AddItem = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -53,11 +53,11 @@ Partial Class Employee
         Me.AddItem.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.AddItem.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AddItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.AddItem.Location = New System.Drawing.Point(1148, 29)
+        Me.AddItem.Location = New System.Drawing.Point(1103, 29)
         Me.AddItem.Name = "AddItem"
-        Me.AddItem.Size = New System.Drawing.Size(165, 56)
+        Me.AddItem.Size = New System.Drawing.Size(210, 56)
         Me.AddItem.TabIndex = 38
-        Me.AddItem.Text = "+      Add Item"
+        Me.AddItem.Text = "+      Add Employee"
         Me.AddItem.UseVisualStyleBackColor = False
         '
         'Label2
@@ -98,14 +98,14 @@ Partial Class Employee
         Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
         Me.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(50, Byte), Integer))
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(50, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView1.ColumnHeadersHeight = 40
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.EmployeeID, Me.FirstName, Me.LastName, Me.Gender, Me.DateOfBirth, Me.ContactNumber, Me.Email, Me.Address, Me.HireDate, Me.Position, Me.MaritalStatus, Me.EmploymentStatus, Me.EmploymentType, Me.EmergencyContact, Me.WorkShift, Me.Salary})
         Me.DataGridView1.EnableHeadersVisualStyles = False
@@ -114,14 +114,14 @@ Partial Class Employee
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.Size = New System.Drawing.Size(1516, 181)
@@ -129,6 +129,7 @@ Partial Class Employee
         '
         'EmployeeID
         '
+        Me.EmployeeID.DataPropertyName = "colEmployeeID"
         Me.EmployeeID.Frozen = True
         Me.EmployeeID.HeaderText = "Employee ID"
         Me.EmployeeID.MinimumWidth = 6
@@ -138,6 +139,7 @@ Partial Class Employee
         '
         'FirstName
         '
+        Me.FirstName.DataPropertyName = "colFirstName"
         Me.FirstName.HeaderText = "First Name"
         Me.FirstName.MinimumWidth = 6
         Me.FirstName.Name = "FirstName"
@@ -146,6 +148,7 @@ Partial Class Employee
         '
         'LastName
         '
+        Me.LastName.DataPropertyName = "colLastName"
         Me.LastName.HeaderText = "Last Name"
         Me.LastName.MinimumWidth = 6
         Me.LastName.Name = "LastName"
@@ -154,6 +157,7 @@ Partial Class Employee
         '
         'Gender
         '
+        Me.Gender.DataPropertyName = "colGender"
         Me.Gender.HeaderText = "Gender"
         Me.Gender.MinimumWidth = 6
         Me.Gender.Name = "Gender"
@@ -162,6 +166,7 @@ Partial Class Employee
         '
         'DateOfBirth
         '
+        Me.DateOfBirth.DataPropertyName = "colDateOfBirth"
         Me.DateOfBirth.HeaderText = "Date Of Birth"
         Me.DateOfBirth.MinimumWidth = 6
         Me.DateOfBirth.Name = "DateOfBirth"
@@ -170,6 +175,7 @@ Partial Class Employee
         '
         'ContactNumber
         '
+        Me.ContactNumber.DataPropertyName = "colContactNumber"
         Me.ContactNumber.HeaderText = "Contact Number"
         Me.ContactNumber.MinimumWidth = 6
         Me.ContactNumber.Name = "ContactNumber"
@@ -178,6 +184,7 @@ Partial Class Employee
         '
         'Email
         '
+        Me.Email.DataPropertyName = "colEmail"
         Me.Email.HeaderText = "Email"
         Me.Email.MinimumWidth = 6
         Me.Email.Name = "Email"
@@ -186,6 +193,7 @@ Partial Class Employee
         '
         'Address
         '
+        Me.Address.DataPropertyName = "colAddress"
         Me.Address.HeaderText = "Address"
         Me.Address.MinimumWidth = 6
         Me.Address.Name = "Address"
@@ -194,6 +202,7 @@ Partial Class Employee
         '
         'HireDate
         '
+        Me.HireDate.DataPropertyName = "colHireDate"
         Me.HireDate.HeaderText = "Hire Date"
         Me.HireDate.MinimumWidth = 6
         Me.HireDate.Name = "HireDate"
@@ -202,6 +211,7 @@ Partial Class Employee
         '
         'Position
         '
+        Me.Position.DataPropertyName = "colPosition"
         Me.Position.HeaderText = "Position"
         Me.Position.MinimumWidth = 6
         Me.Position.Name = "Position"
@@ -210,6 +220,7 @@ Partial Class Employee
         '
         'MaritalStatus
         '
+        Me.MaritalStatus.DataPropertyName = "colMaritalStatus"
         Me.MaritalStatus.HeaderText = "Marital Status"
         Me.MaritalStatus.MinimumWidth = 6
         Me.MaritalStatus.Name = "MaritalStatus"
@@ -218,6 +229,7 @@ Partial Class Employee
         '
         'EmploymentStatus
         '
+        Me.EmploymentStatus.DataPropertyName = "colEmploymentStatus"
         Me.EmploymentStatus.HeaderText = "Employment Status"
         Me.EmploymentStatus.MinimumWidth = 6
         Me.EmploymentStatus.Name = "EmploymentStatus"
@@ -226,6 +238,7 @@ Partial Class Employee
         '
         'EmploymentType
         '
+        Me.EmploymentType.DataPropertyName = "colEmploymentType"
         Me.EmploymentType.HeaderText = "Employment Type"
         Me.EmploymentType.MinimumWidth = 6
         Me.EmploymentType.Name = "EmploymentType"
@@ -234,6 +247,7 @@ Partial Class Employee
         '
         'EmergencyContact
         '
+        Me.EmergencyContact.DataPropertyName = "colEmergencyContact"
         Me.EmergencyContact.HeaderText = "Emergency Contact"
         Me.EmergencyContact.MinimumWidth = 6
         Me.EmergencyContact.Name = "EmergencyContact"
@@ -242,6 +256,7 @@ Partial Class Employee
         '
         'WorkShift
         '
+        Me.WorkShift.DataPropertyName = "colWorkShift"
         Me.WorkShift.HeaderText = "Work Shift"
         Me.WorkShift.MinimumWidth = 6
         Me.WorkShift.Name = "WorkShift"
@@ -250,6 +265,7 @@ Partial Class Employee
         '
         'Salary
         '
+        Me.Salary.DataPropertyName = "colSalary"
         Me.Salary.HeaderText = "Salary"
         Me.Salary.MinimumWidth = 6
         Me.Salary.Name = "Salary"
