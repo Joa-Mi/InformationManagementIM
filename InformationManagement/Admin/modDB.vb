@@ -1,24 +1,25 @@
-﻿Imports System.Data.SqlClient
-Imports System.IO
-Imports System.Security
+﻿Imports System.IO
 Imports System.Security.Cryptography
 Imports System.Text
-Imports MySql.Data.MySqlClient
 Imports MySqlConnector
-
 Module modDB
     Public myadocon, conn As New MySqlConnection
     Public cmd As New MySqlCommand
     Public cmdRead As MySqlDataReader
-
-    ' Database configuration - CHANGE THESE TO MATCH YOUR DATABASE
     Public db_server As String = "localhost"
     Public db_uid As String = "root"
     Public db_pwd As String = ""
-    Public db_name As String = "tabeya_system"  ' Change this to your database name
-    Public strConnection As String = "server=" & db_server & ";uid=" & db_uid & ";password=" & db_pwd & ";database=" & db_name & ";" & "allowuservariables='True';"
+    Public db_name As String = "tabeya_system"
+    Public strConnection As String =
+    "Server=" & db_server &
+    ";Port=3306" &
+    ";Database=" & db_name &
+    ";Uid=" & db_uid &
+    ";Pwd=" & db_pwd &
+    ";SslMode=None" &
+    ";AllowUserVariables=True;"
 
-    ' Structure to hold logged user information
+
     Public Structure LoggedUser
         Dim id As Integer
         Dim name As String
@@ -27,10 +28,7 @@ Module modDB
         Dim password As String
         Dim type As Integer
     End Structure
-
     Public CurrentLoggedUser As LoggedUser = Nothing
-
-    ' Open database connection
     Public Sub openConn(ByVal db_name As String)
         Try
             With conn
@@ -39,11 +37,10 @@ Module modDB
                 .Open()
             End With
         Catch EX As Exception
-            MsgBox(EX.Message, MsgBoxStyle.Critical, "Database Connection Error")
+            MsgBox(EX.Message, MsgBoxStyle.Critical)
         End Try
     End Sub
 
-    ' Execute a SELECT query and return a DataReader
     Public Sub readQuery(ByVal sql As String)
         Try
             openConn(db_name)
@@ -53,11 +50,10 @@ Module modDB
                 cmdRead = .ExecuteReader
             End With
         Catch EX As Exception
-            MsgBox(EX.Message, MsgBoxStyle.Critical, "Query Error")
+            MsgBox(EX.Message, MsgBoxStyle.Critical)
         End Try
     End Sub
 
-    ' Test if connected to local server
     Public Function isConnectedToLocalServer() As Boolean
         Dim result As Boolean = False
         Try
@@ -82,7 +78,6 @@ Module modDB
         Return result
     End Function
 
-    ' Load data into a DataGridView
     Function LoadToDGV(ByVal query As String, ByVal dgv As DataGridView) As Integer
         Try
             readQuery(query)
@@ -92,13 +87,13 @@ Module modDB
             dgv.Refresh()
             Return dgv.Rows.Count
         Catch ex As Exception
-            MsgBox(ex.Message, MsgBoxStyle.Critical, "Data Load Error")
+            MsgBox(ex.Message, MsgBoxStyle.Critical)
         End Try
         Return 0
     End Function
 
-    ' Encrypt a string
     Public Function Encrypt(ByVal clearText As String) As String
+
         Dim EncryptionKey As String = "MAKV2SPBNI99212"
         Dim clearBytes As Byte() = Encoding.Unicode.GetBytes(clearText)
         Using encryptor As Aes = Aes.Create()
@@ -117,8 +112,6 @@ Module modDB
         End Using
         Return clearText
     End Function
-
-    ' Decrypt a string
     Public Function Decrypt(ByVal cipherText As String) As String
         Dim EncryptionKey As String = "MAKV2SPBNI99212"
         Dim cipherBytes As Byte() = Convert.FromBase64String(cipherText)
@@ -138,8 +131,6 @@ Module modDB
         End Using
         Return cipherText
     End Function
-
-    ' Log user activities
     Sub Logs(ByVal transaction As String, Optional ByVal events As String = "*_Click")
         Try
             readQuery(String.Format("INSERT INTO `logs`(`dt`, `user_accounts_id`, `event`, `transactions`) VALUES ({0},{1},'{2}','{3}')", "now()",
@@ -147,7 +138,7 @@ Module modDB
                                     events,
                                     transaction))
         Catch ex As Exception
-            MsgBox(ex.Message, MsgBoxStyle.Exclamation, "Log Error")
+            MsgBox(ex.Message)
         End Try
     End Sub
 End Module
