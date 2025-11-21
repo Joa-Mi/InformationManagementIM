@@ -137,6 +137,12 @@
     <Compile Include="Admin\Adminlogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Admin\Costumer.Designer.vb">
+      <DependentUpon>Costumer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Costumer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Admin\Dashboard.Designer.vb">
       <DependentUpon>Dashboard.vb</DependentUpon>
     </Compile>
@@ -342,6 +348,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Adminlogin.resx">
       <DependentUpon>Adminlogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Costumer.resx">
+      <DependentUpon>Costumer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>

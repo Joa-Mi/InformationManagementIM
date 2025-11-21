@@ -38,6 +38,7 @@ Partial Class AdminDashboard
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Costumer = New System.Windows.Forms.Button()
         Me.SidePanel.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -46,6 +47,7 @@ Partial Class AdminDashboard
         'SidePanel
         '
         Me.SidePanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.SidePanel.Controls.Add(Me.Costumer)
         Me.SidePanel.Controls.Add(Me.Employee)
         Me.SidePanel.Controls.Add(Me.Inventory)
         Me.SidePanel.Controls.Add(Me.btnReports)
@@ -61,7 +63,7 @@ Partial Class AdminDashboard
         Me.SidePanel.Location = New System.Drawing.Point(0, 0)
         Me.SidePanel.Margin = New System.Windows.Forms.Padding(4)
         Me.SidePanel.Name = "SidePanel"
-        Me.SidePanel.Size = New System.Drawing.Size(348, 666)
+        Me.SidePanel.Size = New System.Drawing.Size(348, 808)
         Me.SidePanel.TabIndex = 0
         '
         'Employee
@@ -104,7 +106,7 @@ Partial Class AdminDashboard
         Me.btnReports.ForeColor = System.Drawing.Color.White
         Me.btnReports.Image = CType(resources.GetObject("btnReports.Image"), System.Drawing.Image)
         Me.btnReports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnReports.Location = New System.Drawing.Point(26, 551)
+        Me.btnReports.Location = New System.Drawing.Point(27, 603)
         Me.btnReports.Margin = New System.Windows.Forms.Padding(4)
         Me.btnReports.Name = "btnReports"
         Me.btnReports.Size = New System.Drawing.Size(253, 34)
@@ -220,7 +222,7 @@ Partial Class AdminDashboard
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel3.Controls.Add(Me.btnLogout)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel3.Location = New System.Drawing.Point(0, 613)
+        Me.Panel3.Location = New System.Drawing.Point(0, 755)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(348, 53)
@@ -274,14 +276,30 @@ Partial Class AdminDashboard
         Me.Panel1.Location = New System.Drawing.Point(348, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(719, 666)
+        Me.Panel1.Size = New System.Drawing.Size(719, 808)
         Me.Panel1.TabIndex = 1
+        '
+        'Costumer
+        '
+        Me.Costumer.FlatAppearance.BorderSize = 0
+        Me.Costumer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Costumer.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Costumer.ForeColor = System.Drawing.Color.White
+        Me.Costumer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Costumer.Location = New System.Drawing.Point(-9, 552)
+        Me.Costumer.Margin = New System.Windows.Forms.Padding(4)
+        Me.Costumer.Name = "Costumer"
+        Me.Costumer.Size = New System.Drawing.Size(253, 34)
+        Me.Costumer.TabIndex = 11
+        Me.Costumer.Text = "Costumer"
+        Me.Costumer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Costumer.UseVisualStyleBackColor = True
         '
         'AdminDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1067, 666)
+        Me.ClientSize = New System.Drawing.Size(1067, 808)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.SidePanel)
         Me.DoubleBuffered = True
@@ -311,4 +329,5 @@ Partial Class AdminDashboard
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Inventory As Button
     Friend WithEvents Employee As Button
+    Friend WithEvents Costumer As Button
 End Class

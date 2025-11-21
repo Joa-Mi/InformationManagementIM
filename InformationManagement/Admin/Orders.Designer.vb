@@ -33,8 +33,8 @@ Partial Class Orders
         Me.OrderDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.OrderTime = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Remarks = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.OrderType = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Products = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.OrderSource = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ReceiptNumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NumberOfDiners = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -43,12 +43,12 @@ Partial Class Orders
         Me.PreparationTimeEstimate = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SpecialRequestFlag = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ItemsOrderedCount = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewButtonColumn1 = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.DataGridViewButtonColumn2 = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.Quantities = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UnitPrices = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalPrice = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Status = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Actions = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.Delete = New System.Windows.Forms.DataGridViewButtonColumn()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -71,7 +71,7 @@ Partial Class Orders
         Me.AddOrdersBtn.ForeColor = System.Drawing.Color.White
         Me.AddOrdersBtn.Image = CType(resources.GetObject("AddOrdersBtn.Image"), System.Drawing.Image)
         Me.AddOrdersBtn.Location = New System.Drawing.Point(1235, 17)
-        Me.AddOrdersBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.AddOrdersBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.AddOrdersBtn.Name = "AddOrdersBtn"
         Me.AddOrdersBtn.Size = New System.Drawing.Size(196, 52)
         Me.AddOrdersBtn.TabIndex = 4
@@ -99,7 +99,7 @@ Partial Class Orders
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridView2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView2.ColumnHeadersHeight = 40
-        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.OrderDate, Me.OrderTime, Me.Remarks, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.OrderSource, Me.ReceiptNumber, Me.NumberOfDiners, Me.TotalAmount, Me.OrderPriority, Me.PreparationTimeEstimate, Me.SpecialRequestFlag, Me.ItemsOrderedCount, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewButtonColumn1, Me.DataGridViewButtonColumn2})
+        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.OrderDate, Me.OrderTime, Me.Remarks, Me.OrderType, Me.Products, Me.OrderSource, Me.ReceiptNumber, Me.NumberOfDiners, Me.TotalAmount, Me.OrderPriority, Me.PreparationTimeEstimate, Me.SpecialRequestFlag, Me.ItemsOrderedCount, Me.Quantities, Me.UnitPrices, Me.TotalPrice, Me.Status, Me.Actions, Me.Delete})
         Me.DataGridView2.EnableHeadersVisualStyles = False
         Me.DataGridView2.Location = New System.Drawing.Point(13, 96)
         Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4)
@@ -113,6 +113,7 @@ Partial Class Orders
         '
         'DataGridViewTextBoxColumn1
         '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "colID"
         Me.DataGridViewTextBoxColumn1.HeaderText = "ID"
         Me.DataGridViewTextBoxColumn1.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
@@ -120,6 +121,7 @@ Partial Class Orders
         '
         'OrderDate
         '
+        Me.OrderDate.DataPropertyName = "colOrderDate"
         Me.OrderDate.HeaderText = "Order Date"
         Me.OrderDate.MinimumWidth = 6
         Me.OrderDate.Name = "OrderDate"
@@ -127,6 +129,7 @@ Partial Class Orders
         '
         'OrderTime
         '
+        Me.OrderTime.DataPropertyName = "colOrderTime"
         Me.OrderTime.HeaderText = "Order Time"
         Me.OrderTime.MinimumWidth = 6
         Me.OrderTime.Name = "OrderTime"
@@ -134,27 +137,31 @@ Partial Class Orders
         '
         'Remarks
         '
+        Me.Remarks.DataPropertyName = "colRemarks"
         Me.Remarks.HeaderText = "Remarks"
         Me.Remarks.MinimumWidth = 6
         Me.Remarks.Name = "Remarks"
         Me.Remarks.Width = 125
         '
-        'DataGridViewTextBoxColumn2
+        'OrderType
         '
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Order Type"
-        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.Width = 120
+        Me.OrderType.DataPropertyName = "colOrder_Type"
+        Me.OrderType.HeaderText = "Order Type"
+        Me.OrderType.MinimumWidth = 6
+        Me.OrderType.Name = "OrderType"
+        Me.OrderType.Width = 120
         '
-        'DataGridViewTextBoxColumn3
+        'Products
         '
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Products"
-        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.Width = 150
+        Me.Products.DataPropertyName = "colProducts"
+        Me.Products.HeaderText = "Products"
+        Me.Products.MinimumWidth = 6
+        Me.Products.Name = "Products"
+        Me.Products.Width = 150
         '
         'OrderSource
         '
+        Me.OrderSource.DataPropertyName = "colOrderSource"
         Me.OrderSource.HeaderText = "OrderSource"
         Me.OrderSource.MinimumWidth = 6
         Me.OrderSource.Name = "OrderSource"
@@ -162,13 +169,15 @@ Partial Class Orders
         '
         'ReceiptNumber
         '
+        Me.ReceiptNumber.DataPropertyName = "colReceiptNumber"
         Me.ReceiptNumber.HeaderText = "Receipt Number"
         Me.ReceiptNumber.MinimumWidth = 6
         Me.ReceiptNumber.Name = "ReceiptNumber"
-        Me.ReceiptNumber.Width = 125
+        Me.ReceiptNumber.Width = 130
         '
         'NumberOfDiners
         '
+        Me.NumberOfDiners.DataPropertyName = "colNumberOfDiners"
         Me.NumberOfDiners.HeaderText = "Number Of Diners"
         Me.NumberOfDiners.MinimumWidth = 6
         Me.NumberOfDiners.Name = "NumberOfDiners"
@@ -176,6 +185,7 @@ Partial Class Orders
         '
         'TotalAmount
         '
+        Me.TotalAmount.DataPropertyName = "colTotalAmount"
         Me.TotalAmount.HeaderText = "Total Amount"
         Me.TotalAmount.MinimumWidth = 6
         Me.TotalAmount.Name = "TotalAmount"
@@ -183,6 +193,7 @@ Partial Class Orders
         '
         'OrderPriority
         '
+        Me.OrderPriority.DataPropertyName = "colOrderPriority"
         Me.OrderPriority.HeaderText = "Order Priority"
         Me.OrderPriority.MinimumWidth = 6
         Me.OrderPriority.Name = "OrderPriority"
@@ -190,13 +201,15 @@ Partial Class Orders
         '
         'PreparationTimeEstimate
         '
+        Me.PreparationTimeEstimate.DataPropertyName = "colPreparationTimeEstimate"
         Me.PreparationTimeEstimate.HeaderText = "Preparation Time Estimate"
         Me.PreparationTimeEstimate.MinimumWidth = 6
         Me.PreparationTimeEstimate.Name = "PreparationTimeEstimate"
-        Me.PreparationTimeEstimate.Width = 125
+        Me.PreparationTimeEstimate.Width = 130
         '
         'SpecialRequestFlag
         '
+        Me.SpecialRequestFlag.DataPropertyName = "colSpecialRequestFlag"
         Me.SpecialRequestFlag.HeaderText = "Special Request Flag"
         Me.SpecialRequestFlag.MinimumWidth = 6
         Me.SpecialRequestFlag.Name = "SpecialRequestFlag"
@@ -204,74 +217,81 @@ Partial Class Orders
         '
         'ItemsOrderedCount
         '
+        Me.ItemsOrderedCount.DataPropertyName = "colItemsOrderedCount"
         Me.ItemsOrderedCount.HeaderText = "Items Ordered Count"
         Me.ItemsOrderedCount.MinimumWidth = 6
         Me.ItemsOrderedCount.Name = "ItemsOrderedCount"
         Me.ItemsOrderedCount.Width = 125
         '
-        'DataGridViewTextBoxColumn4
+        'Quantities
         '
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Quantities"
-        Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.Width = 150
+        Me.Quantities.DataPropertyName = "colQuantities"
+        Me.Quantities.HeaderText = "Quantities"
+        Me.Quantities.MinimumWidth = 6
+        Me.Quantities.Name = "Quantities"
+        Me.Quantities.Width = 150
         '
-        'DataGridViewTextBoxColumn5
+        'UnitPrices
         '
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Unit Prices"
-        Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.Width = 150
+        Me.UnitPrices.DataPropertyName = "colUnitPrices"
+        Me.UnitPrices.HeaderText = "Unit Prices"
+        Me.UnitPrices.MinimumWidth = 6
+        Me.UnitPrices.Name = "UnitPrices"
+        Me.UnitPrices.Width = 150
         '
-        'DataGridViewTextBoxColumn6
+        'TotalPrice
         '
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Total Price"
-        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.Width = 120
+        Me.TotalPrice.DataPropertyName = "colTotalPrice"
+        Me.TotalPrice.HeaderText = "Total Price"
+        Me.TotalPrice.MinimumWidth = 6
+        Me.TotalPrice.Name = "TotalPrice"
+        Me.TotalPrice.Width = 120
         '
-        'DataGridViewTextBoxColumn7
+        'Status
         '
-        Me.DataGridViewTextBoxColumn7.HeaderText = "Status"
-        Me.DataGridViewTextBoxColumn7.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        Me.DataGridViewTextBoxColumn7.Width = 120
+        Me.Status.DataPropertyName = "colStatus"
+        Me.Status.HeaderText = "Status"
+        Me.Status.MinimumWidth = 6
+        Me.Status.Name = "Status"
+        Me.Status.Width = 120
         '
-        'DataGridViewButtonColumn1
+        'Actions
         '
+        Me.Actions.DataPropertyName = "colActions"
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.Blue
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Blue
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black
-        Me.DataGridViewButtonColumn1.DefaultCellStyle = DataGridViewCellStyle2
-        Me.DataGridViewButtonColumn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.DataGridViewButtonColumn1.HeaderText = "Actions"
-        Me.DataGridViewButtonColumn1.MinimumWidth = 6
-        Me.DataGridViewButtonColumn1.Name = "DataGridViewButtonColumn1"
-        Me.DataGridViewButtonColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewButtonColumn1.Text = "Edit"
-        Me.DataGridViewButtonColumn1.Width = 125
+        Me.Actions.DefaultCellStyle = DataGridViewCellStyle2
+        Me.Actions.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Actions.HeaderText = "Actions"
+        Me.Actions.MinimumWidth = 6
+        Me.Actions.Name = "Actions"
+        Me.Actions.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Actions.Text = "Edit"
+        Me.Actions.Width = 125
         '
-        'DataGridViewButtonColumn2
+        'Delete
         '
+        Me.Delete.DataPropertyName = "colDelete"
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.Red
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
         DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Red
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
-        Me.DataGridViewButtonColumn2.DefaultCellStyle = DataGridViewCellStyle3
-        Me.DataGridViewButtonColumn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.DataGridViewButtonColumn2.HeaderText = ""
-        Me.DataGridViewButtonColumn2.MinimumWidth = 6
-        Me.DataGridViewButtonColumn2.Name = "DataGridViewButtonColumn2"
-        Me.DataGridViewButtonColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewButtonColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.DataGridViewButtonColumn2.Text = "Delete"
-        Me.DataGridViewButtonColumn2.UseColumnTextForButtonValue = True
-        Me.DataGridViewButtonColumn2.Width = 125
+        Me.Delete.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Delete.HeaderText = "Delete"
+        Me.Delete.MinimumWidth = 6
+        Me.Delete.Name = "Delete"
+        Me.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.Delete.Text = "Delete"
+        Me.Delete.UseColumnTextForButtonValue = True
+        Me.Delete.Width = 125
         '
         'Orders
         '
@@ -284,7 +304,7 @@ Partial Class Orders
         Me.Controls.Add(Me.AddOrdersBtn)
         Me.Controls.Add(Me.Label1)
         Me.DoubleBuffered = True
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Orders"
         Me.Text = "Orders"
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -300,8 +320,8 @@ Partial Class Orders
     Friend WithEvents OrderDate As DataGridViewTextBoxColumn
     Friend WithEvents OrderTime As DataGridViewTextBoxColumn
     Friend WithEvents Remarks As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents OrderType As DataGridViewTextBoxColumn
+    Friend WithEvents Products As DataGridViewTextBoxColumn
     Friend WithEvents OrderSource As DataGridViewTextBoxColumn
     Friend WithEvents ReceiptNumber As DataGridViewTextBoxColumn
     Friend WithEvents NumberOfDiners As DataGridViewTextBoxColumn
@@ -310,10 +330,10 @@ Partial Class Orders
     Friend WithEvents PreparationTimeEstimate As DataGridViewTextBoxColumn
     Friend WithEvents SpecialRequestFlag As DataGridViewTextBoxColumn
     Friend WithEvents ItemsOrderedCount As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewButtonColumn1 As DataGridViewButtonColumn
-    Friend WithEvents DataGridViewButtonColumn2 As DataGridViewButtonColumn
+    Friend WithEvents Quantities As DataGridViewTextBoxColumn
+    Friend WithEvents UnitPrices As DataGridViewTextBoxColumn
+    Friend WithEvents TotalPrice As DataGridViewTextBoxColumn
+    Friend WithEvents Status As DataGridViewTextBoxColumn
+    Friend WithEvents Actions As DataGridViewButtonColumn
+    Friend WithEvents Delete As DataGridViewButtonColumn
 End Class

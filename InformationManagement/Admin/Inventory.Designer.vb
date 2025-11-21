@@ -34,17 +34,17 @@ Partial Class Inventory
         Me.Label11 = New System.Windows.Forms.Label()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.RoundedPane22 = New InformationManagement.RoundedPane2()
-        Me.Actions = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.RestockedBy = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ExpirationDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Type = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.LostStock = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TotalValue = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CostUnit = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Status = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Quantity = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ItemName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.ItemName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Quantity = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Status = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CostUnit = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalValue = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LostStock = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Type = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ExpirationDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RestockedBy = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Actions = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -174,95 +174,6 @@ Partial Class Inventory
         Me.RoundedPane22.Size = New System.Drawing.Size(447, 170)
         Me.RoundedPane22.TabIndex = 36
         '
-        'Actions
-        '
-        Me.Actions.HeaderText = "Actions"
-        Me.Actions.MinimumWidth = 6
-        Me.Actions.Name = "Actions"
-        Me.Actions.ReadOnly = True
-        Me.Actions.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Actions.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.Actions.UseColumnTextForButtonValue = True
-        Me.Actions.Width = 120
-        '
-        'RestockedBy
-        '
-        Me.RestockedBy.HeaderText = "Restocked By"
-        Me.RestockedBy.MinimumWidth = 6
-        Me.RestockedBy.Name = "RestockedBy"
-        Me.RestockedBy.ReadOnly = True
-        Me.RestockedBy.Width = 120
-        '
-        'ExpirationDate
-        '
-        Me.ExpirationDate.HeaderText = "Expiration Date"
-        Me.ExpirationDate.MinimumWidth = 6
-        Me.ExpirationDate.Name = "ExpirationDate"
-        Me.ExpirationDate.ReadOnly = True
-        Me.ExpirationDate.Width = 120
-        '
-        'Type
-        '
-        Me.Type.HeaderText = "Unit Type"
-        Me.Type.MinimumWidth = 6
-        Me.Type.Name = "Type"
-        Me.Type.ReadOnly = True
-        Me.Type.Width = 120
-        '
-        'LostStock
-        '
-        Me.LostStock.Frozen = True
-        Me.LostStock.HeaderText = "Last Stock"
-        Me.LostStock.MinimumWidth = 6
-        Me.LostStock.Name = "LostStock"
-        Me.LostStock.ReadOnly = True
-        Me.LostStock.Width = 120
-        '
-        'TotalValue
-        '
-        Me.TotalValue.Frozen = True
-        Me.TotalValue.HeaderText = "Total Value"
-        Me.TotalValue.MinimumWidth = 6
-        Me.TotalValue.Name = "TotalValue"
-        Me.TotalValue.ReadOnly = True
-        Me.TotalValue.Width = 120
-        '
-        'CostUnit
-        '
-        Me.CostUnit.Frozen = True
-        Me.CostUnit.HeaderText = "Cost/Unit"
-        Me.CostUnit.MinimumWidth = 6
-        Me.CostUnit.Name = "CostUnit"
-        Me.CostUnit.ReadOnly = True
-        Me.CostUnit.Width = 125
-        '
-        'Status
-        '
-        Me.Status.Frozen = True
-        Me.Status.HeaderText = "Status"
-        Me.Status.MinimumWidth = 6
-        Me.Status.Name = "Status"
-        Me.Status.ReadOnly = True
-        Me.Status.Width = 120
-        '
-        'Quantity
-        '
-        Me.Quantity.Frozen = True
-        Me.Quantity.HeaderText = "Quantity"
-        Me.Quantity.MinimumWidth = 6
-        Me.Quantity.Name = "Quantity"
-        Me.Quantity.ReadOnly = True
-        Me.Quantity.Width = 120
-        '
-        'ItemName
-        '
-        Me.ItemName.Frozen = True
-        Me.ItemName.HeaderText = "Item Name"
-        Me.ItemName.MinimumWidth = 6
-        Me.ItemName.Name = "ItemName"
-        Me.ItemName.ReadOnly = True
-        Me.ItemName.Width = 150
-        '
         'DataGridView1
         '
         Me.DataGridView1.AllowUserToResizeColumns = False
@@ -299,6 +210,105 @@ Partial Class Inventory
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.Size = New System.Drawing.Size(1516, 181)
         Me.DataGridView1.TabIndex = 40
+        '
+        'ItemName
+        '
+        Me.ItemName.DataPropertyName = "colItemName"
+        Me.ItemName.Frozen = True
+        Me.ItemName.HeaderText = "Item Name"
+        Me.ItemName.MinimumWidth = 6
+        Me.ItemName.Name = "ItemName"
+        Me.ItemName.ReadOnly = True
+        Me.ItemName.Width = 150
+        '
+        'Quantity
+        '
+        Me.Quantity.DataPropertyName = "colQuantity"
+        Me.Quantity.Frozen = True
+        Me.Quantity.HeaderText = "Quantity"
+        Me.Quantity.MinimumWidth = 6
+        Me.Quantity.Name = "Quantity"
+        Me.Quantity.ReadOnly = True
+        Me.Quantity.Width = 120
+        '
+        'Status
+        '
+        Me.Status.DataPropertyName = "colStatus"
+        Me.Status.Frozen = True
+        Me.Status.HeaderText = "Status"
+        Me.Status.MinimumWidth = 6
+        Me.Status.Name = "Status"
+        Me.Status.ReadOnly = True
+        Me.Status.Width = 120
+        '
+        'CostUnit
+        '
+        Me.CostUnit.DataPropertyName = "colCostUnit"
+        Me.CostUnit.Frozen = True
+        Me.CostUnit.HeaderText = "Cost/Unit"
+        Me.CostUnit.MinimumWidth = 6
+        Me.CostUnit.Name = "CostUnit"
+        Me.CostUnit.ReadOnly = True
+        Me.CostUnit.Width = 125
+        '
+        'TotalValue
+        '
+        Me.TotalValue.DataPropertyName = "colTotalValue"
+        Me.TotalValue.Frozen = True
+        Me.TotalValue.HeaderText = "Total Value"
+        Me.TotalValue.MinimumWidth = 6
+        Me.TotalValue.Name = "TotalValue"
+        Me.TotalValue.ReadOnly = True
+        Me.TotalValue.Width = 120
+        '
+        'LostStock
+        '
+        Me.LostStock.DataPropertyName = "colLostStock"
+        Me.LostStock.Frozen = True
+        Me.LostStock.HeaderText = "Last Stock"
+        Me.LostStock.MinimumWidth = 6
+        Me.LostStock.Name = "LostStock"
+        Me.LostStock.ReadOnly = True
+        Me.LostStock.Width = 120
+        '
+        'Type
+        '
+        Me.Type.DataPropertyName = "colType"
+        Me.Type.HeaderText = "Unit Type"
+        Me.Type.MinimumWidth = 6
+        Me.Type.Name = "Type"
+        Me.Type.ReadOnly = True
+        Me.Type.Width = 120
+        '
+        'ExpirationDate
+        '
+        Me.ExpirationDate.DataPropertyName = "colExpirationDate"
+        Me.ExpirationDate.HeaderText = "Expiration Date"
+        Me.ExpirationDate.MinimumWidth = 6
+        Me.ExpirationDate.Name = "ExpirationDate"
+        Me.ExpirationDate.ReadOnly = True
+        Me.ExpirationDate.Width = 120
+        '
+        'RestockedBy
+        '
+        Me.RestockedBy.DataPropertyName = "colRestockedBy"
+        Me.RestockedBy.HeaderText = "Restocked By"
+        Me.RestockedBy.MinimumWidth = 6
+        Me.RestockedBy.Name = "RestockedBy"
+        Me.RestockedBy.ReadOnly = True
+        Me.RestockedBy.Width = 120
+        '
+        'Actions
+        '
+        Me.Actions.DataPropertyName = "colActions"
+        Me.Actions.HeaderText = "Actions"
+        Me.Actions.MinimumWidth = 6
+        Me.Actions.Name = "Actions"
+        Me.Actions.ReadOnly = True
+        Me.Actions.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Actions.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.Actions.UseColumnTextForButtonValue = True
+        Me.Actions.Width = 120
         '
         'Label7
         '
@@ -420,16 +430,6 @@ Partial Class Inventory
     Friend WithEvents Label11 As Label
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents RoundedPane22 As RoundedPane2
-    Friend WithEvents Actions As DataGridViewButtonColumn
-    Friend WithEvents RestockedBy As DataGridViewTextBoxColumn
-    Friend WithEvents ExpirationDate As DataGridViewTextBoxColumn
-    Friend WithEvents Type As DataGridViewTextBoxColumn
-    Friend WithEvents LostStock As DataGridViewTextBoxColumn
-    Friend WithEvents TotalValue As DataGridViewTextBoxColumn
-    Friend WithEvents CostUnit As DataGridViewTextBoxColumn
-    Friend WithEvents Status As DataGridViewTextBoxColumn
-    Friend WithEvents Quantity As DataGridViewTextBoxColumn
-    Friend WithEvents ItemName As DataGridViewTextBoxColumn
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
@@ -439,4 +439,14 @@ Partial Class Inventory
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Splitter1 As Splitter
+    Friend WithEvents ItemName As DataGridViewTextBoxColumn
+    Friend WithEvents Quantity As DataGridViewTextBoxColumn
+    Friend WithEvents Status As DataGridViewTextBoxColumn
+    Friend WithEvents CostUnit As DataGridViewTextBoxColumn
+    Friend WithEvents TotalValue As DataGridViewTextBoxColumn
+    Friend WithEvents LostStock As DataGridViewTextBoxColumn
+    Friend WithEvents Type As DataGridViewTextBoxColumn
+    Friend WithEvents ExpirationDate As DataGridViewTextBoxColumn
+    Friend WithEvents RestockedBy As DataGridViewTextBoxColumn
+    Friend WithEvents Actions As DataGridViewButtonColumn
 End Class

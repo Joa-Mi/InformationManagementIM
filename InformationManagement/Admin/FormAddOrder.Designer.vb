@@ -56,7 +56,7 @@ Partial Class FormAddOrder
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(12, 12)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(151, 25)
+        Me.Label1.Size = New System.Drawing.Size(192, 32)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Add New Order"
         '
@@ -66,7 +66,7 @@ Partial Class FormAddOrder
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(24, 64)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(107, 17)
+        Me.Label2.Size = New System.Drawing.Size(135, 23)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Customer Name"
         '
@@ -76,7 +76,7 @@ Partial Class FormAddOrder
         Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(24, 138)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(81, 17)
+        Me.Label3.Size = New System.Drawing.Size(101, 23)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Other Items"
         '
@@ -122,7 +122,7 @@ Partial Class FormAddOrder
         Me.NumericUpDown2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NumericUpDown2.Location = New System.Drawing.Point(354, 49)
         Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.Size = New System.Drawing.Size(120, 25)
+        Me.NumericUpDown2.Size = New System.Drawing.Size(120, 30)
         Me.NumericUpDown2.TabIndex = 11
         '
         'NumericUpDown1
@@ -132,7 +132,7 @@ Partial Class FormAddOrder
         Me.NumericUpDown1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NumericUpDown1.Location = New System.Drawing.Point(197, 49)
         Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(105, 25)
+        Me.NumericUpDown1.Size = New System.Drawing.Size(105, 30)
         Me.NumericUpDown1.TabIndex = 10
         '
         'Label6
@@ -141,7 +141,7 @@ Partial Class FormAddOrder
         Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(351, 19)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(66, 17)
+        Me.Label6.Size = New System.Drawing.Size(84, 23)
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "Unit Price"
         '
@@ -151,7 +151,7 @@ Partial Class FormAddOrder
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(210, 19)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(61, 17)
+        Me.Label5.Size = New System.Drawing.Size(77, 23)
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "Quantity"
         '
@@ -161,7 +161,7 @@ Partial Class FormAddOrder
         Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(18, 19)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(96, 17)
+        Me.Label4.Size = New System.Drawing.Size(121, 23)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Product Name"
         '
@@ -171,7 +171,7 @@ Partial Class FormAddOrder
         Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(384, 334)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(70, 17)
+        Me.Label7.Size = New System.Drawing.Size(88, 23)
         Me.Label7.TabIndex = 11
         Me.Label7.Text = "Total Price"
         '
@@ -181,7 +181,7 @@ Partial Class FormAddOrder
         Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(227, 334)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(46, 17)
+        Me.Label8.Size = New System.Drawing.Size(57, 23)
         Me.Label8.TabIndex = 12
         Me.Label8.Text = "Status"
         '
@@ -191,7 +191,7 @@ Partial Class FormAddOrder
         Me.Label9.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(35, 334)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(75, 17)
+        Me.Label9.Size = New System.Drawing.Size(95, 23)
         Me.Label9.TabIndex = 13
         Me.Label9.Text = "Order Type"
         '
@@ -226,7 +226,7 @@ Partial Class FormAddOrder
         Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(409, 383)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(0, 13)
+        Me.Label10.Size = New System.Drawing.Size(0, 19)
         Me.Label10.TabIndex = 16
         '
         'btnCreateOrder
@@ -260,9 +260,9 @@ Partial Class FormAddOrder
         '
         Me.Label11.AutoSize = True
         Me.Label11.Image = Global.InformationManagement.My.Resources.Resources.philippines_peso_currency_symbol__2_
-        Me.Label11.Location = New System.Drawing.Point(384, 372)
+        Me.Label11.Location = New System.Drawing.Point(363, 364)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(49, 13)
+        Me.Label11.Size = New System.Drawing.Size(65, 19)
         Me.Label11.TabIndex = 19
         Me.Label11.Text = "              "
         '
@@ -312,10 +312,10 @@ Partial Class FormAddOrder
         '
         'FormAddOrder
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(539, 481)
+        Me.ClientSize = New System.Drawing.Size(539, 618)
         Me.ControlBox = False
         Me.Controls.Add(Me.txtCustomerName)
         Me.Controls.Add(Me.Label11)
