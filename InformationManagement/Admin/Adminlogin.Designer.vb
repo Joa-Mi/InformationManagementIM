@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Adminlogin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,13 +20,13 @@ Partial Class Adminlogin
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Adminlogin))
         Me.Back1 = New System.Windows.Forms.Button()
         Me.RoundedPanel1 = New InformationManagement.RoundedPanel()
         Me.txtPassword = New InformationManagement.RoundedTextBox()
-        Me.txtId = New InformationManagement.RoundedTextBox()
+        Me.txtUsername = New InformationManagement.RoundedTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.adminlog = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -41,10 +41,10 @@ Partial Class Adminlogin
         Me.Back1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Back1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Back1.ForeColor = System.Drawing.Color.Red
-        Me.Back1.Location = New System.Drawing.Point(15, 14)
-        Me.Back1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Back1.Location = New System.Drawing.Point(11, 11)
+        Me.Back1.Margin = New System.Windows.Forms.Padding(2)
         Me.Back1.Name = "Back1"
-        Me.Back1.Size = New System.Drawing.Size(99, 34)
+        Me.Back1.Size = New System.Drawing.Size(74, 28)
         Me.Back1.TabIndex = 9
         Me.Back1.Text = "Back"
         Me.Back1.UseVisualStyleBackColor = False
@@ -54,16 +54,15 @@ Partial Class Adminlogin
         Me.RoundedPanel1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.RoundedPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RoundedPanel1.Controls.Add(Me.txtPassword)
-        Me.RoundedPanel1.Controls.Add(Me.txtId)
+        Me.RoundedPanel1.Controls.Add(Me.txtUsername)
         Me.RoundedPanel1.Controls.Add(Me.Label1)
         Me.RoundedPanel1.Controls.Add(Me.adminlog)
         Me.RoundedPanel1.Controls.Add(Me.Label2)
         Me.RoundedPanel1.Controls.Add(Me.Label3)
         Me.RoundedPanel1.CornerRadius = 24
-        Me.RoundedPanel1.Location = New System.Drawing.Point(401, 134)
-        Me.RoundedPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RoundedPanel1.Location = New System.Drawing.Point(301, 109)
         Me.RoundedPanel1.Name = "RoundedPanel1"
-        Me.RoundedPanel1.Size = New System.Drawing.Size(411, 362)
+        Me.RoundedPanel1.Size = New System.Drawing.Size(308, 294)
         Me.RoundedPanel1.TabIndex = 10
         '
         'txtPassword
@@ -71,38 +70,36 @@ Partial Class Adminlogin
         Me.txtPassword.BackColor = System.Drawing.Color.Transparent
         Me.txtPassword.BorderRadius = 6
         Me.txtPassword.FocusBorderColor = System.Drawing.Color.Red
-        Me.txtPassword.Location = New System.Drawing.Point(77, 217)
-        Me.txtPassword.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtPassword.Location = New System.Drawing.Point(58, 176)
         Me.txtPassword.MaxLength = 32767
-        Me.txtPassword.MinimumSize = New System.Drawing.Size(67, 25)
+        Me.txtPassword.MinimumSize = New System.Drawing.Size(50, 20)
         Me.txtPassword.Multiline = False
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtPassword.Size = New System.Drawing.Size(241, 37)
+        Me.txtPassword.Size = New System.Drawing.Size(181, 30)
         Me.txtPassword.TabIndex = 10
         Me.txtPassword.TextBoxBackColor = System.Drawing.Color.White
         Me.txtPassword.TextColor = System.Drawing.Color.Black
         Me.txtPassword.TextFont = New System.Drawing.Font("Segoe UI", 10.0!)
         '
-        'txtId
+        'txtUsername
         '
-        Me.txtId.BackColor = System.Drawing.Color.Transparent
-        Me.txtId.BorderRadius = 6
-        Me.txtId.FocusBorderColor = System.Drawing.Color.Red
-        Me.txtId.Location = New System.Drawing.Point(77, 111)
-        Me.txtId.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.txtId.MaxLength = 32767
-        Me.txtId.MinimumSize = New System.Drawing.Size(67, 25)
-        Me.txtId.Multiline = False
-        Me.txtId.Name = "txtId"
-        Me.txtId.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.txtId.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtId.Size = New System.Drawing.Size(241, 37)
-        Me.txtId.TabIndex = 9
-        Me.txtId.TextBoxBackColor = System.Drawing.Color.White
-        Me.txtId.TextColor = System.Drawing.Color.Black
-        Me.txtId.TextFont = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.txtUsername.BackColor = System.Drawing.Color.Transparent
+        Me.txtUsername.BorderRadius = 6
+        Me.txtUsername.FocusBorderColor = System.Drawing.Color.Red
+        Me.txtUsername.Location = New System.Drawing.Point(58, 90)
+        Me.txtUsername.MaxLength = 32767
+        Me.txtUsername.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.txtUsername.Multiline = False
+        Me.txtUsername.Name = "txtUsername"
+        Me.txtUsername.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.txtUsername.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtUsername.Size = New System.Drawing.Size(181, 30)
+        Me.txtUsername.TabIndex = 9
+        Me.txtUsername.TextBoxBackColor = System.Drawing.Color.White
+        Me.txtUsername.TextColor = System.Drawing.Color.Black
+        Me.txtUsername.TextFont = New System.Drawing.Font("Segoe UI", 10.0!)
         '
         'Label1
         '
@@ -111,9 +108,10 @@ Partial Class Adminlogin
         Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(152, 26)
+        Me.Label1.Location = New System.Drawing.Point(114, 21)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(102, 37)
+        Me.Label1.Size = New System.Drawing.Size(81, 30)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Admin"
         '
@@ -125,10 +123,10 @@ Partial Class Adminlogin
         Me.adminlog.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.adminlog.Font = New System.Drawing.Font("Microsoft New Tai Lue", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.adminlog.ForeColor = System.Drawing.Color.Red
-        Me.adminlog.Location = New System.Drawing.Point(143, 292)
-        Me.adminlog.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.adminlog.Location = New System.Drawing.Point(107, 237)
+        Me.adminlog.Margin = New System.Windows.Forms.Padding(2)
         Me.adminlog.Name = "adminlog"
-        Me.adminlog.Size = New System.Drawing.Size(131, 32)
+        Me.adminlog.Size = New System.Drawing.Size(98, 26)
         Me.adminlog.TabIndex = 8
         Me.adminlog.Text = "Login"
         Me.adminlog.UseVisualStyleBackColor = False
@@ -139,9 +137,10 @@ Partial Class Adminlogin
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Transparent
-        Me.Label2.Location = New System.Drawing.Point(72, 81)
+        Me.Label2.Location = New System.Drawing.Point(54, 66)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(115, 28)
+        Me.Label2.Size = New System.Drawing.Size(91, 21)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Username :"
         '
@@ -150,25 +149,26 @@ Partial Class Adminlogin
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Transparent
-        Me.Label3.Location = New System.Drawing.Point(72, 187)
+        Me.Label3.Location = New System.Drawing.Point(54, 152)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(108, 28)
+        Me.Label3.Size = New System.Drawing.Size(87, 21)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Password :"
         '
         'Adminlogin
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.CancelButton = Me.Back1
-        Me.ClientSize = New System.Drawing.Size(1193, 550)
+        Me.ClientSize = New System.Drawing.Size(895, 447)
         Me.Controls.Add(Me.RoundedPanel1)
         Me.Controls.Add(Me.Back1)
         Me.DoubleBuffered = True
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Adminlogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Admin"
@@ -185,5 +185,5 @@ Partial Class Adminlogin
     Friend WithEvents Back1 As Button
     Friend WithEvents RoundedPanel1 As RoundedPanel
     Friend WithEvents txtPassword As RoundedTextBox
-    Friend WithEvents txtId As RoundedTextBox
+    Friend WithEvents txtUsername As RoundedTextBox
 End Class
